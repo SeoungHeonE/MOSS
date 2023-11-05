@@ -1,0 +1,141 @@
+html {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+
+
+
+/********************************************************
+                        bg img
+********************************************************/
+body{background-color: var(--white--color); font-family: var(--main--font); overflow-x: hidden;}
+img {cursor: pointer;}
+a {text-decoration: none; color: var(--white--color);}
+
+
+
+/********************************************************
+                section1-detailPage-wrappe
+********************************************************/
+#interviewee-wrapper {position: relative; top: 100px; width: 1920px; height: 550px;}
+
+.interviewee-group {position: absolute; width: 1800px; height: 100vh; top: 0; left: 50%; transform: translateX(-50%);}
+.interviewee-group-inner-text {margin-top: 68px;}
+.interviewee-group-inner-text .Place {font-size: 40px; font-weight: var(--weight--500);}
+
+.interviewee-group-inner-text .interviewee-group {width: 100%; height: auto; display: flex; margin-top: 172px;}
+.interviewee-english-name {font-size: 128px; font-weight: var(--weight--700); font-family: var(--sub--font); display: flex; justify-content: center; flex-direction: column; line-height: 1.3;}
+.interviewee-korean-name {position: absolute; top: 20%; right: 0; font-size: 80px; font-weight: var(--weight--700); font-family: var(--main--font); display: flex; flex-direction: column; gap: 80px;}
+
+
+
+/********************************************************
+                clipped-image Section
+********************************************************/
+.clipped-image-wrapper {width: 1920px; text-align: center; color: var(--black--color); background: var(--white--color);}
+.clipped-image-group{width: 100%; height: 170vh;}
+.clipped-image-2 {position: sticky; top: 0; transform: scale(0.8, 0.8); clip-path: inset(0% 30%); height: 955px; transition: all .5s ease-out;}
+.clipped-image-2 img {position: relative; width: 100%; height: 100%; display: block; z-index: 0; object-fit: cover;}
+
+
+
+/********************************************************
+                    detailPage-wrapper
+********************************************************/
+.detailPage-wrapper {width: 1920px; height: 8700px;}
+.detailPage-group {position: relative; width: 1800px; height: 100%; left: 50%; transform: translateX(-50%); display: flex;}
+
+.interview-intro-group {width: 426px; height: 93%; /*border: 1px solid blue;*/}
+.interview-intro-item {position: sticky; top: 0; padding-top: 140px; display: flex; flex-direction: column; gap: 40px;}
+.interview-intro-item .interview-intro {padding-top: 30px; font-size: 40px; font-weight: var(--weight--700); border-top: 2px solid var(--black--color);}
+.interview-intro-item .interview-info {font-size: 24px; font-weight: var(--weight--500); color: var(--gray--color); display: flex; gap: 60px;}
+.interview-intro-item .interview-info span {color: var(--black--color);}
+.interview-info:nth-child(3) span {margin-left: 20px;}
+.interview-intro-item .interview-info:nth-of-type(3) {padding-bottom: 30px; border-bottom: 2px solid var(--black--color);}
+
+/********************************************************
+                타이틀 및 인터뷰 배경
+********************************************************/
+.main-interview-wrap {position: absolute; width: 1342px; height: 100%; right: 0; display: flex; flex-direction: column;}
+.main-interview-group {position: relative; top: 0; width: 100%; height: 764px;}
+.interview-inner-text {margin-top: 140px; display: flex; flex-direction: column; gap: 60px;}
+.interview-title {font-size: 60px; font-weight: var(--weight--700); line-height: 1.5;}
+.interview-background {font-size: 30px; font-weight: var(--weight--400); letter-spacing: 0.3px; line-height: 1.6;}
+
+/********************************************************
+                    인삿말 및 QnA 시작
+********************************************************/
+.interview-qna-wrapper {width: 100%; height: 1300px;}
+.senior-couple-photo {width: 100%; height: 857px; background-image: url(../images/senior/senior_9.jpg); background-repeat: no-repeat; background-size: cover;}
+
+.qna-item {position: relative; display: flex; margin-top: 80px; gap: 70px;}
+.qna-item .question {font-size: 40px; font-weight: var(--weight--700); line-height: 1.5;}
+.qna-item .answer {font-size: 30px; font-weight: var(--weight--400); line-height: 2;}
+
+.text-margin-left {margin-left: 50px;}
+.text-bold {font-weight: var(--weight--600); padding-right: 5px;}
+
+
+/********************************************************
+                패션 아이템소개 및  QnA
+********************************************************/
+.fashion-info-wrapper {width: 100%; height: auto;}
+
+.fashion-image-group {position: relative; width: 100%; height: 1497px;}
+.fashion-image-group img {width: 100%; height: 100%; cursor: auto;}
+
+.fashion-item-image {position: relative; overflow: hidden; transition: all 1s;}
+.fashion-item-image:hover .see-products {opacity: 1;}
+
+.see-products {position: absolute; top: 0; width: 100%; height: 100%; background: #000000ce; color: var(--white--color); font-size: 30px; font-weight: var(--weight--500); opacity: 0;
+transition: opacity 0.5s; cursor: pointer;}
+.see-products-item {position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 60px;}
+
+.top-image, .bottom-image {display: flex; gap: 30px;}
+.top-image .fashion-item-image:nth-of-type(1) {width: 714px; height: 612px; clip-path: inset(0% 100% 0% 0%);}
+.top-image .fashion-item-image:nth-of-type(2) {width: 600px; height: 612px; clip-path: inset(0% 0% 100% 0%);}
+
+.bottom-image {position: absolute; bottom: 0;}
+.bottom-image .fashion-item-image:nth-of-type(1) {width: 580px; height: 855px; clip-path: inset(100% 0% 0% 0%);}
+.bottom-image .fashion-item-image:nth-of-type(2) {width: 728px; height: 855px; clip-path: inset(0% 0% 0% 100%);}
+
+
+.qna-wrapper {position: relative; width: 100%; height: auto; padding-top: 80px; display: flex; gap: 30px;}
+.question-group {width: 580px; height: 100%; font-size: 40px; font-weight: var(--weight--700); line-height: 1.5;}
+.question-1-1 {height: 616px;}
+.question-1-2 {height: 472px;}
+.question-1-3 {height: 476px;}
+.question-1-4 {height: 520px;}
+
+.answer-group {width: 732px; height: 100%; font-size: 30px; font-weight: var(--weight--400); line-height: 1.6;}
+.answer-1-1 {height: 616px; display: flex; flex-direction: column; gap: 24px;}
+.answer-1-2 {height: 472px; display: flex; flex-direction: column; gap: 24px;}
+.answer-1-3 {height: 476px;}
+.answer-1-4 {height: 520px; display: flex; flex-direction: column; gap: 24px;}
+
+
+/********************************************************
+                    마무리 QnA 마지막
+********************************************************/
+.interview-qna-last-wrapper {width: 100%; height: auto;}
+
+.senior-couple-photo-2 {width: 100%; height: 1200px; background-image: url(../images/senior/senior_14.jpg); background-repeat: no-repeat; background-size: cover; clip-path: inset(0% 100% 0% 0%); transition: all 1s;}
+
+.question-2-1 {height: 380px;}
+.question-2-2 {display: flex; gap: 30px;}
+.question-2-3 {padding-top: 80px; height: auto;}
+
+.answer-2-1 {height: 380px; display: flex; flex-direction: column; gap: 24px;}
+.answer-2-2 {height: 412px;}
+.answer-2-3 {padding-top: 80px; height: auto; display: flex; flex-direction: column; gap: 24px;}
+
+
+/********************************************************
+                        footer
+********************************************************/
+footer {position: relative; width: 1920px; height: 336px; background: var(--yellow--color); color: var(--white--color);}
+.footer-wrapper {position: absolute; top: 50%; left: 180px; transform: translateY(-50%); display: grid; gap: 30px;}
+.footer-wrapper li:nth-of-type(1) {font-family: var(--sub--font); font-size: 53px; font-weight: var(--weight--700);}
+.footer-wrapper li:nth-of-type(2) {font-size: 40px; font-weight: var(--weight--400); padding-bottom: 40px;}
+.footer-wrapper li:nth-of-type(3) {font-family: var(--sub--font); font-size: 24px; font-weight: var(--weight--600);}
+
+
+
+.top-inset {clip-path: inset(0% 0% 100% 0%); transition: all 1s;}

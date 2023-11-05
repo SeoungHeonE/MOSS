@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/mouseCursor.css">
+    <link rel="stylesheet" href="./public/css/font.css">
+    <link rel="stylesheet" href="./public/css/appIntro.css">
+    <link rel="stylesheet" href="./public/css/header_2.css">
+    <link rel="stylesheet" href="./public/css/fade.css">
+    <!-- font popins / Noto Sans Korea-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>MOSS | 시니어 패션 큐레이팅 서비스</title>
+</head>
+
+<body>
+    <!-- header / nav -->
+    <header id="header-Wrap">
+        <nav id="nav-Wrap">
+            <a style="text-decoration: none; color: #000;" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path
+                        d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.20101 47.799C2.94999 42.548 -1.97574e-06 35.4261 -2.44784e-06 28L28 28L56 28Z"
+                        fill="#F96512" />
+                    <rect x="38" y="8.87427" width="2.25166" height="20" transform="rotate(90 38 8.87427)"
+                        fill="#F96512" />
+                    <rect x="20.1328" y="3.72485" width="2.25166" height="20" transform="rotate(-45 20.1328 3.72485)"
+                        fill="#F96512" />
+                    <rect x="26.875" width="2.25166" height="20" fill="#F96512" />
+                    <rect x="34.2754" y="2.13281" width="2.25166" height="20" transform="rotate(45 34.2754 2.13281)"
+                        fill="#F96512" />
+                </svg>
+            </a>
+
+            <!-- nav menu -->
+            <ul id="nav-menu">
+                <li><a href="index.html">모스 이야기</a></li>
+                <li><a href="appIntro.html">앱 소개</a></li>
+                <li><a href="webIntro.html">웹 소개</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- section1-main-title-wrapper -->
+    <section class="main-title-wrapper">
+        <div class="main-title-group">
+            <div class="moss-slogan-wrap">
+                <div class="moss-app-logo fadein active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+                        <rect width="169" height="169" rx="32.6857" fill="white" />
+                        <path
+                            d="M143.648 84.4977C143.648 100.185 137.416 115.23 126.323 126.323C115.23 137.416 100.185 143.648 84.4977 143.648C68.8101 143.648 53.7651 137.416 42.6723 126.323C31.5795 115.23 25.3477 100.185 25.3477 84.4977L84.4977 84.4977L143.648 84.4977Z"
+                            fill="#F96512" />
+                        <rect x="105.621" y="44.0938" width="4.75662" height="42.25"
+                            transform="rotate(90 105.621 44.0938)" fill="#F96512" />
+                        <rect x="67.8767" y="33.2148" width="4.75662" height="42.25"
+                            transform="rotate(-45 67.8767 33.2148)" fill="#F96512" />
+                        <rect x="82.1177" y="25.3477" width="4.75662" height="42.25" fill="#F96512" />
+                        <rect x="97.7527" y="29.8516" width="4.75662" height="42.25"
+                            transform="rotate(45 97.7527 29.8516)" fill="#F96512" />
+                    </svg>
+                </div>
+                <ul class="moss-inner-text">
+                    <li class="fadein active" style="animation-delay: .5s;">시니어 맞춤형 온라인 쇼핑을 돕는<br>
+                        패션 큐레이터, MOSS 앱 </li>
+                    <li class="fadein active" style="animation-delay: 1s;">더 쉽게, 더 잘 맞게, 더 멋스럽게</li>
+                </ul>
+            </div>
+
+            <div class="main-mockup-image">
+                <img class="fadein active" style="animation-delay: 1.5s;" src="./public/images/appPageImage/2X/e1_1.png"
+                    alt="메인 목업 이미지">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section2-onboarding-wrapper -->
+    <section class="onboarding-wrapper">
+        <div class="onboarding-group">
+            <ul class="onboarding-text">
+                <li class="fadein" style="animation-delay: .25s;">온보딩</li>
+                <li class="fadein" style="animation-delay: .5s;">
+                    나만의 패션 감각을 쉽게 찾을 수 있도록<br>
+                    MOSS, 지금 시작해볼까요?
+                </li>
+            </ul>
+
+            <div class="onboarding-mockup-group">
+                <div class="onboarding-mockup-item">
+                    <div class="left-mockup">
+                        <img class="fadein" style="animation-delay: .75s;" src="./public/images/appPageImage/2X/e3.png"
+                            alt="기능 소개 이미지">
+                        <img class="fadein" style="animation-delay: .5s;" src="./public/images/appPageImage/2X/e4.png"
+                            alt="기능 소개 이미지">
+                    </div>
+                    <div id="iphone">
+                        <video id="video" width="400" src="./video/mockup_video/Comp_1.mp4" autoplay muted loop></video>
+                    </div>
+                    <div class="right-mockup">
+                        <img class="fadein" style="animation-delay: .5s;" src="./public/images/appPageImage/2X/e5.png"
+                            alt="기능 소개 이미지">
+                        <img class="fadein" style="animation-delay: .75s;" src="./public/images/appPageImage/2X/e6.png"
+                            alt="기능 소개 이미지">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-background"></div>
+    </section>
+
+
+    <!-- section3-first-tutorial-wrapper -->
+    <section class="first-tutorial-wrapper">
+        <div class="tutorial-group">
+            <div class="tutorial-text-item fadein" style="animation-delay: .25s;">
+                <ul class="tutorial-text-inner">
+                    <li>정보 수집 튜토리얼</li>
+                    <li>
+                        맞춤형 스타일 추천에<br>
+                        필요한 정보 입력
+                    </li>
+                </ul>
+                <ul class="tutorial-detailed-text">
+                    <li>
+                        기본 정보와 상세 체형 및 스타일까지 패션 큐레이팅에 필요한<br>
+                        상세한 정보를 등록할 수 있어요. 입력한 정보를 바탕으로<br>
+                        모스에서 맞춤형 패션 아이템을 추천해줄게요.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tutorial-mockup-group">
+                <div class="tutorial-mockup-item fadein" style="animation-delay: .5s;">
+                    <ul class="mockup-text-inner">
+                        <li>01</li>
+                        <li>기본 정보 등록</li>
+                    </ul>
+                    <div class="iphone">
+                        <video class="video" width="338" src="./video/mockup_video/Comp_2.mp4" autoplay muted
+                            loop></video>
+                    </div>
+                </div>
+
+                <div class="tutorial-mockup-item fadein" style="animation-delay: .75s;">
+                    <ul class="mockup-text-inner">
+                        <li>02</li>
+                        <li>체형 정보 입력</li>
+                    </ul>
+                    <div class="iphone">
+                        <video class="video" width="338" src="./video/mockup_video/Comp_3.mp4" autoplay muted
+                            loop></video>
+                    </div>
+                </div>
+
+                <div class="tutorial-mockup-item fadein" style="animation-delay: 1s;">
+                    <ul class="mockup-text-inner">
+                        <li>03</li>
+                        <li>선호하는 스타일 입력</li>
+                    </ul>
+                    <div class="iphone">
+                        <video class="video" width="338" src="./video/mockup_video/Comp_4.mp4" autoplay muted
+                            loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section4-second-tutorial-wrapper -->
+    <section class="second-tutorial-wrapper">
+        <div class="second-tutorial-group">
+            <ul class="second-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">체형 분석 결과</li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;"><span>내 체형은</span> 어떤 유형에<br>해당할까?</li>
+                <li class="fadein tutorial-text" style="animation-delay: .75s;">어떤 체형인지 모른다면 사진을 통해 AI 분석으로<br>어떤 유형에
+                    해당하는지 정확하고 쉽게 알려줘요.</li>
+            </ul>
+
+            <div class="second-mockup-group">
+                <img width="530" src="./public/images/appPageImage/2X/e11.png" alt="체형 분석 결과 이미지">
+            </div>
+
+            <div class="body-type-icon">
+                <img class="triangle" src="./public/images/appPageImage/2X/e7.png" alt="삼각형 체형 이미지">
+                <img class="inverted" src="./public/images/appPageImage/2X/e8.png" alt="역삼각형 체형 이미지">
+                <img class="square" src="./public/images/appPageImage/2X/e9.png" alt="사각형 체형 이미지">
+                <img class="round" src="./public/images/appPageImage/2X/e10.png" alt="둥근ㄴ형 체형 이미지">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section5-third-tutorial-wrapper -->
+    <section class="third-tutorial-wrapper">
+        <div class="third-tutorial-group">
+            <div class="third-cetailed-category">
+                <img class="category-item" style="animation-delay: 1s;" width="339"
+                    src="./public/images/appPageImage/2X/e13.png" alt="어깨가 좁다">
+                <img class="category-item" style="animation-delay: .75s;" width="339"
+                    src="./public/images/appPageImage/2X/e14.png" alt="허리가 길다">
+                <img class="category-item" style="animation-delay: .5s;" width="293"
+                    src="./public/images/appPageImage/2X/e15.png" alt="목이 짧다">
+                <img class="category-item" style="animation-delay: .25s;" width="385"
+                    src="./public/images/appPageImage/2X/e16.png" alt="종아리가 짧다">
+                <img class="category-item" style="animation-delay: 0s;" width="430"
+                    src="./public/images/appPageImage/2X/e17.png" alt="허벅지가 두껍다">
+            </div>
+            <ul class="third-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">상세 체형 설정</li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">내가 생각하는<br>
+                    <span>체형 고민</span>을 정확하게
+                </li>
+                <li class="fadein tutorial-text" style="animation-delay: .75s;">따로 신경쓰이는 고민이 있다면 상세 체형 설정에서<br>
+                    신체 부분 별로 고민을 선택하여 설정할 수 있어요. </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- section6-fourth-tutorial-wrapper -->
+    <section class="fourth-tutorial-wrapper">
+        <div class="fourth-tutorial-group">
+            <ul class="fourth-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">메인 홈</li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">상품 별로 바로 확인하고<br>
+                    매일 바뀌는 추천 아이템
+                </li>
+                <li class="fadein tutorial-text" style="animation-delay: .75s;">메안 화면에서는 매일 다른 패션 아이템을 다양하게<br>
+                    추천받고 상품 키워드 별로 손 쉽게 들어갈 수 있어요.
+                </li>
+            </ul>
+
+            <div class="fourth-main-home">
+                <div class="fourth-mockup-group">
+                    <div class="fourth-mockup-item"">
+                        <div class=" iphone fadein" style="animation-delay: .25s;">
+                        <video class="video" width="338" src="./video/mockup_video/Comp_5.mp4" autoplay muted
+                            loop></video>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-mockup-item-inner">
+                <img class="mockup-left-item left" style="animation-delay: .5s;"
+                    src="./public/images/appPageImage/2X/e20.png" alt="날씨 정보 이미지">
+                <img class="mockup-left-item left" style="animation-delay: 1s;"
+                    src="./public/images/appPageImage/2X/e19.png" alt="날씨 정보 이미지">
+                <img class="mockup-right-item right" style="animation-delay: .75s;"
+                    src="./public/images/appPageImage/2X/e21.png" alt="날씨 정보 이미지">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- section7-fifth-tutorial-wrapper -->
+    <section class="fifth-tutorial-wrapper">
+        <div class="fifth-tutorial-group">
+            <ul class="fifth-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">체형 맞춤 패션 추천 </li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">다양한 아이템을<br>
+                    <span>체형의 장단점</span>에 딱 맞게 추천
+                </li>
+                <li class="fadein tutorial-text" style="animation-delay: .75s;">메안 화면에서는 매일 다른 패션 아이템을 다양하게<br>
+                    추천받고 상품 키워드 별로 손 쉽게 들어갈 수 있어요.
+                </li>
+            </ul>
+
+            <div class="fifth-mockup-group">
+                <div class="fifth-mockup-item">
+                    <div class="fifth-mockup-item-inner">
+                        <div class="div-with-gap right" style="animation-delay: .25s;">
+                            <img width="370" src="./public/images/appPageImage/2X/e23.png" alt="상세 체형 이미지">
+                        </div>
+                        <div class="div-with-gap right" style="animation-delay: .5s;">
+                            <img width="338" src="./public/images/appPageImage/2X/e24.png" alt="상하체 맞춤 아이템 이미지">
+                            <h1>상하체 맞춤 아이템</h1>
+                        </div>
+                        <div class="div-with-gap right" style="animation-delay: .75s;">
+                            <img width="338" src="./public/images/appPageImage/2X/e25.png" alt="상품 상세 정보 이미지">
+                            <h1>상품 상세 정보</h1>
+                        </div>
+                    </div>
+                </div>
+                <p class="fadein">판매자가 상품마다 어울리는 체형을 등록하여<br>
+                    더 쉽고 정확하게 상품을 볼 수 있어요.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section8-sixth-tutorial-wrapper -->
+    <section class="sixth-tutorial-wrapper">
+        <div class="sixth-tutorial-group">
+            <ul class="sixth-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">상황에 맞는 코디 추천</li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">다양한 <span>때와 상황</span>에<br>
+                    더 멋스럽게
+                </li>
+                <li class="fadein tutorial-text" style="animation-delay: .75s;">따로 신경쓰이는 고민이 있다면 상세 체형 설정에서<br>
+                    신체 부분 별로 고민을 선택하여 설정할 수 있어요. </li>
+            </ul>
+
+            <div class="sixth-mockup-group">
+                <div class="sixth-mockup-item fadein" style="animation-delay: .25s;">
+                    <img width="371" src="./public/images/appPageImage/2X/e26.png" alt="상황에 맞는 옷차림 이미지">
+                </div>
+                <div class="sixth-mockup-item right" style="margin-top: 400px; animation-delay: .5s;">
+                    <img width="338" src="./public/images/appPageImage/2X/e27.png" alt="옷차림 상세 1">
+                    <h1>옷차림 상세 1</h1>
+                </div>
+                <div class="sixth-mockup-item right" style="margin-top: 400px; animation-delay: .75s;">
+                    <img width="338" src="./public/images/appPageImage/2X/e28.png" alt="옷차림 상세 2">
+                    <h1>옷차림 상세 2</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section9-seventh-tutorial-wrapper -->
+    <section class="seventh-tutorial-wrapper">
+        <div class="seventh-tutorial-group">
+            <ul class="seventh-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: 0s;">상품 별 상세보기</li>
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">
+                    <span>상품의 정보</span>를<br>
+                    상세하고 더 정확하게
+                </li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">
+                    상품이 자신의 체형에 대입했을 때 어떨지부터<br>
+                    재질, 디테일 정보까지 한눈에 확인할 수 있어요.
+                </li>
+            </ul>
+
+            <div class="seventh-mockup-scrolling fadein" style="animation-delay: .25s;">
+                <img width="371" src="./public/images/appPageImage/2X/e30.png" alt="상품 이미지">
+                <img width="338" src="./public/images/appPageImage/2X/e30_1.png" alt="상품 이미지">
+            </div>
+
+            <div class="seventh-mockup-group">
+                <div class="seventh-mockup-item right" style="animation-delay: .5s;">
+                    <img width="338" src="./public/images/appPageImage/2X/e31.png" alt="체형 적용 확인 이미지">
+                    <h1>체형 적용 확인</h1>
+                </div>
+                <div class="seventh-mockup-item right" style="animation-delay: .75s;">
+                    <img width="338" src="./public/images/appPageImage/2X/e32.png" alt="재질 상세 확인 이미지">
+                    <h1>재질 상세 확인</h1>
+                </div>
+                <div class="seventh-mockup-item right" style="animation-delay: 1s;">
+                    <img width="338" src="./public/images/appPageImage/2X/e33.png" alt="상품 디테일 이미지">
+                    <h1>상품 디테일 확인</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section10-eighth-tutorial-wrapper -->
+    <section class="eighth-tutorial-wrapper">
+        <div class="eighth-tutorial-group">
+            <ul class="eighth-tutorial-text">
+                <li class="fadein tutorial-text" style="animation-delay: 0s;">모스 AI에게 묻는 패션 정보</li>
+                <li class="fadein tutorial-text" style="animation-delay: .25s;">
+                    궁금한건 <span>모스 AI</span>에게<br><span>음성이나 채팅</span>으로
+                </li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">
+                    AI에게 패션에 대한 원하는 정보를 물어볼 수 있어요!<br>음성인식 기능도 있으니 편리하게 이용해보세요.
+                </li>
+            </ul>
+
+            <div class="eighth-mockup-group">
+                <div class="eighth-mockup-item">
+                    <div class="iphone">
+                        <video class="video" width="338" src="./video/mockup_video/Comp_6.mp4" autoplay muted
+                            loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section11-sub-mockup-->
+    <section class="sub-mockup"></section>
+
+
+    <!-- section12-moss-app-downlod -->
+    <section class="app-downlod-wrapper">
+        <div class="app-downlod-group">
+            <div class="app-downlod-text">
+                <div class="app-downlod-text-inner">
+                    <h1>
+                        시니어 패션<br>
+                        큐레이팅 앱 설치하기
+                    </h1>
+                    <div class="btn-wrap">
+                        <a class="btn" href="#">앱 다운로드 하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="app-downlod-mockup"></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <ul class="footer-wrapper">
+            <li>MOSS</li>
+            <li>SENIOR FASHION SERVICE</li>
+            <li>Copyright Ⓒ 2023. MOSS All pictures cannot be copied without permission</li>
+        </ul>
+    </footer>
+
+    <div id="mouse-cursor"></div>
+    <!-- script -->
+    <!-- <script src="./public/canvas.js"></script> -->
+    <script src="./public/mouseCursor.js"></script>
+    <script src="./public/header.js"></script>
+    <script src="./public/scroll.js"></script>
+    <script src="./public/fadeinGroup.js"></script>
+</body>
+
+</html>

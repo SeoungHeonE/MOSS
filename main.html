@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/mouseCursor.css">
+    <!-- <link rel="stylesheet" href="/public/css/splashScreen.css"> -->
+    <link rel="stylesheet" href="./public/css/font.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/header.css">
+    <!-- font popins / Noto Sans Korea-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>MOSS | 시니어 패션 큐레이팅 서비스</title>
+</head>
+
+<body>
+    <!-- header / nav -->
+    <header id="header-Wrap">
+        <nav id="nav-Wrap">
+            <a style="text-decoration: none; color: #000;" href="main.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path
+                        d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.20101 47.799C2.94999 42.548 -1.97574e-06 35.4261 -2.44784e-06 28L28 28L56 28Z"
+                        fill="#F96512" />
+                    <rect x="38" y="8.87427" width="2.25166" height="20" transform="rotate(90 38 8.87427)"
+                        fill="#F96512" />
+                    <rect x="20.1328" y="3.72485" width="2.25166" height="20" transform="rotate(-45 20.1328 3.72485)"
+                        fill="#F96512" />
+                    <rect x="26.875" width="2.25166" height="20" fill="#F96512" />
+                    <rect x="34.2754" y="2.13281" width="2.25166" height="20" transform="rotate(45 34.2754 2.13281)"
+                        fill="#F96512" />
+                </svg>
+            </a>
+
+            <!-- nav menu -->
+            <ul id="nav-menu">
+                <li><a href="main.html">모스 소개</a></li>
+                <li><a href="magazine.html">패션 매거진</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Moss Section  -->
+    <section class="Moss">
+        <!-- mouse parallax -->
+        <div class="mouse-parallax">
+            <div class="image-layer">
+                <img class="layer" src="./public/images/senior/senior_15.jpg" alt="senior-image" data-speed="7"
+                    style="transition-duration: 0.12s;">
+                <img class="layer" src="./public/images/senior/senior_6.jpg" alt="senior-image" data-speed="7"
+                    style="transition-duration: 0.15s;">
+                <img class="layer" src="./public/images/senior/senior_7.jpg" alt="senior-image" data-speed="7"
+                    style="transition-duration: 0.15s;">
+                <img class="layer" src="./public/images/senior/senior_9.jpg" alt="senior-image" data-speed="7"
+                    style="transition-duration: 0.2s;">
+                <img class="layer" src="./public/images/senior/senior_5.jpg" alt="senior-image" data-speed="7"
+                    style="transition-duration: 0.2s;">
+                <img class="layer" src="./public/images/senior/senior_1.jpg" alt="seinor-image" data-speed="7"
+                    style="transition-duration: 0.12s;">
+                <img class="layer" src="./public/images/senior/senior_9.jpg" alt="seinor-image" data-speed="7"
+                    style="transition-duration: 0.3s;">
+            </div>
+
+            <div class="moss-wrapper">
+                <!-- 모스 풀네임 및 svg -->
+                <div class="moss-group">
+                    <h1 class="moss-fullName">Modern Oasis<br>for Senior Style</h1>
+                    <h1 class="moss-korean-copy">시니어 스타일을 위한 모던 오아시스</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Oasis Section -->
+    <section class="Oasis">
+        <div class="oasis-wrapper">
+            <div class="oasis-background-image">
+                <img src="./public/images/background/desert.jpg" alt="">
+
+                <div class="oasis-group">
+                    <div class="telescope-effect-group">
+                        <div class="telescope-effect">
+                            <svg class="telescope" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"
+                                viewBox="0 0 1920 1080" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1920 0H0V1080H1920V0ZM957.929 970C1187.63 970 1373.85 777.482 1373.85 540C1373.85 302.518 1187.63 110 957.929 110C728.223 110 542.009 302.518 542.009 540C542.009 777.482 728.223 970 957.929 970Z"
+                                    fill="black" />
+                            </svg>
+                            <h1 class="text-fadeout">사막 속 오아시스처럼 찾기 어려운<br>시니어 자신만의 패션 감각</h1>
+                        </div>
+
+                        <div class="text-fadein-group">
+                            <div class="fadein-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84"
+                                    fill="none">
+                                    <rect x="46.7266" y="84" width="9.45695" height="84"
+                                        transform="rotate(-180 46.7266 84)" fill="#F96512" />
+                                    <rect x="68.3516" y="8.95703" width="9.45695" height="84"
+                                        transform="rotate(45 68.3516 8.95703)" fill="#F96512" />
+                                    <rect x="84" y="37.2734" width="9.45695" height="84"
+                                        transform="rotate(90 84 37.2734)" fill="#F96512" />
+                                    <rect x="75.042" y="68.3555" width="9.45695" height="84"
+                                        transform="rotate(135 75.042 68.3555)" fill="#F96512" />
+                                </svg>
+
+                                <p>그 패션 감각을 쉽게 찾을 수 있도록<br>
+                                    저희가 길잡이가 되어주겠습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Contents">
+        <video src="./video/keyVisualMotion/naming.mp4" autoplay loop muted></video>
+    </section>
+
+
+    <!-- Moss-directional Section -->
+    <section class="Moss-directional">
+        <div class="directional-wrap">
+            <ul class="directional-text-group">
+                <li>MOSS</li>
+                <li>Modern Oasis for Senior Style</li>
+                <li>
+                    우리는 시니어들이 각자의 감각을 쉽게 찾을 수 있게 하기 위해 고민했습니다. <br>
+                    MOSS만의 방법을 통해 액티브한 이들을 위한 거대한 오아시스를 찾습니다.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- keyVisual-motion Section -->
+    <section class="keyVisual-motion">
+        <video src="./video/keyVisualMotion/Motion_Final_2.mp4" autoplay loop muted></video>
+    </section>
+
+
+    <!-- service-Goals Section -->
+    <section class="service-Goals">
+        <div class="service-Goals-wrapper">
+            <div class="service-Goals-group">
+                <div class="keyVisual-group">
+                    <div class="circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="67" height="68" viewBox="0 0 67 68" fill="none">
+                            <circle cx="33.5046" cy="33.7038" r="33.5046" fill="#F96512" />
+                        </svg>
+                    </div>
+                    <div class="star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="67" height="68" viewBox="0 0 67 68" fill="none">
+                            <rect x="37.2773" y="67.2832" width="7.54408" height="67.0092"
+                                transform="rotate(-180 37.2773 67.2832)" fill="#F96512" />
+                            <rect x="54.5293" y="7.41992" width="7.54408" height="67.0092"
+                                transform="rotate(45 54.5293 7.41992)" fill="#F96512" />
+                            <rect x="67.0098" y="30.0059" width="7.54408" height="67.0092"
+                                transform="rotate(90 67.0098 30.0059)" fill="#F96512" />
+                            <rect x="60.2207" y="54.7832" width="7.54408" height="67.0092"
+                                transform="rotate(135 60.2207 54.7832)" fill="#F96512" />
+                        </svg>
+                    </div>
+                    <div class="semicircle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="34" viewBox="0 0 68 34" fill="none">
+                            <path
+                                d="M67.81 0.504589C67.81 9.39056 64.28 17.9126 57.9967 24.1959C51.7134 30.4792 43.1913 34.0092 34.3054 34.0092C25.4194 34.0092 16.8974 30.4792 10.6141 24.1959C4.33072 17.9126 0.800783 9.39056 0.800781 0.504593L34.3054 0.504589H67.81Z"
+                                fill="#F96512" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="service-text-group">
+                    <h1>액티브 시니어를 위해, 더 액티브한 패션 서비스</h1>
+                    <p>능동적이고, 주체적인 삶의 태도를 가지고 앞으로 나아가는 액티브 시니어들을 <br>위해 더 쉽고 정확하고 다양하게 패션에 대한 정보를 전달합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Magazine Section -->
+    <section class="magazine-wrapper">
+        <!-- magazin maquee -->
+        <div class="magazine-main-content">
+            <div class="magazine-text-gtoup">
+                <h1>매거진</h1>
+                <ul>
+                    <li>
+                        시니어들의 패션 이야기를<br>
+                        들어보는 <span>매거진</span>
+                    </li>
+                    <li>
+                        실제 시니어들의 길거리 인터뷰를 통해<br>
+                        패션 이야기를 들을 수 있는 매거진입니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="magazine-slide">
+                <div class="magazine-slide-group">
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_6.jpg" alt="senior-image" style="width: 376px;">
+                        <h1>이미라 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_1.jpg" alt="senior-image" style="width: 275px;">
+                        <h1>김정남 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_9.jpg" alt="senior-image" style="width: 428px;">
+                        <h1>임경섭 님 / 이은영 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_2.jpg" alt="senior-image" style="width: 300px;">
+                        <h1>최영배 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_7.jpg" alt="senior-image" style="width: 250px;">
+                        <h1>이종선 님</h1>
+                    </div>
+
+                    <div class="magazine-slide-item cloned">
+                        <img src="./public/images/senior/senior_6.jpg" alt="senior-image" style="width: 376px;">
+                        <h1>이미라 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_1.jpg" alt="senior-image" style="width: 275px;">
+                        <h1>김정남 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_9.jpg" alt="senior-image" style="width: 428px;">
+                        <h1>임경섭 님 / 이은영 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_2.jpg" alt="senior-image" style="width: 300px;">
+                        <h1>최영배 님</h1>
+                    </div>
+                    <div class="magazine-slide-item">
+                        <img src="./public/images/senior/senior_7.jpg" alt="senior-image" style="width: 250px;">
+                        <h1>이종선 님</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="more-wrapper">
+        <div class="more-text-group">
+            <ul class="more-text-item">
+                <li>당신의 액티브한 패션 라이프를 위해</li>
+                <li>패션에 대해 잘 몰라도 괜찮아요. 당신만의 패션 감각이 <br>
+                    생길 수 있도록 모스가 계속해서 함께 하겠습니다.</li>
+            </ul>
+
+            <div class="btn-wrap">
+                <a class="btn" href="magazine.html">매거진 보러가기</a>
+                <a class="btn" href="#">앱 다운받기</a>
+            </div>
+        </div>
+        <img src="./public/images/background/keyVisual.png" alt="">
+    </section>
+
+    <footer>
+        <ul class="footer-wrapper">
+            <li>MOSS</li>
+            <li>시니어 스타일을 위한 모던 오아시스</li>
+            <li>Copyright Ⓒ 2023. MOSS All pictures cannot be copied without permission</li>
+        </ul>
+    </footer>
+
+
+
+    <div id="mouse-cursor"></div>
+    <!-- script -->
+    <script src="./public/mouseCursor.js"></script>
+    <script src="./public/header.js"></script>
+    <script src="./public/scroll.js"></script>
+</body>
+
+</html>
+
+
+
+<!--<div class="Pixelate">
+    <canvas id="canvas" width="1580" height="540"></canvas>
+</div> -->

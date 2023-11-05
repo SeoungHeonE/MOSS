@@ -1,0 +1,253 @@
+html {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+
+
+
+/********************************************************
+                        bg img
+********************************************************/
+body{background-color: var(--white--color); font-family: var(--main--font); overflow-x: hidden;}
+img {cursor: auto;}
+a {text-decoration: none; color: var(--white--color);}
+
+
+
+/********************************************************
+                section-all___tutorial-text
+********************************************************/
+.tutorial-text span {color: var(--yellow--color);}
+.tutorial-text:nth-of-type(1) {font-size: 32px; color: var(--yellow--color); line-height: 1.6;}
+.tutorial-text:nth-of-type(2) {padding-top: 15px; font-size: 65px; color: var(--black--color); line-height: 1.4;}
+.tutorial-text:nth-of-type(3) {padding-top: 60px; font-size: 36px; font-weight: var(--weight--400); color: var(--black--color); line-height: 1.5;}
+
+
+
+/********************************************************
+                section1-main-title-wrapper
+********************************************************/
+.main-title-wrapper {position: relative; width: 1920px; height: 100vh; background: var(--yellow--color); color: var(--white--color);}
+.main-title-group {width: 100%; height: 100%;}
+.moss-slogan-wrap {position: absolute; top: 200px; left: 180px; display: flex; flex-direction: column; gap: 57px;}
+.moss-inner-text li:nth-of-type(1) {font-size: 55px; font-weight: var(--weight--700); line-height: 1.4;}
+.moss-inner-text li:nth-of-type(2) {padding-top: 30px; font-size: 36px; font-weight: var(--weight--500); line-height: 1.6;}
+
+.main-mockup-image {position: absolute; width: 975px; height: 964px; bottom: 0; right: 0; overflow: hidden;}
+.main-mockup-image img {position: absolute; width: 100%; object-fit: cover; cursor: auto;}
+
+
+
+/********************************************************
+                section2-onboarding-wrapper
+********************************************************/
+.onboarding-wrapper {position: relative; width: 1920px; height: 1714px; color: var(--black--color);}
+.onboarding-group {width: 100%; height: 100%; display: flex; flex-direction: column; gap: 108px;}
+.onboarding-text {margin-top: 260px; text-align: center; font-weight: var(--weight--700); display: flex; flex-direction: column; gap: 37px;}
+.onboarding-text li:nth-of-type(1) {color: var(--yellow--color); font-size: 32px; line-height: 1.6;}
+.onboarding-text li:nth-of-type(2) {color: var(--black--color); font-size: 65px; line-height: 1.4;}
+
+.onboarding-mockup-group {width: 100%; height: auto; z-index: 1;}
+.onboarding-mockup-item {display: flex; align-items: flex-end; gap: 64px;}
+.onboarding-mockup-item img {width: 332px;}
+
+.left-mockup, .right-mockup {width: fit-content; display: flex; gap: 60px;}
+.left-mockup {margin-left: -47px;}
+.right-mockup {margin-right: -47px;}
+#iphone {position: relative; width: 435px; height: 896px; flex-shrink: 0; border-radius: 57px; background: var(--iphone--color);}
+#video {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50px;}
+
+.bottom-background {position: absolute; width: 100%; height: 528px; bottom: 0; z-index: 0; background: var(--yellow--color);}
+
+
+
+/********************************************************
+            section3-first-tutorial-wrapper
+********************************************************/
+.first-tutorial-wrapper {width: 1920px; height: 2544px; color: var(--black--color);}
+.tutorial-group {position: relative; width: 100%; height: auto; top: 449px; left: 50%; transform: translateX(-50%);}
+.tutorial-text-item {margin-left: 180px; display: flex; gap: 182px;}
+.tutorial-text-inner li:nth-of-type(1) {font-size: 32px; font-weight: var(--weight--700); line-height: 1.6; color: var(--yellow--color);}
+.tutorial-text-inner li:nth-of-type(2) {padding-top: 15px; font-size: 65px; font-weight: var(--weight--700); line-height: 1.4; color: var(--black--color);}
+
+.tutorial-detailed-text {display: flex; align-items: flex-end;}
+.tutorial-detailed-text li {font-size: 36px; font-weight: var(--weight--400); line-height: 1.5;}
+
+.tutorial-mockup-group {position: relative; width: 1560px; height: auto; margin-top: 140px; left: 50%; display: flex; gap: 155px; transform: translateX(-50%); display: flex;}
+.tutorial-mockup-item {display: flex; flex-direction: column; gap: 40px;}
+.tutorial-mockup-item:nth-of-type(2) {margin-top: 173px;}
+.tutorial-mockup-item:nth-of-type(3) {margin-top: 341px;}
+
+.mockup-text-inner {font-size: 28px; line-height: 1.5; text-align: center;}
+.mockup-text-inner li:nth-of-type(1) {font-weight: var(--weight--700); line-height: 1.6; padding-bottom: 5px; color: var(--yellow--color);}
+.iphone {position: relative; width: 371px; height: 764px; flex-shrink: 0; border-radius: 57px; background: var(--iphone--color);}
+.video {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 40px;}
+
+
+/********************************************************
+            section4-second-tutorial-wrapper
+********************************************************/
+.second-tutorial-wrapper {width: 1920px; height: 1080px; background: var(--white--color); overflow: hidden;}
+.second-tutorial-group {position: relative; width: 100%; height: 100%; top: 0; left: 50%; transform: translateX(-50%);}
+
+.second-tutorial-text {position: absolute; top: 217px; left: 180px; font-weight: var(--weight--700);}
+
+.second-mockup-group {position: absolute; width: fit-content; right: 230px; top: 190px;}
+
+.body-type-icon {position: relative; width: 100%; height: 100%; top: 0; right: 0;}
+.body-type-icon img {position: absolute; width: 180px; opacity: 0;}
+
+.triangle {top: 699px; left: 881px;}
+.inverted {top: 405px; left: 969px;}
+.square {top: 123px; right: 152px;}
+.round {top: 463px; right: 43px;}
+
+.triangle-animate {animation: triangle 1.5s forwards ease;}
+.inverted-animate {animation: inverted 1.5s forwards ease;}
+.square-animate {animation: square 1.5s forwards ease;}
+.round-animate {animation: round 1.5s forwards ease;}
+
+
+@keyframes triangle {0% {top: 500px; left: 1200px; transform: scale(.5);} 100% {top: 699px; left: 881px; transform: scale(1); opacity: 1;}}
+@keyframes inverted {0% {top: 400px; left: 1300px; transform: scale(.5);} 100% {top: 405px; left: 969px; transform: scale(1); opacity: 1;}}
+@keyframes square {0% {top: 400px; right: 300px; transform: scale(.5);} 100% {top: 123px; right: 152px; transform: scale(1); opacity: 1;}}
+@keyframes round {0% {top: 500px; right: 300px; transform: scale(.5);} 100% {top: 463px; right: 43px; transform: scale(1); opacity: 1;}}
+
+
+
+/********************************************************
+            section5-third-tutorial-wrapper
+********************************************************/
+.third-tutorial-wrapper {width: 1920px; height: 1241px; background: var(--background--gray--color2);}
+.third-tutorial-group {position: relative; width: 100%; height: 100%;}
+.third-cetailed-category {position: absolute; width: 748px; height: 586px; top: 255px; left: 180px;}
+.category-item {position: absolute; opacity: 0;}
+.category-item:nth-of-type(1) {right: 40px; top: 60px;}
+.category-item:nth-of-type(2) {left: 156px; top: 185px;}
+.category-item:nth-of-type(3) {left: 60px; top: 297px;}
+.category-item:nth-of-type(4) {right: 0; top: 331px;}
+.category-item:nth-of-type(5) {left: 0; top: 444px;}
+
+.third-tutorial-text {position: relative; top: 400px; right: 180px; text-align: right; font-weight: var(--weight--700);}
+
+
+
+/********************************************************
+            section6-fourth-tutorial-wrapper
+********************************************************/
+.fourth-tutorial-wrapper {width: 1920px; height: 2164px; background: var(--white--color);}
+.fourth-tutorial-group {width: 100%; height: 100%; display: flex; flex-direction: column; gap: 127px;}
+
+.fourth-tutorial-text {position: relative; width: fit-content; height: auto; margin-top: 260px; left: 180px; text-align: left; font-weight: var(--weight--700);}
+
+.fourth-main-home {position: relative; width: 1560px; height: auto; top: 0; left: 50%; transform: translateX(-50%);}
+.fourth-mockup-group {position: relative; margin: 0 auto; width: 1036px; height: 1036px; border-radius: 50%; background: var(--yellow--color);}
+.fourth-mockup-item {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.fourth-mockup-item-inner {position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.fourth-mockup-item-inner img {position: absolute; width: 428px;}
+
+.mockup-left-item {top: 126px; left: 90px;}
+.mockup-left-item:nth-of-type(2) {top: 507px; left: 0;}
+.mockup-right-item {top: 376px; right: 102px;}
+
+
+
+
+/********************************************************
+            section7-fifth-tutorial-wrapper
+********************************************************/
+.fifth-tutorial-wrapper {width: 1920px; height: 2346px; background: var(--background--gray--color2);}
+.fifth-tutorial-group {width: 100%; height: 100%; display: flex; flex-direction: column; gap: 140px;}
+
+.fifth-tutorial-text {position: relative; width: fit-content; height: auto; margin-top: 214px; left: 180px; text-align: left; font-weight: var(--weight--700);}
+
+.fifth-mockup-group {position: relative; width: 100%; height: 100%; text-align: center;}
+.fifth-mockup-item {position: absolute; width: 1560px; top: 0; left: 50%; transform: translateX(-50%);}
+.fifth-mockup-group p {position: absolute; width: fit-content; top: 1045px; right: 158px; text-align: left; font-size: 36px; font-weight: var(--weight--400); line-height: 1.5;}
+
+.fifth-mockup-item-inner {display: flex;}
+.fifth-mockup-item-inner .div-with-gap {margin-right: 160px;}
+.fifth-mockup-item-inner .div-with-gap:last-child {margin-left: -90px; margin-right: 0;}
+
+.fifth-mockup-item-inner .div-with-gap h1 {position: relative; margin-top: 47px; width: fit-content; left: 50%; transform: translateX(-50%); font-size: 28px; font-weight: var(--weight--400); line-height: 1.5;}
+.fifth-mockup-item-inner .div-with-gap h1::before {content: ""; position: absolute; width: 235px; height: 3px; top: -10px; left: 50%; transform: translateX(-50%);  background: var(--yellow--color);}
+
+
+
+
+/********************************************************
+            section8-sixth-tutorial-wrapper
+********************************************************/
+.sixth-tutorial-wrapper {position: relative; width: 1920px; height: 1790px; background: var(--white--color);}
+.sixth-tutorial-group {position: absolute; width: 1560px; height: 100%; top: 0; left: 50%; transform: translateX(-50%);}
+
+.sixth-tutorial-text {position: absolute; width: fit-content; top: 224px; right: 0; text-align: right; font-weight: var(--weight--700);}
+
+.sixth-mockup-group {position: absolute; width: fit-content; height: auto; top: 380px; left: 0; display: flex;}
+.sixth-mockup-item {margin-right: 140px;}
+.sixth-mockup-item:last-child {margin-left: -50px;  margin-right: 0;}
+
+.sixth-mockup-item h1 {position: relative; margin-top: 47px; width: fit-content; left: 50%; transform: translateX(-50%); font-size: 28px; font-weight: var(--weight--400); line-height: 1.5;}
+.sixth-mockup-item h1::before {content: ""; position: absolute; width: 235px; height: 3px; top: -10px; left: 50%; transform: translateX(-50%);  background: var(--yellow--color);}
+
+
+
+
+/********************************************************
+            section9-seventh-tutorial-wrapper
+********************************************************/
+.seventh-tutorial-wrapper {width: 1920px; height: 2476px; background: var(--background--gray--color2);}
+.seventh-tutorial-group {position: relative; width: 1560px; height: 100%; top: 0; left: 50%; transform: translateX(-50%);}
+
+.seventh-tutorial-text {position: absolute; width: fit-content; top: 263px; right: 0; text-align: right; font-weight: var(--weight--700);}
+
+.seventh-mockup-scrolling {position: relative; top: 470px;}
+.seventh-mockup-scrolling img {position: absolute;}
+.seventh-mockup-scrolling img:first-child {top: 0; left: 0; z-index: 2;}
+.seventh-mockup-scrolling img:last-child {top: 40px; left: 20px; z-index: 1; clip-path: inset(0% 0% 60% 0%); transition: all 1.5s;}
+
+.seventh-mockup-group {position: absolute; width: fit-content; height: auto; display: flex; align-items: flex-end; gap: 30px; top: 1021px; right: 0;}
+
+.seventh-mockup-item h1 {position: relative; margin-top: 47px; width: fit-content; left: 50%; transform: translateX(-50%); font-size: 28px; font-weight: var(--weight--400); line-height: 1.5;}
+.seventh-mockup-item h1::before {content: ""; position: absolute; width: 235px; height: 3px; top: -10px; left: 50%; transform: translateX(-50%);  background: var(--yellow--color);}
+
+
+
+/********************************************************
+            section10-eighth-tutorial-wrapper
+********************************************************/
+.eighth-tutorial-wrapper {width: 1920px; height: 1259px; background: var(--white--color);}
+.eighth-tutorial-group {position: relative; width: 1560px; height: 100%; top: 0; left: 50%; transform: translateX(-50%);}
+
+.eighth-tutorial-text {position: absolute; width: fit-content; top: 237px; left: 0; font-weight: var(--weight--700);}
+.eighth-mockup-group {position: absolute; width: fit-content; top: 237px; right: 130px;}
+
+
+
+/********************************************************
+                section11-sub-mockup
+********************************************************/
+.sub-mockup {width: 1920px; height: 1080px; background: url(../images/appPageImage/2X/e34.png) no-repeat center/cover fixed;}
+
+
+/********************************************************
+                section12-moss-app-downlod
+********************************************************/
+.app-downlod-wrapper {width: 1920px; height: 1080px;}
+.app-downlod-group {display: flex; width: 100%; height: 100%;}
+.app-downlod-text, .app-downlod-mockup {width: 50%; height: 100%;} 
+.app-downlod-text {position: relative; background: var(--white--color); color: var(--black--color);}
+.app-downlod-text-inner {position: absolute; top: 185px; left: 160px;}
+.app-downlod-text h1 {font-size: 65px; font-weight: var(--weight--700); line-height: 1.4;}
+.app-downlod-mockup {background: var(--black--color); background-image: url(../images/appPageImage/2X/e35.png); background-repeat: no-repeat; background-size: cover;}
+
+
+.btn-wrap {margin-top: 60px; display: flex; gap: 80px; font-size: 60px;}
+.btn-wrap .btn {width: 305px; height: 80px; font-size: 24px; font-weight: var(--weight--600); padding: 10px 60px; display: flex; justify-content: center; align-items: center; flex-shrink: 0; border-radius: 50px; border: 2px solid var(--yellow--color); color: var(--yellow--color); background: var(--white--color); cursor: pointer; transition: all .2s ease; overflow: hidden;}
+.btn-wrap .btn:hover {background: var(--yellow--color); color: #FFF;}
+/********************************************************
+                        footer
+********************************************************/
+footer {position: relative; width: 1920px; height: 366px; background: var(--yellow--color); color: var(--white--color);}
+.footer-wrapper {position: absolute; top: 50%; left: 180px; transform: translateY(-50%); display: grid; gap: 30px; font-family: var(--sub--font); }
+.footer-wrapper li:nth-of-type(1) {font-size: 53px; font-weight: var(--weight--700);}
+.footer-wrapper li:nth-of-type(2) {font-size: 40px; font-weight: var(--weight--400); padding-bottom: 40px;}
+.footer-wrapper li:nth-of-type(3) {font-size: 24px; font-weight: var(--weight--600);}

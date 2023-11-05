@@ -1,0 +1,11 @@
+/********************************************************
+                    mouse-cursor css
+********************************************************/
+
+#mouse-cursor {position: absolute; width: 40px; height: 40px; margin: -32px 0px 0px -32px; border: 1.4px solid var(--black--color); border-radius: 50%; pointer-events: none !important;  z-index: 201; transition: transform 0.3s ease;}
+
+
+#mouse-cursor.active {transform: scale(3); border: solid 2px var(--yellow--color); z-index: 201; /*filter: invert(100%);  mix-blend-mode: difference;*/}
+#mouse-cursor.visitsite {background: var(--yellow--color); z-index: 201;}
+#mouse-cursor.visitsite::before {content: "Visit Site"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 8px; white-space: pre; z-index: 201;}
+#mouse-cursor.oasis {border: 1.4px solid var(--yellow--color);}

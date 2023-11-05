@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --yellow--color : #F96512;
+    --black--color : #000;
+    --white--color : #fff;
+    --white--opacity : #ffffff85;
+    --light--gray : #CCCCCC;
+    --dark--gray : #616161;
+    --dark--gray2 : #525252;
+    --dark--gray3 : #828282;
+    --background--gray--color : #F8F8F9;
+    --background--gray--color2 : #F0F1F2;
+    --iphone--color : #2C2C2C;
+
+    /* font-theme*/
+    --main--font : 'Pretendard';
+    --sub--font: 'Poppins', sans-serif;
+
+
+    /* font-weight*/
+    --weight--400: 400;
+    --weight--500: 500;
+    --weight--600: 600;
+    --weight--700: 700;
+    --weight--800: 800;
+}
+
+/* 스크롤바의 Track(바탕) 부분 스타일 */
+::-webkit-scrollbar {width: 6px;}
+/* 스크롤바의 Track(바탕) 배경 색상 */
+::-webkit-scrollbar-track {background: var(--black--color);}
+
+/* 스크롤바의 Thumb(스크롤바 핸들) 스타일 */
+::-webkit-scrollbar-thumb {background: var(--yellow--color); border-radius: 50px;}
+
+/*  Firefox */
+.scrollbar {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
+
+
+
+
+
+
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+
+
+/* 너비가 600 픽셀 미만인 스마트폰을 위한 기본 설정 */
+[class*="c_"] {
+    width: 100%;
+}
+
+/* 너비가 600 픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width:600px) {
+
+    .c_m_1 { width: 8.33%;}
+    .c_m_2 { width: 16.66%;}
+    .c_m_3 { width: 25%;}
+    .c_m_4 { width: 33.33%;}
+    .c_m_5 { width: 41.66%;}
+    .c_m_6 { width: 50%;}
+    .c_m_7 { width: 58.33%;}
+    .c_m_8 { width: 66.66%;}
+    .c_m_9 { width: 75%;}
+    .c_m_10 { width: 83.33%;}
+    .c_m_11 { width: 91.66%;}
+    .c_m_12 { width: 100%;}
+}
+
+
+/* 너비가 768 픽셀 이상인 데스크탑 컴퓨터, 노트북 등*/
+@media only screen and (min-width:768px) {
+
+    .c_1 { width: 8.33%;}
+    .c_2 { width: 16.66%;}
+    .c_3 { width: 25%;}
+    .c_4 { width: 33.33%;}
+    .c_5 { width: 41.66%;}
+    .c_6 { width: 50%;}
+    .c_7 { width: 58.33%;}
+    .c_8 { width: 66.66%;}
+    .c_9 { width: 75%;}
+    .c_10 { width: 83.33%;}
+    .c_11 { width: 91.66%;}
+    .c_12 { width: 100%;}
+}

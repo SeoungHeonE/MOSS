@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/mouseCursor.css">
+    <link rel="stylesheet" href="./public/css/font.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/header_2.css">
+    <link rel="stylesheet" href="./public/css/fade.css">
+    <!-- font popins / Noto Sans Korea-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>MOSS | 시니어 패션 큐레이팅 서비스</title>
+</head>
+
+<body>
+    <!-- header / nav -->
+    <header id="header-Wrap">
+        <nav id="nav-Wrap">
+            <a style="text-decoration: none; color: #000;" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path
+                        d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.20101 47.799C2.94999 42.548 -1.97574e-06 35.4261 -2.44784e-06 28L28 28L56 28Z"
+                        fill="#F96512" />
+                    <rect x="38" y="8.87427" width="2.25166" height="20" transform="rotate(90 38 8.87427)"
+                        fill="#F96512" />
+                    <rect x="20.1328" y="3.72485" width="2.25166" height="20" transform="rotate(-45 20.1328 3.72485)"
+                        fill="#F96512" />
+                    <rect x="26.875" width="2.25166" height="20" fill="#F96512" />
+                    <rect x="34.2754" y="2.13281" width="2.25166" height="20" transform="rotate(45 34.2754 2.13281)"
+                        fill="#F96512" />
+                </svg>
+            </a>
+
+            <!-- nav menu -->
+            <ul id="nav-menu">
+                <li><a href="index.html">모스 이야기</a></li>
+                <li><a href="appIntro.html">앱 소개</a></li>
+                <li><a href="webIntro.html">웹 소개</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- section1-main-wrapper -->
+    <section class="main-wrapper">
+        <div class="service-item-group">
+            <div class="keyVisual-background-fixed">
+                <img width="266" src="./public/images/indexPageImage/2x/e27.png" alt="">
+                <img width="163" src="./public/images/indexPageImage/2x/e28.png" alt="">
+                <img width="276" src="./public/images/indexPageImage/2x/e29.png" alt="">
+            </div>
+            <ul class="service-text">
+                <li><img width="532" src="./public/images/indexPageImage/2x/e1.png" alt=""></li>
+                <li>더 쉽게, 더 잘 맞게, 더 멋스럽게<br>시니어 스타일을 위한 모던 오아시스 MOSS</li>
+            </ul>
+
+            <div class="service-mockup-slider">
+                <img class="slider-image" width="934" src="./public/images/indexPageImage/2x/e2.png" alt="">
+                <img class="slider-image" width="1297" src="./public/images/indexPageImage/2x/e3.png" alt="">
+            </div>
+        </div>
+        <h1 style="display: none;">main-wrapper</h1>
+    </section>
+
+
+    <!-- section2-service-background-wrapper -->
+    <section class="service-background-wrapper">
+        <div class="service-background-text-group">
+            <ul class="service-background-text-inner">
+                <li class="fadein" style="animation-delay: 0s;">
+                    <span>액티브 시니어</span>를<br>
+                    겨냥한 콘텐츠 증가
+                </li>
+                <li class="right" style="animation-delay: .25s;">
+                    액티브 시니어란 시간적, 경제적인 여유를 기반으로 능동적으로 하고 싶은 일을 찾아 도전하며 디지털 기기에 익숙한 40~60세의 연령층을 의미합니다. 액티브 시니어가 늘어가며,
+                    동시에 이들을 겨냥한 콘텐츠가 증가하고 있습니다.
+                </li>
+            </ul>
+        </div>
+        <h1 style="display: none;">service-background-wrapper</h1>
+    </section>
+
+
+    <!-- section3-problem-recognition -->
+    <section class="problem-recognition-wrapper">
+        <div class="problem-recognition-group">
+            <ul class="problem-recognition-text">
+                <li class="common-text-inner fadein" style="animation-delay: 0s;">문제 인식</li>
+                <li class="common-text-inner fadein" style="animation-delay: .25s;">
+                    그러나, 시니어들이 사용하기<br>어려운 기존의 패션 서비스
+                </li>
+            </ul>
+
+            <div class="survey-statistics-wrap">
+                <h1 class="qestion-content right" style="animation-delay: 0s;">
+                    Q. 시니어를 위한 패션 서비스에 대해 알고 있고, 이용해 보셨나요?
+                </h1>
+                <div class="progressbar-wrap">
+                    <div class="progressbar-item right" style="animation-delay: .10s;">
+                        <p class="progressbar">이용해 볼 엄두가 나지 않는다</p>
+                        <p class="progressbar-number">41.8%</p>
+                    </div>
+
+                    <div class="progressbar-item right" style="animation-delay: .20s;">
+                        <p class="progressbar">이용해 본 적이 있다</p>
+                        <p class="progressbar-number">41.2%</p>
+                    </div>
+
+                    <div class="progressbar-item right" style="animation-delay: .40s;">
+                        <p class="progressbar">이용해 본 적이 없다</p>
+                        <p class="progressbar-number">9.6%</p>
+                    </div>
+
+                    <div class="progressbar-item right" style="animation-delay: .60s;">
+                        <p class="progressbar">잘 이용할 수 있다</p>
+                        <p class="progressbar-number">7.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="display: none;">problem-recognition-wrapper</h1>
+    </section>
+
+
+    <!-- section4-field-research-wrapper -->
+    <section class="field-research-wrapper">
+        <div class="field-research-group">
+            <ul class="field-research-text">
+                <li class="common-text-inner fadein" style="animation-delay: 0s;">필드 리서치</li>
+                <li class="common-text-inner fadein" style="animation-delay: .25s;">
+                    시니어들에게 직접 들은 그들의 페인 포인트
+                </li>
+                <li class="common-text-inner fadein" style="animation-delay: .5s;">
+                    패션 서비스 사용의 어려움을 겪는 시니어들에게 직접 의견을 묻는 과정을 통해 해결 인사이트들을 발견하였습니다.
+                </li>
+            </ul>
+
+            <div class="field-research-inner">
+                <div class="field-research-answers-group">
+                    <div class="top-box right" style="animation-delay: .15s;">
+                        <div class="answers-box">
+                            <p>온라인 쇼핑은 사이즈,재질에<br>따라 실패 확률이 높아요</p>
+                        </div>
+                        <div class="answers-box">
+                            <p>다른 시니어들이 TPO에<br> 맞추어 입는 코디가 궁금해요</p>
+                        </div>
+                    </div>
+                    <div class="bottom-box right" style="animation-delay: .35s;">
+                        <div class="answers-box">
+                            <p>내 체형에 맞는 옷을<br> 온라인에서는 찾기 어려워요</p>
+                        </div>
+                        <div class="answers-box">
+                            <p>보다 쉽고 직관적으로<br> 패션 정보를 알고 싶어요</p>
+                        </div>
+                    </div>
+
+                    <div class="field-research-right-arrow right" style="animation-delay: .50s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="50" viewBox="0 0 54 50" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M38.3431 21L23.1716 5.82843L28.8284 0.171573L50.8284 22.1716L53.6569 25L50.8284 27.8284L28.8284 49.8284L23.1716 44.1716L38.3431 29H0V21H38.3431Z"
+                                fill="#F96512" />
+                        </svg>
+                    </div>
+
+                    <div class="field-research-insite right" style="animation-delay: .75s;">
+                        <div class="insite-box">
+                            <p>상세 정보를 더 알아보기 쉽고<br>본인에게 맞는 패션을 찾을 수 있도록 </p>
+                        </div>
+                        <div class="insite-box">
+                            <p>다양한 시니어들의 다채로운<br>패션을 쉽게 볼 수 있도록</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="display: none;">field-research-wrapper</h1>
+    </section>
+
+
+    <!-- section5-project-goal-wrapper -->
+    <section class="project-goal-wrapper">
+        <div class="project-goal-group">
+            <div class="project-goal-contents">
+                <ul class="project-goal-text">
+                    <li>프로젝트 목표</li>
+                    <li>액티브 시니어가 쉽게<br>사용할 수 있는 패션 서비스</li>
+                    <li>액티브 시니어들이 MOSS를 이용하면서 자신에게 맞는 패션 정보를 쉽고 정확하게 알 수 있도록 하여<br>
+                        시니어들에게 패션 서비스의 진입장벽을 완화 시킬 수 있도록 합니다.</li>
+                </ul>
+
+                <div class="project-goal-box">
+                    <div class="project-goal-box-item right" style="animation-delay: .25s;">
+                        <p class="box-inner-txet">MOSS에서 제공하는 쉽게<br>사용할 수 있는 패션 서비스</p>
+                    </div>
+
+                    <div class="project-goal-right-arrow right" style="animation-delay: .55s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="351" height="46" viewBox="0 0 351 46"
+                            fill="none">
+                            <path
+                                d="M350.121 25.1213C351.293 23.9497 351.293 22.0503 350.121 20.8787L331.029 1.7868C329.858 0.615224 327.958 0.615224 326.787 1.7868C325.615 2.95837 325.615 4.85786 326.787 6.02944L343.757 23L326.787 39.9706C325.615 41.1421 325.615 43.0416 326.787 44.2132C327.958 45.3848 329.858 45.3848 331.029 44.2132L350.121 25.1213ZM7.62939e-06 26L348 26V20L7.62939e-06 20V26Z"
+                                fill="url(#paint0_linear_1025_1652)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1025_1652" x1="1.40563e-09" y1="22.9995" x2="348"
+                                    y2="23.0004" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0" />
+                                    <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="project-goal-box-item right" style="animation-delay: .75s;">
+                        <p class="box-inner-txet">시니어를 위한 패션<br>서비스의 진입장벽 완화</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="display: none;">project-goal-wrapper</h1>
+    </section>
+
+
+    <!-- section6-roadmap-wrapper -->
+    <section class="roadmap-wrapper">
+        <div class="roadmap-group">
+            <ul class="roadmap-group-text">
+                <li class="fadein">서비스 로드맵</li>
+                <li class="fadein" style="animation-delay: .25s;">
+                    앱에서는 개인 맞춤형 패션 큐레이팅 서비스를, 웹에서는 시니어 패션 매거진을<br>
+                    제공함으로써 액티브 시니어들이 쉽고 편하게 사용할 수 있도록 합니다.
+                </li>
+            </ul>
+
+            <div class="roadmap-contents">
+                <div class="roadmap-contents-item right" style="animation-delay: 1s;">
+                    <h1 class="roadmap-inner-txet">TARGET</h1>
+                    <div style="margin-top: 165px;">
+                        <img width="250" src="./public/images/indexPageImage/2x/e10.png" alt="">
+                    </div>
+                </div>
+
+                <div class="roadmap-contents-item right" style="animation-delay: 1.25s;">
+                    <h1 class="roadmap-inner-txet">NEEDS</h1>
+                    <div style="margin-top: 32px;">
+                        <img width="173" src="./public/images/indexPageImage/2x/e11.png" alt="">
+                        <div class="identify-needs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="14" viewBox="0 0 28 14"
+                                fill="none">
+                                <path d="M14 14L0.143594 0.499999L27.8564 0.500002L14 14Z" fill="black"
+                                    fill-opacity="0.5" />
+                            </svg>
+
+                            <p>시니어 패션 서비스에 대한 낮은 사용성</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-contents-item right" style="animation-delay: 1.5s;">
+                    <h1 class="roadmap-inner-txet">SERVICE</h1>
+                    <div style="margin-top: 32px;">
+                        <img width="290" src="./public/images/indexPageImage/2x/e12.png" alt="">
+                    </div>
+                </div>
+
+                <div class="roadmap-contents-item right" style="animation-delay: 1.75s;">
+                    <h1 class="roadmap-inner-txet">EFFECT</h1>
+                    <div style="margin-top: 165px;">
+                        <img width="250" src="./public/images/indexPageImage/2x/e13.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roadmap-right-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1810" height="30" viewBox="0 0 1810 30" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1794 1.3609L1806.37 14.6805L1794 28L1795.47 29.3609L1808.47 15.3609L1809.1 14.6805L1808.47 14L1795.47 0L1794 1.3609ZM0 16.0002H3.00333V14.0002H0V16.0002ZM9.01 16.0002L15.0167 16.0002V14.0002H9.01V16.0002ZM21.0233 16.0002H27.03V14.0002H21.0233V16.0002ZM33.0367 16.0002H39.0433V14.0002L33.0367 14.0002V16.0002ZM45.05 16.0002H51.0567V14.0002L45.05 14.0002V16.0002ZM57.0633 16.0002H63.07V14.0002L57.0633 14.0002V16.0002ZM69.0767 16.0002H75.0833V14.0002L69.0767 14.0002V16.0002ZM81.09 16.0002H87.0967V14.0002L81.09 14.0002V16.0002ZM93.1033 16.0002L99.11 16.0002V14.0002H93.1033V16.0002ZM105.117 16.0002H111.123V14.0002H105.117V16.0002ZM117.13 16.0002L123.137 16.0002V14.0002H117.13V16.0002ZM129.143 16.0002H135.15V14.0002H129.143V16.0002ZM141.157 16.0002L147.163 16.0002V14.0002H141.157V16.0002ZM153.17 16.0002H159.177V14.0002L153.17 14.0002V16.0002ZM165.183 16.0002H171.19V14.0002L165.183 14.0002V16.0002ZM177.197 16.0002H183.203V14.0002L177.197 14.0002V16.0002ZM189.21 16.0002H195.217V14.0002L189.21 14.0002V16.0002ZM201.223 16.0002H207.23V14.0002L201.223 14.0002V16.0002ZM213.237 16.0002H219.243V14.0002H213.237V16.0002ZM225.25 16.0002L231.257 16.0002V14.0002H225.25V16.0002ZM237.263 16.0002H243.27V14.0002H237.263V16.0002ZM249.277 16.0002L255.283 16.0002V14.0002H249.277V16.0002ZM261.29 16.0002H267.297V14.0002L261.29 14.0002V16.0002ZM273.303 16.0002H279.31V14.0002L273.303 14.0002V16.0002ZM285.317 16.0002H291.323V14.0002L285.317 14.0002V16.0002ZM297.33 16.0002H303.337V14.0002L297.33 14.0002V16.0002ZM309.343 16.0002H315.35V14.0002L309.343 14.0002V16.0002ZM321.357 16.0002H327.363V14.0002L321.357 14.0002V16.0002ZM333.37 16.0002L339.377 16.0002V14.0002H333.37V16.0002ZM345.383 16.0002H351.39V14.0002H345.383V16.0002ZM357.396 16.0002L363.403 16.0002V14.0002H357.396V16.0002ZM369.41 16.0002H375.416V14.0002H369.41V16.0002ZM381.423 16.0002L387.43 16.0002V14.0002L381.423 14.0002V16.0002ZM393.436 16.0002H399.443V14.0002L393.436 14.0002V16.0002ZM405.45 16.0002H411.456V14.0002L405.45 14.0002V16.0002ZM417.463 16.0002H423.47V14.0002L417.463 14.0002V16.0002ZM429.476 16.0002H435.483V14.0002L429.476 14.0002V16.0002ZM441.49 16.0002L447.496 16.0002V14.0002L441.49 14.0002V16.0002ZM453.503 16.0002H459.51V14.0002H453.503V16.0002ZM465.516 16.0002L471.523 16.0002V14.0002H465.516V16.0002ZM477.53 16.0002H483.536V14.0002H477.53V16.0002ZM489.543 16.0002L495.549 16.0002V14.0002H489.543V16.0002ZM501.556 16.0002H507.563V14.0002L501.556 14.0002V16.0002ZM513.569 16.0002H519.576V14.0002L513.569 14.0002V16.0002ZM525.583 16.0002H531.589V14.0002L525.583 14.0002V16.0002ZM537.596 16.0002H543.603V14.0002L537.596 14.0002V16.0002ZM549.609 16.0002H555.616V14.0002L549.609 14.0002V16.0002ZM561.623 16.0002H567.629V14.0002L561.623 14.0002V16.0002ZM573.636 16.0002L579.643 16.0002V14.0002H573.636V16.0002ZM585.649 16.0002H591.656V14.0002H585.649V16.0002ZM597.663 16.0002L603.669 16.0002V14.0002H597.663V16.0002ZM609.676 16.0002H615.683V14.0002H609.676V16.0002ZM621.689 16.0002L627.696 16.0002V14.0002L621.689 14.0002V16.0002ZM633.703 16.0002H639.709V14.0002L633.703 14.0002V16.0002ZM645.716 16.0002H651.722V14.0002L645.716 14.0002V16.0002ZM657.729 16.0002H663.736V14.0002L657.729 14.0002V16.0002ZM669.742 16.0002H675.749V14.0002L669.742 14.0002V16.0002ZM681.756 16.0002L687.762 16.0002V14.0002L681.756 14.0002V16.0002ZM693.769 16.0002H699.776V14.0002H693.769V16.0002ZM705.782 16.0002L711.789 16.0002V14.0002H705.782V16.0002ZM717.796 16.0002H723.802V14.0002H717.796V16.0002ZM729.809 16.0002L735.816 16.0002V14.0002H729.809V16.0002ZM741.822 16.0002H747.829V14.0002L741.822 14.0002V16.0002ZM753.836 16.0002H759.842V14.0002L753.836 14.0002V16.0002ZM765.849 16.0002H771.856V14.0002L765.849 14.0002V16.0002ZM777.862 16.0002H783.869V14.0002L777.862 14.0002V16.0002ZM789.875 16.0002H795.882V14.0002L789.875 14.0002V16.0002ZM801.889 16.0002H807.895V14.0002H801.889V16.0002ZM813.902 16.0002L819.909 16.0002V14.0002H813.902V16.0002ZM825.915 16.0002H831.922V14.0002H825.915V16.0002ZM837.929 16.0002L843.935 16.0002V14.0002H837.929V16.0002ZM849.942 16.0002H855.949V14.0002H849.942V16.0002ZM861.955 16.0002H867.962V14.0002L861.955 14.0002V16.0002ZM873.969 16.0002H879.975V14.0002L873.969 14.0002V16.0002ZM885.982 16.0002H891.989V14.0002L885.982 14.0002V16.0002ZM897.995 16.0002H904.002V14.0002L897.995 14.0002V16.0002ZM910.009 16.0002H916.015V14.0002L910.009 14.0002V16.0002ZM922.022 16.0002L928.028 16.0002V14.0002H922.022V16.0002ZM934.035 16.0002H940.042V14.0002H934.035V16.0002ZM946.048 16.0002L952.055 16.0002V14.0002H946.048V16.0002ZM958.062 16.0002H964.068V14.0002H958.062V16.0002ZM970.075 16.0002L976.082 16.0002V14.0002H970.075V16.0002ZM982.088 16.0002H988.095V14.0002L982.088 14.0002V16.0002ZM994.102 16.0002H1000.11V14.0002L994.102 14.0002V16.0002ZM1006.11 16.0002H1012.12V14.0002L1006.11 14.0002V16.0002ZM1018.13 16.0002H1024.14V14.0002L1018.13 14.0002V16.0002ZM1030.14 16.0002H1036.15V14.0002L1030.14 14.0002V16.0002ZM1042.16 16.0002H1048.16V14.0002H1042.16V16.0002ZM1054.17 16.0002L1060.18 16.0002V14.0002H1054.17V16.0002ZM1066.18 16.0002H1072.19V14.0002H1066.18V16.0002ZM1078.2 16.0002L1084.2 16.0001V14.0001H1078.2V16.0002ZM1090.21 16.0001H1096.22V14.0001H1090.21V16.0001ZM1102.22 16.0001H1108.23V14.0001L1102.22 14.0001V16.0001ZM1114.24 16.0001H1120.24V14.0001L1114.24 14.0001V16.0001ZM1126.25 16.0001H1132.26V14.0001L1126.25 14.0001V16.0001ZM1138.26 16.0001H1144.27V14.0001L1138.26 14.0001V16.0001ZM1150.28 16.0001H1156.28V14.0001L1150.28 14.0001V16.0001ZM1162.29 16.0001L1168.3 16.0001V14.0001H1162.29V16.0001ZM1174.3 16.0001H1180.31V14.0001H1174.3V16.0001ZM1186.32 16.0001L1192.32 16.0001V14.0001H1186.32V16.0001ZM1198.33 16.0001H1204.34V14.0001H1198.33V16.0001ZM1210.34 16.0001L1216.35 16.0001V14.0001L1210.34 14.0001V16.0001ZM1222.36 16.0001H1228.36V14.0001L1222.36 14.0001V16.0001ZM1234.37 16.0001H1240.38V14.0001L1234.37 14.0001V16.0001ZM1246.38 16.0001H1252.39V14.0001L1246.38 14.0001V16.0001ZM1258.4 16.0001H1264.4V14.0001L1258.4 14.0001V16.0001ZM1270.41 16.0001L1276.42 16.0001V14.0001L1270.41 14.0001V16.0001ZM1282.42 16.0001H1288.43V14.0001H1282.42V16.0001ZM1294.44 16.0001L1300.44 16.0001V14.0001H1294.44V16.0001ZM1306.45 16.0001H1312.46V14.0001H1306.45V16.0001ZM1318.46 16.0001L1324.47 16.0001V14.0001H1318.46V16.0001ZM1330.48 16.0001H1336.48V14.0001L1330.48 14.0001V16.0001ZM1342.49 16.0001H1348.5V14.0001L1342.49 14.0001V16.0001ZM1354.5 16.0001H1360.51V14.0001L1354.5 14.0001V16.0001ZM1366.52 16.0001H1372.52V14.0001L1366.52 14.0001V16.0001ZM1378.53 16.0001H1384.54V14.0001L1378.53 14.0001V16.0001ZM1390.54 16.0001H1396.55V14.0001L1390.54 14.0001V16.0001ZM1402.56 16.0001L1408.56 16.0001V14.0001H1402.56V16.0001ZM1414.57 16.0001H1420.58V14.0001H1414.57V16.0001ZM1426.58 16.0001L1432.59 16.0001V14.0001H1426.58V16.0001ZM1438.6 16.0001H1444.6V14.0001H1438.6V16.0001ZM1450.61 16.0001L1456.62 16.0001V14.0001L1450.61 14.0001V16.0001ZM1462.63 16.0001H1468.63V14.0001L1462.63 14.0001V16.0001ZM1474.64 16.0001H1480.65V14.0001L1474.64 14.0001V16.0001ZM1486.65 16.0001H1492.66V14.0001L1486.65 14.0001V16.0001ZM1498.67 16.0001H1504.67V14.0001L1498.67 14.0001V16.0001ZM1510.68 16.0001L1516.69 16.0001V14.0001L1510.68 14.0001V16.0001ZM1522.69 16.0001H1528.7V14.0001H1522.69V16.0001ZM1534.71 16.0001L1540.71 16.0001V14.0001H1534.71V16.0001ZM1546.72 16.0001H1552.73V14.0001H1546.72V16.0001ZM1558.73 16.0001L1564.74 16.0001V14.0001H1558.73V16.0001ZM1570.75 16.0001H1576.75V14.0001L1570.75 14.0001V16.0001ZM1582.76 16.0001H1588.77V14.0001L1582.76 14.0001V16.0001ZM1594.77 16.0001H1600.78V14.0001L1594.77 14.0001V16.0001ZM1606.79 16.0001H1612.79V14.0001L1606.79 14.0001V16.0001ZM1618.8 16.0001H1624.81V14.0001L1618.8 14.0001V16.0001ZM1630.81 16.0001H1636.82V14.0001L1630.81 14.0001V16.0001ZM1642.83 16.0001L1648.83 16.0001V14.0001H1642.83V16.0001ZM1654.84 16.0001H1660.85V14.0001H1654.84V16.0001ZM1666.85 16.0001L1672.86 16.0001V14.0001H1666.85V16.0001ZM1678.87 16.0001H1684.87V14.0001H1678.87V16.0001ZM1690.88 16.0001H1696.89V14.0001L1690.88 14.0001V16.0001ZM1702.89 16.0001H1708.9V14.0001L1702.89 14.0001V16.0001ZM1714.91 16.0001H1720.91V14.0001L1714.91 14.0001V16.0001ZM1726.92 16.0001H1732.93V14.0001L1726.92 14.0001V16.0001ZM1738.93 16.0001H1744.94V14.0001L1738.93 14.0001V16.0001ZM1750.95 16.0001L1756.95 16.0001V14.0001H1750.95V16.0001ZM1762.96 16.0001H1768.97V14.0001H1762.96V16.0001ZM1774.97 16.0001L1780.98 16.0001V14.0001H1774.97V16.0001ZM1786.99 16.0001H1792.99V14.0001H1786.99V16.0001ZM1799 16.0001L1802 16.0001V14.0001H1799V16.0001Z"
+                    fill="#F96512" />
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- section7-brand-intro-wrapper -->
+    <section class="brand-intro-wrapper">
+        <div class="brand-intro-group">
+            <div class="brand-intro-contents">
+                <h1>브랜드</h1>
+                <img style="margin-top: 111px;" width="532" src="./public/images/indexPageImage/2x/e15.png" alt="">
+                <ul class="brand-intro-txet">
+                    <li>Modern Oasis for Senior Style</li>
+                    <li>사막 속 오아시스를 찾아낸 기쁨처럼 모스를 발견한 <br>
+                        시니어들에게 기쁨을 전하는 오아시스가 되고자 합니다.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section8-service-keyword-wrappr -->
+    <section class="service-keyword-wrappr">
+
+    </section>
+
+
+    <!-- section9-video-wrapper -->
+    <section class="video-wrapper">
+        <div class="clipped-video-group">
+            <div class="clipped-video">
+                <video src="./video/Moss_Service_video.mp4" controls></video>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section10-design-concept-wrapper -->
+    <section class="design-concept-wrapper">
+
+    </section>
+
+
+
+
+    <div id="mouse-cursor"></div>
+    <!-- script -->
+    <script src="./public/mouseCursor.js"></script>
+    <script src="./public/header.js"></script>
+    <script src="./public/scroll.js"></script>
+    <script src="./public/cross.js"></script>
+    <script src="./public/fadeinGroup.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+    <!-- section5-persona-settings-wrapper -->
+    <!-- <section class="persona-settings-wrapper">
+        <div class="persona-settings-group">
+            <ul class="persona-settings-text">
+                <li class="common-text-inner right" style="animation-delay: 0s;">페르소나 설정</li>
+                <li class="common-text-inner right" style="animation-delay: .15s;">이러한 시니어들에게<br>가장 필요합니다.</li>
+                <li class="common-text-inner right" style="animation-delay: .30s;">리서치를 통해 상황 별 4명의 시니어를<br>대표적인 페르소나로
+                    설정했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="prsona-uesr-group">
+            <div class="prsona-uesr-box">
+                <div class="persona-box-top left" style="animation-delay: .5s;">
+                    <img width="590" src="./public/images/indexPageImage/2x/e4.png" alt="">
+                    <img width="590" src="./public/images/indexPageImage/2x/e5.png" alt="">
+                </div>
+
+                <div class="persona-box-middle left" style="animation-delay: .5s;">
+                    <img width="590" src="./public/images/indexPageImage/2x/e6.png" alt="">
+                    <img width="590" src="./public/images/indexPageImage/2x/e7.png" alt="">
+                </div>
+
+                <div class="persona-box-bottom left" style="animation-delay: .5s;">
+                    <img width="590" src="./public/images/indexPageImage/2x/e8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->

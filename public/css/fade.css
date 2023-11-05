@@ -1,0 +1,21 @@
+/********************************************************
+            fadein / fadeout / ative CONTROL
+********************************************************/
+.fadein {opacity: 0; transform: translateY(50px);}
+.active {animation: fadein 1s forwards cubic-bezier(0.23, 0.76, 0.76, 0.98);}
+@keyframes fadein {0% {transform: translateY(50px); opacity: 0;} 100% {transform: translateY(0); opacity: 1;}}
+
+
+.down-fade {animation: down-fade 2s forwards cubic-bezier(0.075, 0.82, 0.165, 1);}
+@keyframes down-fade {0% {transform: translateY(-300px); opacity: 0;} 100% {transform: translateY(0); opacity: 1;}}
+
+
+
+.left {opacity: 0; transform: translateX(50px);}
+.right {opacity: 0; transform: translateX(-50px);}
+
+.fadein-left {animation: fadein-left 1s forwards cubic-bezier(0.23, 0.76, 0.76, 0.98);}
+.fadein-right {animation: fadein-right 1s forwards cubic-bezier(0.23, 0.76, 0.76, 0.98);}
+
+@keyframes fadein-left {0% {transform: translateX(50px);} 100% {transform: translateX(0); opacity: 1;}}
+@keyframes fadein-right {0% {transform: translateX(-50px);} 100% {transform: translateX(0); opacity: 1;}}

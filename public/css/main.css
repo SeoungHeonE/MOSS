@@ -1,0 +1,157 @@
+html {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+
+
+
+/********************************************************
+                        bg img
+********************************************************/
+body{background-color: var(--white--color); overflow-x: hidden; font-family: var(--main--font);}
+a {text-decoration: none;}
+img {cursor: none;}
+
+
+
+/********************************************************
+                        section_1
+********************************************************/
+.Moss {width: 1920px; height: 100vh;}
+.moss-wrapper {position: relative; width: 100%; top: 50%; transform: translateY(-50%); display: flex; align-items: center; justify-content: center; z-index: 3;}
+.moss-group {width: fit-content; display: flex; flex-direction: column; gap: 30px; text-align: center;}
+.moss-group span {padding: 5px;}
+.moss-fullName {font-family: var(--sub--font); font-size: 150px; font-weight: var(--weight--700); line-height: 1.2;}
+.moss-korean-copy {font-size: 50px; font-weight: var(--weight--500);}
+
+
+
+.mouse-parallax {position: relative; width: 100%; height: 100vh; overflow: hidden;}
+
+.image-layer {position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;}
+.image-layer {z-index: 1;}
+
+.image-layer img {position: absolute; max-width: 380px; transition-timing-function: ease-out; box-shadow: 1px 1px 5px #949494;}
+.image-layer img:nth-child(1) {top: 610px; right: 218px; width: 249px;}
+.image-layer img:nth-child(2) {top: 540px; left: 0; width: 265px;}
+.image-layer img:nth-child(3) {top: 60px;; left: 722px;; width: 200px;}
+.image-layer img:nth-child(4) {top: 26px; left: -94px; width: 509px;}
+.image-layer img:nth-child(5) {top: 90px; left: 1240px; width: 240px;}
+.image-layer img:nth-child(6) {top: 700px;; left: 505px; width: 337px;}
+.image-layer img:nth-child(7) {top: 430px;; right: -333px; width: 466px;}
+
+
+
+
+/********************************************************
+                        section_2
+********************************************************/
+.Oasis {width: 1920px; background: var(--black--color); text-align: center; font-family: var(--main--font); color: var(--white--color); text-align: center;}
+.oasis-wrapper {width: 100%; height: 200vh;}
+.oasis-group {position:absolute; top: 0;}
+
+.oasis-background-image {position: sticky; top: -60px; width: 100%; height: auto; overflow: hidden;}
+.oasis-background-image img {width: 100%; height: 100%;}
+
+
+.telescope-effect .text-fadeout {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; line-height: 1.5; opacity: 1; transition: all .25s;}
+.telescope-effect {width: 100%; height: 100%; overflow: hidden;}
+.telescope-effect > .telescope {transform: scale(3); transition: all .5s;}
+
+.text-fadein-group {position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: all .25s;}
+.fadein-item {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 50px;}
+.fadein-item p {font-size: 3rem; line-height: 1.5;}
+
+
+/********************************************************
+                        section_3
+********************************************************/
+.Contents {width: 1920px; height: 600px; background: var(--white-color); text-align: center; font-size: 2.5rem; font-weight: var(--weight--500);}
+.Contents h1 {position: relative; top: 130px; color: var(--yellow--color); font-weight: var(--weight--700); font-size: 2rem;}
+.Contents p {position: relative; top: 50%; transform: translateY(-50%); line-height: 1.5; font-size: 3.5rem; font-weight: var(--weight--700); font-family: var(--sub--font);}
+.Contents p:nth-of-type(2) {margin-top: 30px; font-size: 36px; font-weight: var(--weight--400);}
+
+
+
+/********************************************************
+                section_Moss-directional
+********************************************************/
+.Moss-directional {width: 1920px; height: 1110px; background: var(--black--color); background-image: url(../images/background/pants.jpg); background-attachment: fixed;}
+.directional-wrap {position: relative; width: 100%; height: 100%; background: #00000063;}
+.directional-text-group {position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: var(--white--color);}
+.directional-text-group li {font-family: Poppins; font-style: normal; padding-top: 80px;}
+.directional-text-group li:nth-of-type(1) {font-size: 8rem; font-weight: var(--weight--700);}
+.directional-text-group li:nth-of-type(2) {font-size: 2rem; font-weight: var(--weight--400);}
+.directional-text-group li:nth-of-type(3) {padding-top: 120px; font-size: 2rem; font-weight: var(--weight--400); line-height: 1.5;}
+
+
+/********************************************************
+                section_keyVisual-motion
+********************************************************/
+.keyVisual-motion {width: 1920px; height: 1080px; background: var(--black--color); overflow: hidden;}
+
+
+/********************************************************
+                    section_serviceGoals
+********************************************************/
+.service-Goals {width: 1920px; height: 640px; background: var(--background--gray--color); color: var(--black--color); text-align: center;}
+.service-Goals-wrapper {position: relative; width: 70%; height: 60%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.service-Goals-group {position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: 60px;}
+.service-Goals-group h1 {color: var(--yellow--color); font-size: 3.4rem; font-weight: var(--weight--700);}
+.service-Goals-group p {font-weight: var(--weight--400); font-size: 2.2rem;}
+.keyVisual-group {position: relative; top: 0; display: flex; justify-content: center; align-items: center; gap: 30px;}
+.semicircle {margin-top: 30px;}
+.service-text-group {display: flex; flex-direction: column; gap: 40px; line-height: 1.5;}
+
+
+/********************************************************
+                    section_magazine
+********************************************************/
+.magazine-wrapper {width: 1920px; height: 140vh; text-align: center; color: var(--black--color);}
+
+.magazine-main-content {position: relative; width: 100%; height: 100%;}
+.magazine-text-gtoup {position: relative; display: flex; flex-direction: column; gap: 35px; width: 1560px; height: auto; top: 220px; left: 50%; transform: translateX(-50%); text-align: left;}
+.magazine-text-gtoup h1 {font-size: 32px; font-weight: var(--weight--700); color: var(--yellow--color);}
+.magazine-text-gtoup ul {position: relative; display: flex; font-weight: var(--weight--700); font-size: 4rem; line-height: 1.5;}
+.magazine-text-gtoup li span {color: var(--yellow--color);}
+.magazine-text-gtoup li:nth-of-type(2) {position: absolute; right: 0; bottom: 0; font-weight: var(--weight--400); font-size: 2.4rem;}
+.magazine-slide {position: absolute; width: fit-content; height: auto; bottom: 200px; background-color: var(--white--color); color: var(--black--color); 
+/*border: 1px solid red;*/ font-size: 26px; text-align: left;}
+.magazine-slide-group {width: fit-content; display: flex; align-items: center; animation: marquee 20s linear infinite;}
+.magazine-slide-item {display: grid; padding: 0 50px; gap: 24px;}
+
+
+
+
+/********************************************************
+                    section_more
+********************************************************/
+.more-wrapper {position: relative; width: 1920px; height: 1080px; background: var(--background--gray--color);}
+.more-wrapper img {position: absolute; bottom: -20px; right: 0; width: 820px;}
+.more-text-group {position: absolute; top: 290px; left: 180px;}
+.more-text-item {display: flex; flex-direction: column; gap: 50px;}
+.more-text-item li:nth-of-type(1) {color: var(--yellow--color); font-size: 88px; font-weight: var(--weight--700); line-height: 1.4;}
+.more-text-item li:nth-of-type(2) {color: var(--black--color); font-size: 36px; font-weight: var(--weight--500); line-height: 1.55;}
+
+.btn-wrap {margin-top: 130px; display: flex; gap: 80px; font-size: 60px;}
+.btn-wrap .btn {width: 305px; height: 80px; font-size: 24px; font-weight: var(--weight--600); padding: 10px 60px; display: flex; justify-content: center; align-items: center; flex-shrink: 0; border-radius: 50px; border: 2px solid var(--yellow--color); color: var(--yellow--color); background: #F0F1F3; cursor: pointer; transition: all .2s ease; overflow: hidden;}
+.btn-wrap .btn:hover {background: var(--yellow--color); color: #FFF;}
+
+/********************************************************
+                        footer
+********************************************************/
+footer {position: relative; width: 1920px; height: 336px; background: var(--yellow--color); color: var(--white--color);}
+.footer-wrapper {position: absolute; top: 50%; left: 180px; transform: translateY(-50%); display: grid; gap: 30px;}
+.footer-wrapper li:nth-of-type(1) {font-family: var(--sub--font); font-size: 53px; font-weight: var(--weight--700);}
+.footer-wrapper li:nth-of-type(2) {font-size: 40px; font-weight: var(--weight--400); padding-bottom: 40px;}
+.footer-wrapper li:nth-of-type(3) {font-family: var(--sub--font); font-size: 24px; font-weight: var(--weight--600);}
+
+
+
+/* text Backgroud Scroll CSS */
+.has-mask-fill > span {position: relative; display: inline; -webkit-text-fill-color: rgba(0,0,0,0.1); -webkit-background-clip: text; background-repeat: no-repeat; background-image: linear-gradient(#000, #000); background-size: 0% 100%; transition: background-size .55s ease-out;}
+
+
+.scrollTrigger-test {position: relative; height: 100vh}
+.main-image {position: absolute; left: -4%; top: 50%; margin-top: -24vw}
+.scrollTrigger-test .main-image img {width: 64vw; height: 51.2vw;}
+
+
+/* .Pixelate {position: relative; top: 430px; left: 50%; transform: translateX(-50%); border: 1px solid red;} */
