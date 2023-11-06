@@ -43,11 +43,11 @@ img {cursor: none;}
 /********************************************************
                         section_2
 ********************************************************/
-.Oasis {width: 1920px; background: var(--black--color); text-align: center; font-family: var(--main--font); color: var(--white--color); text-align: center;}
+.Oasis {width: 1920px; height: auto; background: var(--black--color); text-align: center; font-family: var(--main--font); color: var(--white--color); text-align: center;}
 .oasis-wrapper {width: 100%; height: 200vh;}
 .oasis-group {position:absolute; top: 0;}
 
-.oasis-background-image {position: sticky; top: -60px; width: 100%; height: auto; overflow: hidden;}
+.oasis-background-image {position: sticky; top: 0; width: 100%; height: auto; overflow: hidden;}
 .oasis-background-image img {width: 100%; height: 100%;}
 
 
@@ -73,7 +73,7 @@ img {cursor: none;}
 /********************************************************
                 section_Moss-directional
 ********************************************************/
-.Moss-directional {width: 1920px; height: 1110px; background: var(--black--color); background-image: url(../images/background/pants.jpg); background-attachment: fixed;}
+.Moss-directional {width: 1920px; height: 1110px; background: var(--black--color); background-image: url(../images/background/pants.jpg); background-attachment: fixed; background-repeat: no-repeat;}
 .directional-wrap {position: relative; width: 100%; height: 100%; background: #00000063;}
 .directional-text-group {position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: var(--white--color);}
 .directional-text-group li {font-family: Poppins; font-style: normal; padding-top: 80px;}
@@ -104,7 +104,7 @@ img {cursor: none;}
 /********************************************************
                     section_magazine
 ********************************************************/
-.magazine-wrapper {width: 1920px; height: 140vh; text-align: center; color: var(--black--color);}
+.magazine-wrapper {width: 1920px; height: 1400px; text-align: center; color: var(--black--color);}
 
 .magazine-main-content {position: relative; width: 100%; height: 100%;}
 .magazine-text-gtoup {position: relative; display: flex; flex-direction: column; gap: 35px; width: 1560px; height: auto; top: 220px; left: 50%; transform: translateX(-50%); text-align: left;}
@@ -112,6 +112,7 @@ img {cursor: none;}
 .magazine-text-gtoup ul {position: relative; display: flex; font-weight: var(--weight--700); font-size: 4rem; line-height: 1.5;}
 .magazine-text-gtoup li span {color: var(--yellow--color);}
 .magazine-text-gtoup li:nth-of-type(2) {position: absolute; right: 0; bottom: 0; font-weight: var(--weight--400); font-size: 2.4rem;}
+
 .magazine-slide {position: absolute; width: fit-content; height: auto; bottom: 200px; background-color: var(--white--color); color: var(--black--color); 
 /*border: 1px solid red;*/ font-size: 26px; text-align: left;}
 .magazine-slide-group {width: fit-content; display: flex; align-items: center; animation: marquee 20s linear infinite;}

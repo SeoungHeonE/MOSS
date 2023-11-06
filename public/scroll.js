@@ -58,7 +58,6 @@ function setupScrollScaling(elementSelector, startScalePosition, endScalePositio
 }
 
 setupScrollScaling(".clipped-image-2", 600, 700, 0.8, 1);
-setupScrollScaling(".clipped-video", 8000, 8400, 0.8, 1);
 
 
 
@@ -68,28 +67,43 @@ setupScrollScaling(".clipped-video", 8000, 8400, 0.8, 1);
 function setupScrollClipPath(elementSelector, startClipPathPosition, endClipPathPosition, startClipPathValue, endClipPathValue) {
     window.addEventListener("scroll", () => {
         const scrollPosition = window.scrollY;
-        const clippedImage = document.querySelector(elementSelector);
+        const clippedElements = document.querySelectorAll(elementSelector);
 
-        if (!clippedImage) return;
+        if (clippedElements.length === 0) return;
 
         const t = Math.min(1, Math.max(0, (scrollPosition - startClipPathPosition) / (endClipPathPosition - startClipPathPosition)));
         const clipPathValue = startClipPathValue + t * (endClipPathValue - startClipPathValue);
 
-        clippedImage.style.clipPath = `inset(0% ${clipPathValue} 0% 0%)`;
+        clippedElements.forEach((element) => {
+            element.style.clipPath = `inset(0% ${clipPathValue} 0% 0%)`;
+        });
     });
 }
+
+setupScrollClipPath(".clipped-left", 11700, 12000, 100, 0);
+
 
 setupScrollClipPath(".top-inset", 2100, 2500, 100, 0);
 setupScrollClipPath(".top-image .fashion-item-image:nth-of-type(1)", 3600, 3800, 100, 0);
 setupScrollClipPath(".top-image .fashion-item-image:nth-of-type(2)", 3800, 4000, 100, 0);
+
 setupScrollClipPath(".bottom-image .fashion-item-image:nth-of-type(2)", 4000, 4200, 100, 0);
 setupScrollClipPath(".bottom-image .fashion-item-image:nth-of-type(1)", 4200, 4400, 100, 0);
+
 setupScrollClipPath(".senior-couple-photo-2 ", 6900, 7100, 100, 0);
+
 setupScrollClipPath(".question-2-2 .top-inset:nth-of-type(1)", 8700, 8900, 100, 0);
 setupScrollClipPath(".question-2-2 .top-inset:nth-of-type(2)", 8900, 9100, 100, 0);
+
 setupScrollClipPath(".seventh-mockup-scrolling img:last-child", 14200, 14500, 100, 0);
-setupScrollClipPath(".tablet img", 17300, 17600, 100, 0);
-setupScrollClipPath(".back-img-scroll", 19000, 19300, 100, 0);
+
+setupScrollClipPath(".tablet img", 12300, 12800, 100, 0);
+setupScrollClipPath(".back-img-scroll", 14000, 14500, 100, 0);
+setupScrollClipPath(".moss-intro-mockup-detail", 17800, 18300, 100, 0);
+
+
+setupScrollClipPath(".clipped-left", 11700, 12000, 100, 0);
+
 
 
 

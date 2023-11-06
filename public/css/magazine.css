@@ -16,10 +16,10 @@ a {text-decoration: none; color: var(--white--color);}
 .magazine-map {width: 1920px; height: 100vh; color: var(--black--color);}
 
 /* 매거진 카테고리 타이틀 */
-.magazine-content {position: relative; display: flex; width: 100%; height: 90%; top: 100px; background: var(--black--color);}
-.magazine-category {position: relative; width: 60%; height: 100%; background: var(--white--color); border-right: 1px solid var(--light--gray); display: flex; flex-direction: column; gap: 80px;}
+.magazine-content {position: relative; display: flex; width: 1920px; height: 100%;}
+.magazine-category {position: relative; width: 726px; height: 100%; background: var(--white--color); border-right: 1px solid var(--light--gray); display: flex; flex-direction: column; gap: 80px;}
 
-.category-title {margin-left: 60px; margin-top: 47px; color: var(--black--color); font-family: var(--sub--font); font-weight: var(--weight--700); font-size: 90px; display: flex; flex-direction: column; gap: 50px;}
+.category-title {margin-left: 60px; margin-top: 147px; color: var(--black--color); font-family: var(--sub--font); font-weight: var(--weight--700); font-size: 90px; display: flex; flex-direction: column; gap: 50px;}
 .category-title li:nth-of-type(2) {font-weight: var(--weight--500); font-size: 22px;}
 
 /* 매거진 링크 테이블 */
@@ -32,7 +32,7 @@ a {text-decoration: none; color: var(--white--color);}
 
 
 /* 월별 카테고리 */
-.monthly-category-wrapper {position: absolute; width: 100%; height: 60px; bottom: 0; background: var(--black--color); transition: transform 0.3s cubic-bezier(0.28, 0.9, 0.46, 1.05);}
+.monthly-category-wrapper {position: absolute; width: 726px; height: 60px; left: 0; bottom: 0; background: var(--black--color); transition: transform 0.3s cubic-bezier(0.28, 0.9, 0.46, 1.05);}
 .monthly-category-wrapper p {position: absolute; top: 50%; left: 60px; transform: translateY(-50%); color: var(--white--color); font-weight: var(--weight--500); font-size: 24px; cursor: pointer;}
 
 .monthly-category-wrapper.hidden {transform: translateY(100%);}
@@ -43,8 +43,9 @@ a {text-decoration: none; color: var(--white--color);}
 .monthly-category-group {position: absolute; width: 100%; height: 0; bottom: 0; background: #000000d8; font-size: 36px; font-weight: var(--weight--600); color: var(--white--color); overflow: hidden; visibility: hidden; opacity: 0; transform: translateY(20px); transition: all 0.3s cubic-bezier(0.28, 0.9, 0.46, 1.05);}
 .monthly-category-group.visible {height: 100%; opacity: 1; visibility: visible; transform: translateY(0);}
 
-.monthly-category-item {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; flex-direction: column; gap: 30px;}
+.monthly-category-item {position: absolute; top: 270px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; flex-direction: column; gap: 30px;}
 .monthly-category-item .close {padding-top: 10px; color: var(--yellow--color); font-size: 26px; font-weight: var(--weight--700); cursor: pointer;}
+
 .monthly-category-item li {position: relative; padding-bottom: 10px; overflow: hidden; transition: font-size 0.3s ease;}
 .monthly-category-item li::after {content: ""; position: absolute; bottom: 0; left: 0;  width: 0; height: 2px; background-color: var(--white--color); transition: width 0.3s ease;}
 .monthly-category-item li:hover::after {width: 260px;}
@@ -55,8 +56,9 @@ a {text-decoration: none; color: var(--white--color);}
 
 
 /* 스크린 드래그 */
-.screen-dragging {position: relative; width: 100%; height: 100%; background: var(--white--color); overflow: hidden; z-index: 0;} 
+.screen-dragging {position: relative; width: 1194px; background: var(--white--color); overflow: hidden; z-index: 0;} 
 .screen-dragging .dragging-group {position: relative; width: 5710px; height: 3850px; transition: all .4s;}
+.click-to-move {position: fixed; top: 150px; left: 780px; font-size: 24px; font-weight: var(--weight--500); z-index: 10;}
 
 .magazine-item {z-index: 1;}
 .magazine-item ul {display: flex; flex-direction: column; gap: 10px;}
@@ -64,7 +66,7 @@ a {text-decoration: none; color: var(--white--color);}
 .magazine-item li:nth-of-type(2) {color: var(--black--color); font-size: 30px; font-weight: var(--weight--700);}
 
 /* 이미지 포지션 */
-.magazine-item:nth-child(1) {position: absolute; display: flex; align-items: flex-end; top: 140px; left: 257px; gap: 20px;}
+.magazine-item:nth-child(1) {position: absolute; display: flex; align-items: flex-end; top: 220px; left: 257px; gap: 20px;}
 .magazine-item:nth-child(2) {position: absolute; display: flex; align-items: flex-end; top: 2143px; left: 4233px; gap: 20px;}
 .magazine-item:nth-child(3) {position: absolute; top: 275px; left: 3428px; gap: 20px;}
 .magazine-item:nth-child(4) {position: absolute; display: flex; align-items: flex-end; top: 2935px; left: 2650px; gap: 20px;}
@@ -77,3 +79,4 @@ a {text-decoration: none; color: var(--white--color);}
 .easily {left: 2022px; top: 682px;}
 .accurately {left: 300px; top: 2516px;}
 .find {left: 2980px; top: 1864px;}
+

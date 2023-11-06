@@ -56,3 +56,6 @@ Draggable.create("#dragging", {
         screenDragOffsetY = this.y;
     }
 });
+
+
+// 해결하면 하나가 안되구...하나가 안되구...후...
