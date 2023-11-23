@@ -45,12 +45,25 @@
                         fill="#F96512" />
                 </svg>
             </a>
-            
+
             <!-- nav menu -->
             <ul id="nav-menu">
-                <li><a href="#">모스 소개</a></li>
+                <li><a href="main.html">모스 소개</a></li>
                 <li><a href="magazine.html">패션 매거진</a></li>
             </ul>
+
+            <!-- hamburger -->
+            <div class="hamberger-wrapper">
+                <div class="hamberger-menu"></div>
+            </div>
+            
+            <div class="hamberger-group">
+                <ul class="hamberger-link-item">
+                    <li><a href="main.html">모스 소개</a></li>
+                    <li><a href="magazine.html">패션 매거진</a></li>
+                </ul>
+            </div>
+            
         </nav>
     </header>
 
@@ -60,14 +73,18 @@
                 <div class="interviewee-group-inner-text">
                     <h1 class="Place">인사동 문화의 거리에서</h1>
                     <div class="interviewee-group">
-                        <ul class="interviewee-english-name">
-                            <li>Lim Kyung seop</li>
-                            <li>Cho Mi sook</li>
-                        </ul>
-                        <ul class="interviewee-korean-name">
-                            <li>임경섭</li>
-                            <li>조미숙</li>
-                        </ul>
+                        <div class="interviewee-inner">
+                            <div class="interviewee-name-item">
+                                <h1 class="interviewee-english-name">Lim Kyung seop </h1>
+                                <p class="interviewee-korean-name">임경섭</p>
+                            </div>
+                            <div class="interviewee-name-item">
+                                <h1 class="interviewee-english-name">Cho Mi sook </h1>
+                                <div class="interviewee-korean-name">
+                                    <p>조미숙</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,6 +112,12 @@
 
                 <div class="main-interview-wrap">
                     <div class="main-interview-group">
+                        <ul class="intro-item">
+                            <li class="intro">인터뷰 소개</li>
+                            <li class="info">작성일<span>:&nbsp; &nbsp; 2023. 09. 23</span></li>
+                            <li class="info">위치<span>:&nbsp; &nbsp; 인사동 문화의 거리에서</span></li>
+                        </ul>
+
                         <ul class="interview-inner-text">
                             <li class="interview-title">
                                 클래식한 정장 셋업과 맞춤 수제 구두로<br>
@@ -112,8 +135,7 @@
                         <div class="senior-couple-photo top-inset"></div>
                         <ul class="qna-item">
                             <li class="question">
-                                Q. 인터뷰 응해주셔서 감사합니다. <br>
-                                <span class="text-margin-left">간단한 자기소개 부탁드려요.</span>
+                                Q. 인터뷰 응해주셔서 감사합니다. 간단한 자기소개 부탁드려요.
                             </li>
                             <li class="answer">
                                 <span class="text-bold">임경섭</span> 저는 지금 50대 후반의 길을 가고 있는 임경섭입니다. <br>
@@ -223,36 +245,16 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="qna-wrapper">
                             <div class="question-group">
                                 <ul class="question-1-1">
-                                    <li>Q. 계속 옷에 시선이 가게 되는데요. <br>
-                                        <span class="text-margin-left">혹시 오늘의 패션에 대한 간단한</span> <br>
-                                        <span class="text-margin-left">설명과 포인트를 말해주실 수 있</span> <br>
-                                        <span class="text-margin-left">나요?</span>
+                                    <li>Q. 계속 옷에 시선이 가게 되는데요. 
+                                        혹시 오늘의 패션에 대한 간단한
+                                        설명과 포인트를 말해주실 수 있나요?
                                     </li>
                                 </ul>
-
-                                <ul class="question-1-2">
-                                    <li>Q. 평소에도 옷을 구매하는데 있어서 <br>
-                                        <span class="text-margin-left">본인만의 기준이 있나요?</span>
-                                    </li>
-                                </ul>
-
-                                <ul class="question-1-3">
-                                    <li>Q. 패션에 대한 본인만의 가치관이나 <br>
-                                        <span class="text-margin-left">철학이 있으신가요?</span>
-                                    </li>
-                                </ul>
-
-                                <ul class="question-1-4">
-                                    <li>Q. 평소에 자주 방문하시는 곳이 있 <br>
-                                        <span class="text-margin-left">다면 소개해 주실 수 있나요?</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="answer-group">
-                                <ul class="answer-1-1">
+                                <ul class="answer-1-1 answer-group">
                                     <li><span class="text-bold">임경섭</span>  
                                         오늘 저는 남색 쓰리피스 수트를 입었고, 패턴이 들어간 검은 넥타이와 갈색 스웨이드 구두로 포인트를 줬습니다. (웃음)
                                         원래 이런 수트나 클래식한 옷을 좋아해서 이렇게 자주 입는 것 같아요.
@@ -262,8 +264,14 @@
                                         따라 맞춰 입어요. 오늘은 회색 정장이랑 초록색 스웨이드 구두, 그리고 흰색 레더 토트백을 포인트로 줬어요.
                                     </li>
                                 </ul>
+                            </div>
 
-                                <ul class="answer-1-2">
+                            <div class="question-group">
+                                <ul class="question-1-2">
+                                    <li>Q. 평소에도 옷을 구매하는데 있어서 본인만의 기준이 있나요?
+                                    </li>
+                                </ul>
+                                <ul class="answer-1-2 answer-group">
                                     <li><span class="text-bold">임경섭</span>  
                                         (웃음) 저희 가족 모두 특정 브랜드에서의 구매는 잘 하지 않고 맞춤 제작 옷을 선호해요.
                                     </li>
@@ -271,13 +279,26 @@
                                         저는 그냥 가끔 예쁘고 마음에 들면 살 때도 있어요. 이 신발도 제껀 맞춤은 아니고 그냥 산거에요.
                                     </li>
                                 </ul>
+                            </div>
 
-                                <ul class="answer-1-3">
+                            <div class="question-group">
+                                <ul class="question-1-3">
+                                    <li>Q. 패션에 대한 본인만의 가치관이나 철학이 있으신가요?
+                                    </li>
+                                </ul>
+                                <ul class="answer-1-3 answer-group">
                                     <li>개인적으로 나이에 제한을 두지 않고 젊은 트렌드에 맞게 입으려고 해요. 전체적으로 구색에 맞게 입는다?라고 할 수 있을 것 같아요. 나이를 먹었다고 해서 꼭 나이들게 입을 필요는 없으니까요. 저는 그렇게 생각해요.
                                     </li>
                                 </ul>
+                            </div>
 
-                                <ul class="answer-1-4">
+                            <div class="question-group">
+                                <ul class="question-1-4">
+                                    <li>Q. 평소에 자주 방문하시는 곳이 있다면 소개해 주실 수 있나요?
+                                    </li>
+                                </ul>
+                                
+                                <ul class="answer-1-4 answer-group">
                                     <li><span class="text-bold">임경섭</span>  
                                         여기 인사동에 자주 오죠. (웃음) 제가 건축 관련 직업이라서 그런 걸 좋아합니다.
                                     </li>
@@ -290,28 +311,14 @@
                     </div>
 
                     <div class="interview-qna-last-wrapper">
-                        <div class="senior-couple-photo-2"></div>
+                        <div class="senior-couple-photo-2 top-inset"></div>
                         <div class="qna-wrapper">
-                            <div class="question-group">
+                            <div class="question-group-2">
                                 <ul class="question-2-1">
-                                    <li>Q. 나에게 있어서 옷을 한마디로 정의 <br>
-                                        <span class="text-margin-left">한다면?</span>
+                                    <li>Q. 나에게 있어서 옷을 한마디로 정의 한다면?
                                     </li>
                                 </ul>
-
-                                <div class="question-2-2">
-                                    <img class="top-inset" src="./public/images/senior/senior_15.jpg" width="275" height="412" alt="">
-                                    <img class="top-inset" src="./public/images/senior/senior_16.jpg" width="275" height="412" alt="">
-                                </div>
-
-                                <ul class="question-2-3">
-                                    <li>Q. 옷을 감각있게 잘 입고 싶은 사람 <br>
-                                        <span class="text-margin-left">들에게 한마디를 한다면?</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="answer-group">
-                                <ul class="answer-2-1">
+                                <ul class="answer-2-1 answer-group">
                                     <li><span class="text-bold">임경섭</span>  
                                         나에게 옷이란 젊음이다.
                                     </li>
@@ -319,10 +326,24 @@
                                         나에게 옷이란 예쁜 것.
                                     </li>
                                 </ul>
+                            </div>
+
+                            <div class="question-group-2">
+                                <div class="question-2-2">
+                                    <img class="top-inset" src="./public/images/senior/senior_15.jpg" alt="">
+                                    <img class="top-inset" src="./public/images/senior/senior_16.jpg" alt="">
+                                </div>
 
                                 <ul class="answer-2-2"></ul>
+                            </div>
 
-                                <ul class="answer-2-3">
+                            <div class="question-group-2">
+                                <ul class="question-2-3" >
+                                    <li>Q. 옷을 감각있게 잘 입고 싶은 사람들에게 한마디를 한다면?
+                                    </li>
+                                </ul>
+
+                                <ul class="answer-2-3 answer-group">
                                     <li><span class="text-bold">임경섭</span>  
                                         옷을 잘 입고 싶으면 저는 보색과 색 대비가 중요한 것 같아요. 예를 들어 초록색을 입는다고 할 때 상의나 하의를 노란색 계통으로 입는 것처럼요. 아무리 멋있게 입어도 색 조화가 안 맞으면 별로인 것 같아요. 또, 면이면 면. 캐시미어면 캐시미어. 섞어서 입지 않고 재질을 통일해서 입는 것도 중요한 디테일인 것 같아요.
                                     </li>
@@ -351,6 +372,7 @@
     <script src="./public/mouseCursor.js"></script>
     <script src="./public/header.js"></script>
     <script src="./public/scroll.js"></script>
+    <script src="./public/hamburger.js"></script>
 </body>
 
 </html>

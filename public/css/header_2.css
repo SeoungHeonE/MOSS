@@ -2,7 +2,7 @@
 /********************************************************
                         header
 ********************************************************/
-#header-Wrap {position: fixed; width: 1920px; height: 100px; border-bottom: 1px solid var(--light--gray); z-index: 200; background: var(--white--color); transition: all .5s ease-in-out;}
+#header-Wrap {position: fixed; width: 100vw; height: 100px; border-bottom: 1px solid var(--light--gray); z-index: 200; background: var(--white--color); transition: all .5s ease-in-out;}
 
 /********************************************************
                         nav
@@ -11,8 +11,67 @@
 /* nav menu */
 #nav-Wrap {width: 100%; height: 100px; font-family: var(--main--font), sans-serif; font-size: 65px; font-weight: 600;}
 #nav-Wrap svg {position: absolute; left: 60px; top: 50%; transform: translateY(-50%);}
+#nav-Wrap video { position: absolute; width: 150px; left: 60px; top: 50%; transform: translateY(-50%); border: none; }
 
 #nav-menu {position: absolute; display: flex; gap: 60px; top: 50%; right: 60px; transform: translateY(-50%); font-family: var(--main--font); z-index: 101;}
 #nav-menu li {font-size: 20px;}
 #nav-menu li a {color: var(--black--color); text-decoration: none; transition: all .2s ease-in-out;}
 #nav-menu li a:hover {color: var(--yellow--color);}
+
+
+/* hamburger */
+.hamberger-wrapper { position: absolute; width: 100px; height: 100px; right: 35px; display: none; justify-content: center; align-items: center; cursor: pointer; z-index: 1;}
+
+.hamberger-menu {position: relative; height: 2px; width: 50px; background-color: black; transform: rotate(0deg); transition: all ease 0.5s;}
+.hamberger-menu::before,
+.hamberger-menu::after {content: ""; position: absolute; background-color: inherit; height: 2px; width: 50px; margin: auto; border-radius: inherit; transition: all ease 0.5s;}
+
+.hamberger-menu::before {top: -10px; left: 0; transform-origin: left;}
+.hamberger-menu::after {bottom: -10px; right: 0; transform-origin: right;}
+
+.hamberger-group { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh;  background: var(--white--color); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.5s ease-in-out;}
+.hamberger-link-item { display: flex; flex-direction: column; gap: 100px; text-align: center; padding-bottom: 10px; overflow: hidden; }
+.hamberger-link-item a { color: var(--black--color); transition: color .25s ease-in-out;}
+.hamberger-link-item a:hover {color: var(--yellow--color);}
+
+.hamberger-link-item li { position: relative; }
+.hamberger-link-item li::after { content: ""; position: absolute; bottom: -10px; left: 0; width: 0; height: 2px; background-color: var(--black--color); transition: width 0.3s ease; } 
+.hamberger-link-item li:hover::after { width: 300px; } 
+
+.active {opacity: 1; pointer-events: auto;}
+
+.open {transform: rotate(135deg);}
+.open::before {top: 0; opacity: 0;}
+.open::after {bottom: 25px; transform: translateX(-25px) rotate(-90deg);}
+
+
+
+
+
+/********************************************************
+ 반응형 (min-width: 1280px)
+********************************************************/
+@media all and (max-width: 1280px){
+    #nav-menu {display: flex;}
+    .hamberger-wrapper {display: none;}
+}
+
+
+/********************************************************
+ 반응형 (min-width: 768px)
+********************************************************/
+@media all and (max-width: 768px){
+    #nav-Wrap svg {position: absolute; left: 30px;}
+    #nav-Wrap video { position: absolute; left: 30px;  }
+    #nav-menu {display: none;}
+    .hamberger-wrapper {position: absolute; right: 5px; display: inline-flex;}
+}
+
+
+/********************************************************
+ 반응형 (min-width: 390px)
+********************************************************/
+@media all and (max-width: 428px) {
+    #nav-menu {display: none;}
+    .hamberger-wrapper {display: inline-flex;}
+}

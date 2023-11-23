@@ -49,18 +49,17 @@ function handleCursorStyle(event, cursorElement, className) {
 const cursor = document.getElementById("mouse-cursor");
 
 // 모든 링크 요소와 이미지 요소 선택
-const elements = document.querySelectorAll("a, h2, .monthly-category-item");
+const elements = document.querySelectorAll("a, h2, .comingSoon");
 
 elements.forEach((element) => {
-    element.addEventListener("mouseenter", function () {
-        handleCursorStyle(event, cursor, "active");
+    element.addEventListener("mouseenter", function (event) {
+        handleCursorStyle(event, cursor, "active2");
     });
 
-    element.addEventListener("mouseleave", function () {
-        handleCursorStyle(event, cursor, "active");
+    element.addEventListener("mouseleave", function (event) {
+        handleCursorStyle(event, cursor, "active2");
     });
 });
-
 
 
 
@@ -72,8 +71,17 @@ elements.forEach((element) => {
 
 // Oasis 클래스를 가진 요소에 대한 마우스 커서 스타일 변경
 const oasisSection = document.querySelector(".Oasis");
-const visitsite = document.querySelector(".visit");
+
+const visitsiteElements = document.querySelectorAll(".visit");
+
+const clickDrag = document.querySelectorAll(".active3");
+const screenDraggingWrapper = document.querySelector(".screen-dragging-wrapper");
+
+const comingSoonElements = document.querySelectorAll(".comingSoon");
+
 const categorySection = document.querySelector(".monthly-category-group");
+
+
 
 if (oasisSection) {
     const cursor = document.getElementById("mouse-cursor");
@@ -98,16 +106,54 @@ if (categorySection) {
 }
 
 
-if (visitsite) {
+if (visitsiteElements) {
     const cursor = document.getElementById("mouse-cursor");
 
-    function handleOasisCursorStyle(event) {
+    function handleVisitSiteCursorStyle(event) {
         handleCursorStyle(event, cursor, "visitsite");
     }
 
-    visitsite.addEventListener("mouseenter", handleOasisCursorStyle);
-    visitsite.addEventListener("mouseleave", handleOasisCursorStyle);
+    visitsiteElements.forEach((element) => {
+        element.addEventListener("mouseenter", handleVisitSiteCursorStyle);
+        element.addEventListener("mouseleave", handleVisitSiteCursorStyle);
+    });
 }
+
+if (clickDrag) { // 추가
+    const cursor = document.getElementById("mouse-cursor");
+
+    function handleClickDragCursorStyle(event) {
+        handleCursorStyle(event, cursor, "active3");
+    }
+
+    clickDrag.forEach((element) => {
+        element.addEventListener("mouseenter", handleClickDragCursorStyle);
+        element.addEventListener("mouseleave", handleClickDragCursorStyle);
+    });
+
+    if (screenDraggingWrapper) {
+        screenDraggingWrapper.addEventListener("mouseenter", function (event) {
+            handleClickDragCursorStyle(event);
+        });
+    
+        screenDraggingWrapper.addEventListener("mouseleave", function (event) {
+            handleClickDragCursorStyle(event);
+        });
+    }
+}
+
+
+
+comingSoonElements.forEach(function (comingSoon) {
+    comingSoon.addEventListener("mouseenter", function (event) {
+        cursor.classList.add("coming"); // 호버 시 스타일 추가
+    });
+
+    comingSoon.addEventListener("mouseleave", function (event) {
+        cursor.classList.remove("coming"); // 호버 해제 시 스타일 제거
+    });
+});
+
 
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
@@ -131,3 +177,4 @@ document.addEventListener("mousemove", (e) => {
         layer.style.transform = `translateX(${-x}px) translateY(${-y}px)`;
     });
 });
+

@@ -48,7 +48,7 @@ function onScroll() {
     });
 
 
-    // common fadin-down
+    // category fadin-down
     const categoryItems = document.querySelectorAll('.category-item');
     categoryItems.forEach((element) => {
         if (isElementInViewport(element)) {
@@ -74,6 +74,14 @@ function onScroll() {
         }
     });
 
+    // common fadin-down
+    const mockupDownElements = document.querySelectorAll('.down');
+    mockupDownElements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add('fadein-down');
+        }
+    });
+
 
     // index.html -> image-animate
     const imageAnimations = [
@@ -84,8 +92,6 @@ function onScroll() {
     }));
 
     imageAnimations.forEach((item) => item.element && trackAndAnimate(item.element, item.animationClass));
-
-
 }
 
 window.addEventListener('scroll', onScroll);

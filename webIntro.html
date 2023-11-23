@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./public/css/webIntro.css">
     <link rel="stylesheet" href="./public/css/header_2.css">
     <link rel="stylesheet" href="./public/css/fade.css">
+    <link rel="stylesheet" href="./public/css/image_animate.css">
     <!-- font popins / Noto Sans Korea-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,18 +32,7 @@
     <header id="header-Wrap">
         <nav id="nav-Wrap">
             <a style="text-decoration: none; color: #000;" href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                    <path
-                        d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.20101 47.799C2.94999 42.548 -1.97574e-06 35.4261 -2.44784e-06 28L28 28L56 28Z"
-                        fill="#F96512" />
-                    <rect x="38" y="8.87427" width="2.25166" height="20" transform="rotate(90 38 8.87427)"
-                        fill="#F96512" />
-                    <rect x="20.1328" y="3.72485" width="2.25166" height="20" transform="rotate(-45 20.1328 3.72485)"
-                        fill="#F96512" />
-                    <rect x="26.875" width="2.25166" height="20" fill="#F96512" />
-                    <rect x="34.2754" y="2.13281" width="2.25166" height="20" transform="rotate(45 34.2754 2.13281)"
-                        fill="#F96512" />
-                </svg>
+                <video src="./video/keyVisualMotion/header_Logo.mp4" autoplay loop muted></video>
             </a>
 
             <!-- nav menu -->
@@ -51,6 +41,19 @@
                 <li><a href="appIntro.html">앱 소개</a></li>
                 <li><a href="webIntro.html">웹 소개</a></li>
             </ul>
+
+            <!-- hamburger -->
+            <div class="hamberger-wrapper">
+                <div class="hamberger-menu"></div>
+            </div>
+
+            <div class="hamberger-group">
+                <ul class="hamberger-link-item">
+                    <li><a href="index.html">모스 이야기</a></li>
+                    <li><a href="appIntro.html">앱 소개</a></li>
+                    <li><a href="webIntro.html">웹 소개</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -59,17 +62,19 @@
     <section class="main-title-wrapper">
         <div class="main-title-group">
             <div class="moss-slogan-wrap">
-                <div class="moss-app-logo fadein active">
-                    <img width="335" src="./public/images/appPageImage/2X/e41.png" alt="">
+                <div class="moss-slogan-inner">
+                    <div class="moss-app-logo fadein">
+                        <img src="./public/images/appPageImage/2X/e41.png" alt="">
+                    </div>
+                    <ul class="moss-inner-text">
+                        <li class="fadein" style="animation-delay: .25s;">Web Magazine</li>
+                        <li class="fadein" style="animation-delay: .45s;">현장 길거리 인터뷰로 알아보는 액티브 시니어들의 패션 이야기</li>
+                    </ul>
                 </div>
-                <ul class="moss-inner-text">
-                    <li class="fadein active" style="animation-delay: .5s;">Web Magazine</li>
-                    <li class="fadein active" style="animation-delay: 1s;">현장 길거리 인터뷰로 알아보는 액티브 시니어들의 패션 이야기/li>
-                </ul>
             </div>
 
             <div class="main-mockup-image">
-                <img class="fadein active" style="animation-delay: 1.5s;" src="./public/images/appPageImage/2X/e42.png"
+                <img class="fadein" style="animation-delay: .65s;" src="./public/images/appPageImage/2X/e42.png"
                     alt="메인 목업 이미지">
             </div>
         </div>
@@ -81,11 +86,10 @@
         <div class="contents-intro-group">
             <ul class="contents-intro-text">
                 <li class="common-text-inner fadein" style="animation-delay: .25s;">웹 콘텐츠</li>
-                <li class="common-text-inner fadein" style="animation-delay: .35s;">현장 인터뷰를 통해<br>
-                    만들어진 <span>웹 매거진</span></li>
+                <li class="common-text-inner fadein" style="animation-delay: .35s;">현장 인터뷰를 통해 만들어진 <span>웹 매거진</span></li>
                 <li class="common-text-inner fadein" style="animation-delay: .45s;">매거진 콘텐츠 안에서 시니어의 패션 이야기를 담기 위해 저희
-                    팀원들이 동묘에서부터<br>
-                    인사동까지 직접 돌아다니며 사진 촬영과 함께 현장 인터뷰를 진행했습니다.</li>
+                    팀원들이 동묘에서부터 인사동까지 직접 돌아다니며 사진 촬영과 함께 현장 인터뷰를 진행했습니다.
+                </li>
             </ul>
         </div>
     </section>
@@ -131,6 +135,33 @@
         </div>
     </section>
 
+    <section class="interview-time-wrapper-2">
+        <div class="interview-time-contents-2">
+            <ul class="timeCount-and-text-2 fadein" style="animation-delay: .25s;">
+                <li>63/16</li>
+                <li>63일 중 16시간 동안 진행된 인터뷰에서 총 11분의 흔쾌한<br>
+                    수락 덕분에 저희의 매거진이 완성될 수 있었습니다.</li>
+            </ul>
+        </div>
+
+        <div class="interview-time-group-2">
+            <div class="interview-image-item">
+                <img class="interview-image fadein" style="animation-delay: .15s;" src="./public/images/indexPageImage/2x/e17.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .35s;" src="./public/images/indexPageImage/2x/e19.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .55s;" src="./public/images/indexPageImage/2x/e21.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .75s;" src="./public/images/indexPageImage/2x/e23.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .95s;" src="./public/images/indexPageImage/2x/e25.png" alt="">
+            </div>
+            <div class="interview-image-item">
+                <img class="interview-image fadein" style="animation-delay: .25s;" src="./public/images/indexPageImage/2x/e18.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .45s;" src="./public/images/indexPageImage/2x/e20.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .65s;" src="./public/images/indexPageImage/2x/e22.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: .85s;" src="./public/images/indexPageImage/2x/e24.png" alt="">
+                <img class="interview-image fadein" style="animation-delay: 1.05s;" src="./public/images/indexPageImage/2x/e26.png" alt="">
+            </div>
+        </div>
+    </section>
+
 
     <!-- section5-mainHtml-mockup-wrapper -->
     <section class="mainHtml-mockup-wrapper">
@@ -144,115 +175,118 @@
 
     <!-- section7-magazine-category-wrapper -->
     <section class="magazine-category-wrapper">
-            <div class="magazine-category-group">
-                <ul class="magazine-category-text">
-                    <li class="common-text-inner fadein" style="animation-delay: .25s;">패션 매거진</li>
-                    <li class="common-text-inner fadein" style="animation-delay: .35s;">시니어들의 감각 있는 패션을<br>직접 찾아보는 월간 매거진</li>
-                    <li class="common-text-inner fadein" style="animation-delay: .45s;">패션 매거진 페이지에서는 월간으로 바뀌는 다양한<br>
-                        시니어 패션 인터뷰를 직접 찾아보며 확인할 수 있습니다.</li>
-                </ul>
-    
-                <div class="magazine-category-mockup-group">
-                    <div class="magazine-category-mockup-item">
-                        <video src="./video/mockup_video/web_mockup_2.mov" autoplay loop muted></video>
-                    </div>
+        <div class="magazine-category-group">
+            <ul class="magazine-category-text">
+                <li class="common-text-inner fadein" style="animation-delay: .25s;">패션 매거진</li>
+                <li class="common-text-inner fadein" style="animation-delay: .35s;">시니어들의 감각 있는 패션을 직접 찾아보는 월간 매거진
+                </li>
+                <li class="common-text-inner fadein" style="animation-delay: .45s;">패션 매거진 페이지에서는 월간으로 바뀌는 다양한 시니어 패션 인터뷰를 직접 찾아보며 확인할 수 있습니다.</li>
+            </ul>
+
+            <div class="magazine-category-mockup-group">
+                <div class="magazine-mockup-item">
+                    <video src="./video/mockup_video/web_mockup_2.mov" autoplay muted loop></video>
                 </div>
             </div>
+        </div>
     </section>
 
 
     <!-- section8-magazine-detail-wrapper -->
     <section class="magazine-detail-wrapper">
-            <div class="magazine-detail-image-item">
-                <div class="magazine-detail-image">
-                    <img width="694" src="./public/images/webShowingImage/e2.jpg" alt="">
-                    <h1>이미라 님</h1>
-                    <p>산뜻한 파스텔 핑크 쉬폰 셋업과<br>환한 미소가 아름다우셨던</p>
-                </div>
-                <div class="magazine-detail-image">
-                    <img width="960" src="./public/images/webShowingImage/e3.png" alt="">
-                </div>
+        <div class="magazine-detail-image-item">
+            <div class="magazine-detail-image">
+                <img src="./public/images/webShowingImage/e2.jpg" alt="">
+                <h1>이미라 님</h1>
+                <p>산뜻한 파스텔 핑크 쉬폰 셋업과<br>환한 미소가 아름다우셨던</p>
             </div>
-            <div class="magazine-detail-group">
-                <ul class="magazine-detail-text">
-                    <li class="common-text-inner fadein" style="animation-delay: .25s;">매거진 상세 설명</li>
-                    <li class="common-text-inner fadein" style="animation-delay: .35s;">현장 인터뷰를 통해 담은<br>
-                        그들의 다양한 패션 이야기</li>
-                    <li class="common-text-inner fadein" style="animation-delay: .45s;">
-                        원하는 매거진을 선택하면 그들이 가진 패션에 대한 생각과<br>
-                        착용한 패션 아이템에 대해 자세히 알아볼 수 있습니다.
-                    </li>
-                </ul>
+            <div class="magazine-detail-image">
+                <img src="./public/images/webShowingImage/e3.png" alt="">
             </div>
-    </section>
-    
-    
-    <!-- section9-detailPage-mockup-wrapper -->
-    <section class="detailPage-mockup-wrapper">
-            <div class="detailPage-mockup-group">
-                <div class="tablet-mockup-item">
-                    <div class="tablet">
-                        <img width="633" src="./public/images/webShowingImage/e4.png" alt="">
-                    </div>
-                </div>
-    
-                <div class="app-mockup-item">
-                    <div class="app-mockup-top">
-                        <div class="phone-background">
-                            <img width="338" src="./public/images/webShowingImage/e5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="app-mockup-bottom">
-                        <img class="back-img-scroll" width="338" src="./public/images/webShowingImage/e7.png" alt="">
-                        <div class="phone-background">
-                            <img width="338" src="./public/images/webShowingImage/e6.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
-    
-    <!-- section6-moss-intro-wrapper -->
+
+    <!-- section9-detailPage-mockup-wrapper -->
+    <section class="detailPage-mockup-wrapper">
+        <div class="magazine-detail-group">
+            <ul class="magazine-detail-text">
+                <li class="common-text-inner fadein" style="animation-delay: .25s;">매거진 상세 설명</li>
+                <li class="common-text-inner fadein" style="animation-delay: .35s;">현장 인터뷰를 통해 담은 그들의 다양한 패션 이야기</li>
+                <li class="common-text-inner fadein" style="animation-delay: .45s;">
+                    원하는 매거진을 선택하면 그들이 가진 패션에 대한 생각과
+                    착용한 패션 아이템에 대해 자세히 알아볼 수 있습니다.
+                </li>
+            </ul>
+        </div>
+
+        <div class="detailPage-mockup-group">
+            <div class="tablet-mockup-item">
+                <div class="tablet">
+                    <img width="633" src="./public/images/webShowingImage/e4.png" alt="">
+                </div>
+            </div>
+
+            <div class="app-mockup-item">
+                <div class="app-mockup-top">
+                    <div class="phone-background">
+                        <img width="338" src="./public/images/webShowingImage/e5.png" alt="">
+                    </div>
+                </div>
+                <div class="app-mockup-bottom">
+                    <img class="back-img-scroll" width="338" src="./public/images/webShowingImage/e7.png" alt="">
+                    <div class="phone-background">
+                        <img width="338" src="./public/images/webShowingImage/e6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section10-moss-intro-wrapper -->
     <section class="moss-intro-wrapper">
         <div class="moss-intro-group">
             <ul class="moss-intro-txet">
                 <li class="common-text-inner fadein" style="animation-delay: .25s;">모스 소개</li>
                 <li class="common-text-inner fadein" style="animation-delay: .35s;">모스 매거진에 대해</li>
-                <li class="common-text-inner fadein" style="animation-delay: .45s;">모스가 담고 있는 의미와 자신만의 감각적인 패션 이야기를<br>
+                <li class="common-text-inner fadein" style="animation-delay: .45s;">모스가 담고 있는 의미와 자신만의 감각적인 패션 이야기를
                     담아낸 시니어 패션 매거진을 소개해드리겠습니다.</li>
             </ul>
 
-            <div class="moss-intro-mockup-detail"></div>
+            
 
             <div class="moss-intro-mockup-group">
                 <div class="moss-intro-mockup-item">
                     <img src="./public/images/webShowingImage/e9.png"></img>
                 </div>
             </div>
+            <img class="moss-intro-mockup-detail" src="./public/images/webShowingImage/e10.png" alt="">
         </div>
     </section>
 
 
 
-    <!-- section10-move-site-wrapper -->
+    <!-- section11-move-site-wrapper -->
     <section class="move-site-wrapper">
         <div class="move-site-group">
             <div class="move-site-text">
-                <h1>시니어 패션 매거진<br>MOSS 보러가기</h1>
+                <h1>시니어 패션 매거진 MOSS 보러가기</h1>
                 <div class="btn-wrap">
                     <a class="btn" href="main.html">매거진 사이트 이동</a>
                 </div>
             </div>
             <div class="move-site-mockup">
-                <img width="1406" src="./public/images/webShowingImage/e8.png" alt="">
+                <img  src="./public/images/webShowingImage/e8.png" alt="">
             </div>
         </div>
     </section>
 
 
     <!-- footer -->
-    <footer></footer>
+    <footer>
+        <img src="./public/images/appPageImage/2X/e36.png" alt="">
+    </footer>
 
 
 
@@ -262,6 +296,7 @@
     <script src="./public/header.js"></script>
     <script src="./public/scroll.js"></script>
     <script src="./public/fadeinGroup.js"></script>
+    <script src="./public/hamburger.js"></script>
 </body>
 
 </html>

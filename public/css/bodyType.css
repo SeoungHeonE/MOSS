@@ -1,0 +1,141 @@
+
+ /********************************************************
+ 반응형 (min-width: 1560px)
+ ********************************************************/
+ @media all and (max-width: 1560px) {
+
+ /* section5-second-tutorial-wrapper */
+ .second-tutorial-group { width: 81vw; height: 170vh; } 
+ 
+ .second-tutorial-text { position: absolute; top: 217px; left: 0; font-weight: var(--weight--700); } 
+ .second-tutorial-text li:nth-of-type(2) { width: 100%; } 
+ .second-tutorial-text li:nth-of-type(3) { width: 100%; } 
+ 
+ .second-mockup-group { position: absolute; width: fit-content; top: 780px; left: 50%; transform: translateX(-50%); } 
+ .second-mockup-group img { width: 480px; } 
+ 
+ .body-type-icon { position: relative; width: 100%; height: 100%; top: 600px; display: flex; } 
+ .body-type-icon img { width: 140px; opacity: 0; } 
+ 
+ .triangle { top: 699px; right: 846px; } 
+ .inverted { top: 405px; right: 778px; } 
+ .square { top: 123px; right: 252px; } 
+ .round { top: 463px; right: 190px; } 
+ 
+ @keyframes triangle { 
+ 0% { top: 50%; right: 50%; transform: translate(-50%, -50%) scale(.5); } 100% { top: 699px; right: 846px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes inverted { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 405px; right: 778px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes square { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 123px; right: 252px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes round { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 463px; right: 190px; transform: scale(1); opacity: 1; } 
+ } 
+ }
+ 
+ 
+ 
+ 
+ 
+ /********************************************************
+ 반응형 (min-width: 1280px)
+ ********************************************************/
+ @media all and (max-width: 1280px) {
+
+ /* section5-second-tutorial-wrapper */
+ .second-tutorial-group { width: 90vw; height: 130vh; } 
+ .second-mockup-group { top: 550px; } 
+ .second-mockup-group img { width: 400px; } 
+ 
+ .body-type-icon { top: 500px; } 
+ .body-type-icon img { width: 140px; opacity: 0; } 
+ 
+ .triangle { top: 499px; right: 846px; } 
+ .inverted { top: 205px; right: 778px; } 
+ .square { top: 123px; right: 252px; } 
+ .round { top: 463px; right: 190px; } 
+ 
+ @keyframes triangle { 
+ 0% { top: 50%; right: 50%; transform: translate(-50%, -50%) scale(.5); } 100% { top: 499px; right: 846px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes inverted { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 205px; right: 778px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes square { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 123px; right: 252px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes round { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 463px; right: 190px; transform: scale(1); opacity: 1; } 
+ } 
+ }
+ 
+ 
+ /********************************************************
+ 반응형 (min-width: 768px)
+ ********************************************************/
+ @media all and (max-width: 768px) {
+ /* section5-second-tutorial-wrapper */
+ 
+ .second-tutorial-group { height: 130vh; } 
+ .second-mockup-group { top: 520px; } 
+ .second-mockup-group img { width: 400px; } 
+ .second-tutorial-text { top: 107px; } 
+ 
+ .body-type-icon { top: 500px; } 
+ .body-type-icon img { width: 90px; opacity: 0; } 
+ 
+ .triangle { top: 100px; right: 400px; } 
+ .inverted { top: 405px; right: 460px; } 
+ .square { top: 23px; right: 45px; } 
+ .round { top: 463px; right: 0; } 
+ 
+ @keyframes triangle { 
+ 0% { top: 50%; right: 50%; transform: translate(-50%, -50%) scale(.5); } 100% { top: 100px; right: 400px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes inverted { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 405px; right: 460px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes square { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 23px; right: 45px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes round { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 463px; right: 0; transform: scale(1); opacity: 1; } 
+ } 
+ }
+ 
+ 
+ /********************************************************
+ 반응형 (min-width: 390px)
+ ********************************************************/
+ @media all and (max-width: 428px){
+ /* section5-second-tutorial-wrapper */
+ 
+ .second-tutorial-group { height: 130vh; } 
+ .second-mockup-group { top: 520px; } 
+ .second-mockup-group img { width: 400px; } 
+ .second-tutorial-text { top: 107px; } 
+ 
+ .body-type-icon { top: 500px; } 
+ .body-type-icon img { width: 90px; opacity: 0; } 
+ 
+ .triangle { top: 140px; right: 270px; } 
+ .inverted { top: 405px; right: 290px; } 
+ .square { top: 23px; right: 45px; } 
+ .round { top: 463px; right: 0; } 
+ 
+ @keyframes triangle { 
+ 0% { top: 50%; right: 50%; transform: translate(-50%, -50%) scale(.5); } 100% { top: 140px; right: 270px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes inverted { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 405px; right: 290px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes square { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 23px; right: 45px; transform: scale(1); opacity: 1; } 
+ }
+ @keyframes round { 
+ 0% { top: 50%; transform: translate(-50%, -50%) scale(.5); right: 50% } 100% { top: 463px; right: 0; transform: scale(1); opacity: 1; } 
+ } 
+ }

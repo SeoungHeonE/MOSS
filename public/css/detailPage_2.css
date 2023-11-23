@@ -1,0 +1,363 @@
+html { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } 
+
+
+
+/********************************************************
+ bg img
+********************************************************/
+body { background-color: var(--white--color); font-family: var(--main--font); overflow-x: hidden; } 
+img { cursor: auto; } 
+a { text-decoration: none; color: var(--white--color); } 
+
+
+
+/********************************************************
+ section1-detailPage-wrappe
+********************************************************/
+#interviewee-wrapper { position: relative; width: 100vw; height: 476px; } 
+
+.interviewee-group { position: absolute; width: 94vw; height: auto; top: 100px; left: 50%; transform: translateX(-50%); } 
+.interviewee-group-inner-text { margin-top: 68px; } 
+.interviewee-group-inner-text .Place { font-size: 40px; font-weight: var(--weight--500); } 
+
+.interviewee-group-inner-text .interviewee-group { width: 100%; height: auto; /*display: flex; */ margin-top: 72px; } 
+.interviewee-group { display: flex; align-items: center; } 
+.interviewee-inner { width: 100%; font-size: 128px; font-weight: var(--weight--700); font-family: var(--sub--font); display: flex; justify-content: center; flex-direction: column; line-height: 1.3; } 
+.interviewee-name-item { display: flex; align-items: center; } 
+
+.interviewee-english-name { font-size: 128px; } 
+.interviewee-korean-name { position: absolute; right: 0; font-size: 80px; font-weight: var(--weight--700); font-family: var(--main--font); text-align: right; } 
+
+
+
+/********************************************************
+ clipped-image Section
+********************************************************/
+.clipped-image-wrapper { position: relative; width: 100vw; height: auto; text-align: center; color: var(--black--color); background: var(--white--color); } 
+.clipped-image-group { width: 100%; } 
+.clipped-image-2 { transform: scale(0.8, 0.8); clip-path: inset(0% 30%); height: 100vh; transition: all .5s ease-out; } 
+.clipped-image-2 img { position: relative; width: 100vw; height: 100vh; display: block; z-index: 0; object-fit: cover; } 
+
+
+
+/********************************************************
+ detailPage-wrapper
+********************************************************/
+.detailPage-wrapper { width: 100vw; height: auto; } 
+.detailPage-group { position: relative; width: 94vw; height: 100%; left: 50%; transform: translateX(-50%); display: flex; } 
+
+.interview-intro-group { width: 22.4vw; height: auto; } 
+.interview-intro-item { position: sticky; top: 0; padding-top: 140px; display: flex; flex-direction: column; gap: 40px; } 
+.interview-intro-item .interview-intro { padding-top: 30px; font-size: 40px; font-weight: var(--weight--700); border-top: 2px solid var(--black--color); } 
+.interview-intro-item .interview-info { font-size: 24px; font-weight: var(--weight--500); color: var(--gray--color); display: flex; gap: 60px; } 
+.interview-intro-item .interview-info span { color: var(--black--color); } 
+.interview-info:nth-child(3) span { margin-left: 20px; } 
+.interview-intro-item .interview-info:nth-of-type(3) { padding-bottom: 30px; border-bottom: 2px solid var(--black--color); } 
+
+
+
+.intro-item { position: absolute; top: 30px; display: none; gap: 40px; align-items: center; justify-content: center; } 
+.intro-item .intro { font-size: 20px; font-weight: var(--weight--700); /*border-top: 2px solid var(--black--color); */ } 
+.intro-item .info { font-size: 16px; font-weight: var(--weight--500); color: var(--gray--color); display: flex; gap: 12px; } 
+.intro-item .info span { color: var(--black--color); } 
+ 
+/* .intro-item .info:nth-of-type(3) { padding-bottom: 30px; border-bottom: 2px solid var(--black--color); } */
+
+/********************************************************
+ 타이틀 및 인터뷰 배경
+********************************************************/
+
+.main-interview-wrap { width: 70vw; height: 100%; margin-left: auto; display: flex; flex-direction: column; } 
+.main-interview-group { position: relative; top: 0; width: 100%; height: 764px; } 
+.interview-inner-text { margin-top: 140px; display: flex; flex-direction: column; gap: 60px; } 
+.interview-title { font-size: 60px; font-weight: var(--weight--700); line-height: 1.5; } 
+.interview-background { font-size: 30px; font-weight: var(--weight--400); letter-spacing: 0.3px; line-height: 1.6; } 
+
+
+/********************************************************
+ 인삿말 및 QnA 시작
+********************************************************/
+.interview-qna-wrapper { position: relative; width: 100%; height: 1325px; } 
+.senior-couple-photo { width: 100%; height: 857px; background-image: url(../images/senior/senior_18.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; } 
+
+.qna-item { display: flex; padding-top: 80px; gap: 70px; } 
+.qna-item .question { width: 40%; font-size: 40px; font-weight: var(--weight--700); line-height: 1.5; } 
+.qna-item .answer { width: 55%; font-size: 30px; font-weight: var(--weight--400); line-height: 2; } 
+
+.text-margin-left { margin-left: 50px; } 
+.text-bold { font-weight: var(--weight--600); padding-right: 5px; } 
+
+
+/********************************************************
+ 패션 아이템소개 및 QnA
+********************************************************/
+.fashion-info-wrapper { width: 100%; height: auto; } 
+
+.fashion-image-group { position: relative; width: 100%; height: auto; display: flex; flex-direction: column; gap: 30px; } 
+.fashion-image-group img { width: 100%; height: 100%; cursor: auto; } 
+
+.fashion-item-image { position: relative; object-fit: cover; overflow: hidden; transition: all 1s; } 
+
+.fashion-item-image:hover .see-products { opacity: 1; } 
+
+.see-products { position: absolute; top: 0; width: 100%; height: 100%; background: #000000ce; color: var(--white--color); font-size: 30px; font-weight: var(--weight--500); opacity: 0; transition: opacity 0.5s; cursor: pointer; } 
+.see-products-item { position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 60px; } 
+
+.fashion-item-image img { object-fit: cover; } 
+.top-image, .bottom-image { display: flex; gap: 30px; } 
+.top-image .fashion-item-image:nth-of-type(1) { width: 47vw; height: 612px; clip-path: inset(0% 100% 0% 0%); } 
+.top-image .fashion-item-image:nth-of-type(2) { width: 53vw; height: 612px; clip-path: inset(0% 0% 100% 0%); margin-left: auto; } 
+
+/* .bottom-image { margin-top: 30px; } */
+.bottom-image .fashion-item-image:nth-of-type(1) { width: 40vw; height: 855px; clip-path: inset(100% 0% 0% 0%); } 
+.bottom-image .fashion-item-image:nth-of-type(2) { width: 60vw; height: 855px; clip-path: inset(0% 0% 0% 100%); margin-left: auto; } 
+
+
+.fashion-info-wrapper > .qna-wrapper { position: relative; width: 100%; height: auto; padding-top: 80px; display: flex; flex-direction: column; gap: 260px; } 
+.question-group { width: 100%; height: 100%; display: flex; gap: 30px; font-size: 40px; font-weight: var(--weight--700); line-height: 1.5; } 
+
+.question-1-1, .question-1-2, .question-1-3, .question-1-4 { width: 45%; } 
+/* .question-group:nth-of-type(1) { height: 616px; } */
+/* .question-group:nth-of-type(2) { height: 472px; } */
+/* .question-group:nth-of-type(3) { height: 476px; } */
+.question-group:nth-of-type(4) { height: 520px; } 
+
+.answer-group { width: 55%; font-size: 30px; font-weight: var(--weight--400); line-height: 1.6; } 
+.answer-1-1, .answer-1-2, .answer-1-3, .answer-1-4 { display: flex; flex-direction: column; gap: 24px; } 
+/* .answer-1-2 { display: flex; flex-direction: column; gap: 24px; } */
+/* .answer-1-3 { height: 476px; } */
+/* .answer-1-4 { display: flex; flex-direction: column; gap: 24px; } */
+
+
+/********************************************************
+ 마무리 QnA 마지막
+********************************************************/
+.interview-qna-last-wrapper { position: relative; width: 100%; height: auto; } 
+.interview-qna-last-wrapper > qna-wrapper { gap: 0; } 
+.senior-couple-photo-2 { width: 100%; height: 99vh; background-image: url(../images/senior/senior_23.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; } 
+
+.question-group-2 { width: 100%; height: 100%; padding-top: 80px; display: flex; font-size: 40px; font-weight: var(--weight--700); line-height: 1.5; } 
+.question-group-2:nth-of-type(1) { height: 380px; gap: 30px; } 
+.question-group-2:nth-of-type(3) { height: 793px; gap: 30px; } 
+
+.question-2-1, .question-2-3 { width: 45%; } 
+.question-2-2 { display: flex; gap: 30px; } 
+.question-2-2 img { width: 275px; height: 412px; } 
+
+.answer-2-1, .answer-2-3 { width: 55%; display: flex; flex-direction: column; gap: 24px; } 
+
+/* .question-2-1 { height: 380px; } */
+/* .question-2-3 { height: 793px; padding-top: 80px; border: solid 2px orange; } */
+/* .answer-2-1 { display: flex; flex-direction: column; gap: 24px; } */
+/* .answer-2-2 { height: 412px;; } */
+/* .answer-2-3 { height: auto; display: flex; flex-direction: column; gap: 24px; } */
+
+
+/********************************************************
+ footer
+********************************************************/
+footer { position: relative; width: 100vw; height: 336px; background: var(--yellow--color); color: var(--white--color); } 
+.footer-wrapper { position: absolute; top: 50%; left: 180px; transform: translateY(-50%); display: grid; gap: 30px; } 
+.footer-wrapper li:nth-of-type(1) { font-family: var(--sub--font); font-size: 53px; font-weight: var(--weight--700); } 
+.footer-wrapper li:nth-of-type(2) { font-size: 40px; font-weight: var(--weight--400); padding-bottom: 40px; } 
+.footer-wrapper li:nth-of-type(3) { font-family: var(--sub--font); font-size: 24px; font-weight: var(--weight--600); } 
+
+
+
+.top-inset { clip-path: inset(0% 0% 100% 0%); transition: all 1s; } 
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************
+ 반응형 (min-width: 1800px)
+********************************************************/
+@media all and (max-width: 1800px) { /**section-3**/
+ .interview-intro-group { display: none; } 
+ .intro-item { display: flex; } 
+
+ .main-interview-wrap { width: 100%; height: 100%; display: flex; flex-direction: column; } 
+ }
+
+
+/********************************************************
+ 반응형 (min-width: 1560px)
+********************************************************/
+@media all and (max-width: 1560px) { /**section-1**/
+ .interviewee-group-inner-text .Place { font-size: 36px; } 
+
+ .interviewee-english-name { font-size: 8.6vw; } 
+ .interviewee-korean-name { font-size: 5.4vw; } 
+
+ /** 인삿말 및 QnA 시작 **/
+ .qna-item { position: relative; display: flex; align-items: center; } 
+ .qna-item .question { font-size: 34px; } 
+ .qna-item .answer { font-size: 24px; } 
+ .text-margin-left { margin-left: 40px; } 
+
+ .question-group { font-size: 30px; } 
+ .answer-group { font-size: 26px; } 
+ }
+
+
+/********************************************************
+ 반응형 (min-width: 1280px)
+********************************************************/
+@media all and (max-width: 1280px) { /**section-1**/
+ /* #interviewee-wrapper { position: relative; width: 100vw; height: 476px; }  */
+
+ /**타이틀 및 인터뷰 배경**/
+ .main-interview-group { height: 600px; } 
+ .interview-title { font-size: 50px; white-space: nowrap; } 
+ .interview-background { font-size: 20px; } 
+ 
+
+ 
+ .interview-qna-wrapper { height: 700px; } 
+ .senior-couple-photo { width: 100%; height: 60%; } 
+ .senior-couple-photo-2 { width: 100%; height: 500px; } 
+
+ .qna-item { display: flex; flex-direction: column; gap: 30px; } 
+
+ .qna-item .question { width: 100%; font-size: 28px; } 
+ .qna-item .answer { width: 100%; font-size: 18px; } 
+
+
+ /* 패션 아이템소개 및 QnA */
+ .top-image, .bottom-image { display: grid; gap: 30px; } 
+ .top-image .fashion-item-image:nth-of-type(1) { width: 100%; height: 612px; clip-path: inset(0% 100% 0% 0%); } 
+ .top-image .fashion-item-image:nth-of-type(2) { width: 100%; height: 612px; clip-path: inset(0% 0% 100% 0%); margin-left: auto; } 
+
+ .bottom-image .fashion-item-image:nth-of-type(1) { width: 100%; height: 855px; clip-path: inset(100% 0% 0% 0%); } 
+ .bottom-image .fashion-item-image:nth-of-type(2) { width: 100%; height: 855px; clip-path: inset(0% 0% 0% 100%); margin-left: auto; } 
+
+
+ /** 패션 아이템소개 및 QnA **/
+ .fashion-info-wrapper > .qna-wrapper { gap: 160px; } 
+ .question-group { flex-direction: column; font-size: 30px; } 
+ .question-1-1, .question-1-2, .question-1-3, .question-1-4 { width: 100% } 
+ /* .question-group:nth-of-type(1) { height: 456px; } */
+ /* .question-group:nth-of-type(2) { height: 322px; } */
+ /* .question-group:nth-of-type(3) { height: 326px; } */
+ .question-group:nth-of-type(4) { height: 370px; } 
+
+ .answer-group { width: 100%; font-size: 20px; } 
+
+
+ /**마무리 QnA 마지막**/
+ .question-group-2 { flex-direction: column; font-size: 30px; } 
+ .question-group-2:nth-of-type(1) { height: 320px; } 
+ .question-group-2:nth-of-type(3) { height: 593px; } 
+ 
+ .question-2-1, .question-2-3 { width: 100%; } 
+ .question-2-2 img { width: 100%; object-fit: cover; } 
+ .question-2-2 img:nth-of-type(2) { object-position: top; } 
+ 
+
+ /**footer**/
+ footer { height: 236px; } 
+ .footer-wrapper li:nth-of-type(1) { font-size: 33px; } 
+ .footer-wrapper li:nth-of-type(2) { font-size: 20px; padding-bottom: 40px; } 
+ .footer-wrapper li:nth-of-type(3) { font-size: 14px; } 
+ }
+
+
+/********************************************************
+ 반응형 (min-width: 768px)
+********************************************************/
+@media all and (max-width: 768px) { /**section-1**/
+ #interviewee-wrapper { position: relative; width: 100vw; height: 376px; } 
+
+ /**detailPage-wrapper**/
+ .intro-item { display: flex; flex-direction: column; align-items: normal; gap: 10px; } 
+ .intro-item .intro { font-size: 16px; } 
+ .intro-item .info { font-size: 14px; } 
+ .intro-item .info:nth-of-type(3) span { margin-left: 12px; } 
+
+
+ /**타이틀 및 인터뷰 배경**/
+ .main-interview-group { height: 500px; } 
+ .interview-title { font-size: 30px; } 
+ .interview-background { font-size: 16px; } 
+
+ .see-products { font-size: 20px; } 
+ .see-products svg { width: 40px; } 
+
+ .qna-item { padding-top: 20px; } 
+ .qna-item .question { font-size: 28px; } 
+ .qna-item .answer { font-size: 18px; } 
+
+ .question-group { font-size: 24px; } 
+ .answer-group { font-size: 16px; } 
+
+
+ /**마무리 QnA 마지막**/
+ .senior-couple-photo-2 { width: 100%; height: 300px; } 
+
+ .question-group-2 { font-size: 24px; } 
+ .question-2-1, .question-2-3 { width: 100%; } 
+ .question-2-2 { display: flex; flex-direction: column; gap: 30px; } 
+ .question-2-2 img { width: 100%; object-fit: cover; } 
+
+
+ /**footer**/
+ footer { height: 236px; } 
+ .footer-wrapper { position: absolute; left: 50px; } 
+ .footer-wrapper li:nth-of-type(1) { font-size: 5vw; } 
+ .footer-wrapper li:nth-of-type(2) { font-size: 2.6vw; padding-bottom: 20px; } 
+ .footer-wrapper li:nth-of-type(3) { font-size: 1.8vw; } 
+ }
+
+
+/********************************************************
+ 반응형 (min-width: 390px)
+********************************************************/
+@media all and (max-width: 428px) { /**section-1**/
+
+ /**타이틀 및 인터뷰 배경**/
+ .interview-title { font-size: 22px; } 
+ .interview-background { font-size: 14px; } 
+
+
+ .qna-item .question { font-size: 20px; } 
+ .qna-item .answer { font-size: 16px; } 
+
+
+ .question-group { font-size: 20px; } 
+ .answer-group { font-size: 16px; } 
+
+ .question-group-2 { font-size: 20px; } 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .qna-wrapper { position: relative; width: 100%; height: auto; padding-top: 80px; display: flex; gap: 30px; border: solid red 2px; } 
+ .question-group { width: 580px; height: 100%; font-size: 30px; font-weight: var(--weight--700); line-height: 1.5; white-space: nowrap; border: solid 2px green; } 
+ .question-1-1 { height: 616px; } 
+ .question-1-2 { height: 472px; } 
+ .question-1-3 { height: 476px; } 
+ .question-1-4 { height: 520px; } 
+ 
+ .answer-group { width: 732px; height: 100%; font-size: 20px; font-weight: var(--weight--400); line-height: 1.6; border: solid 2px blue; } 
+ .answer-1-1 { height: 616px; display: flex; flex-direction: column; gap: 24px; } 
+ .answer-1-2 { height: 472px; display: flex; flex-direction: column; gap: 24px; } 
+ .answer-1-3 { height: 476px; } 
+ .answer-1-4 { height: 520px; display: flex; flex-direction: column; gap: 24px; } */

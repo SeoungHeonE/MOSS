@@ -1,0 +1,92 @@
+/********************************************************
+ 반응형 (min-width: 1280px)
+********************************************************/
+@media all and (max-width: 1280px) { 
+
+.image-animate-1 { left: 100px; top: 200px; transform: rotate(-15deg); } 
+.image-animate-2 { right: 200px; top: 200px; transform: rotate(15deg); } 
+.image-animate-3 { left: 500px; top: 200px; transform: rotate(50deg); } 
+.image-animate-4 { left: 200px; top: 200px; transform: rotate(-50deg); } 
+.image-animate-5 { left: 200px; top: 200px; transform: rotate(-5deg); } 
+.image-animate-6 { right: 200px; top: 200px; transform: rotate(15deg); } 
+.image-animate-7 { left: 200px; top: 200px; transform: rotate(50deg); } 
+.image-animate-8 { left: 500px; top: 200px; transform: rotate(15deg); } 
+.image-animate-9 { left: 200px; top: 200px; transform: rotate(-25deg); } 
+.image-animate-10 { right: 200px; top: 200px; transform: rotate(5deg); } 
+
+.image-active-1 { left: 200px; top: 200px; transform: rotate(-15deg); animation: imageMotion 2s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-2 { right: 200px; top: 200px; transform: rotate(15deg); animation: imageMotion2 2s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-3 { left: 500px; top: 200px; transform: rotate(50deg); animation: imageMotion3 2s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-4 { left: 200px; top: 200px; transform: rotate(-50deg); animation: imageMotion4 2s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-5 { left: 200px; top: 200px; transform: rotate(-5deg); animation: imageMotion5 2.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-6 { right: 200px; top: 200px; transform: rotate(15deg); animation: imageMotion6 2.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-7 { left: 200px; top: 200px; transform: rotate(50deg); animation: imageMotion7 2.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-8 { left: 500px; top: 200px; transform: rotate(15deg); animation: imageMotion8 2.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-9 { left: 200px; top: 200px; transform: rotate(-25deg); animation: imageMotion9 2.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+.image-active-10 { right: 200px; top: 200px; transform: rotate(5deg); animation: imageMotion10 2.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1); } 
+    
+ @keyframes imageMotion { 
+ 0% { left: 200px; top: 200px; transform: rotate(-15deg); } 100% { top: 0; left: 0; transform: rotate(0); } 
+ }
+ @keyframes imageMotion2 { 
+ 0% { right: 200px; top: 200px; transform: rotate(15deg); } 100% { top: 53px; right: 0px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion3 { 
+ 0% { left: 500px; top: 200px; transform: rotate(50deg); } 100% { top: 846px; left: 143px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion4 { 
+ 0% { left: 200px; top: 200px; transform: rotate(-50deg); } 100% { top: 950px; left: 847px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion5 { 
+ 0% { left: 200px; top: 200px; transform: rotate(-5deg); } 100% { top: 1582px; left: 0; transform: rotate(0); } 
+ }
+ @keyframes imageMotion6 { 
+ 0% { right: 200px; top: 200px; transform: rotate(15deg); } 100% { top: 1479px; right: 29px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion7 { 
+ 0% { left: 200px; top: 200px; transform: rotate(50deg); } 100% { top: 2567px; left: 37px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion8 { 
+ 0% { left: 500px; top: 200px; transform: rotate(15deg); } 100% { top: 2402px; left: 960px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion9 { 
+ 0% { left: 200px; top: 200px; transform: rotate(-25deg); } 100% { top: 3736px; left: 200px; transform: rotate(0); } 
+ }
+ @keyframes imageMotion10 { 
+ 0% { right: 200px; top: 200px; transform: rotate(5deg); } 100% { top: 3569px; right: 86px; transform: rotate(0); } 
+ } 
+ }
+
+
+/********************************************************
+ 반응형 (min-width: 768px)
+********************************************************/
+@media all and (max-width: 768px) {
+    .interview-time-wrapper { display: none;} 
+    
+    .interview-time-wrapper-2 { width: 100vw; height: auto; display: block; }
+    .interview-time-group-2 { position: relative; display: flex; gap: 20px;}
+
+    .interview-time-contents-2 { position: relative; width: 100%; height: 50vh; display: flex; align-items: center; } 
+
+    .timeCount-and-text-2 { width: 100%; line-height: 1.6; text-align: center; } 
+    .timeCount-and-text-2 li:first-child { color: var(--yellow--color); font-size: 34px; font-weight: var(--weight--700); } 
+    .timeCount-and-text-2 li:last-child { padding-top: 5px; color: var(--black--color); font-size: 20px; font-weight: var(--weight--400); } 
+
+    .interview-image-item {display: flex; flex-direction: column; gap: 20px; }
+    .interview-image-item:nth-of-type(1) {width: 352px;}
+    .interview-image-item:nth-of-type(2) {width: 396px;}
+    .interview-image-item img {width: 100%;}
+
+}
+
+
+/********************************************************
+ 반응형 (min-width: 390px)
+********************************************************/
+@media all and (max-width: 428px) {
+    .interview-time-contents-2 { height: 30vh;} 
+
+    .timeCount-and-text-2 li:first-child { font-size: 24px; } 
+    .timeCount-and-text-2 li:last-child { font-size: 16px; } 
+}

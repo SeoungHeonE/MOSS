@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./public/css/appIntro.css">
     <link rel="stylesheet" href="./public/css/header_2.css">
     <link rel="stylesheet" href="./public/css/fade.css">
+    <link rel="stylesheet" href="./public/css/bodyType.css">
     <!-- font popins / Noto Sans Korea-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,18 +32,7 @@
     <header id="header-Wrap">
         <nav id="nav-Wrap">
             <a style="text-decoration: none; color: #000;" href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                    <path
-                        d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.20101 47.799C2.94999 42.548 -1.97574e-06 35.4261 -2.44784e-06 28L28 28L56 28Z"
-                        fill="#F96512" />
-                    <rect x="38" y="8.87427" width="2.25166" height="20" transform="rotate(90 38 8.87427)"
-                        fill="#F96512" />
-                    <rect x="20.1328" y="3.72485" width="2.25166" height="20" transform="rotate(-45 20.1328 3.72485)"
-                        fill="#F96512" />
-                    <rect x="26.875" width="2.25166" height="20" fill="#F96512" />
-                    <rect x="34.2754" y="2.13281" width="2.25166" height="20" transform="rotate(45 34.2754 2.13281)"
-                        fill="#F96512" />
-                </svg>
+                <video src="./video/keyVisualMotion/header_Logo.mp4" autoplay loop muted></video>
             </a>
 
             <!-- nav menu -->
@@ -51,6 +41,20 @@
                 <li><a href="appIntro.html">앱 소개</a></li>
                 <li><a href="webIntro.html">웹 소개</a></li>
             </ul>
+
+
+            <!-- hamburger -->
+            <div class="hamberger-wrapper">
+                <div class="hamberger-menu"></div>
+            </div>
+
+            <div class="hamberger-group">
+                <ul class="hamberger-link-item">
+                    <li><a href="index.html">모스 이야기</a></li>
+                    <li><a href="appIntro.html">앱 소개</a></li>
+                    <li><a href="webIntro.html">웹 소개</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -59,17 +63,19 @@
     <section class="main-title-wrapper">
         <div class="main-title-group">
             <div class="moss-slogan-wrap">
-                <div class="moss-app-logo fadein active">
-                    <img width="335" src="./public/images/appPageImage/2X/e41.png" alt="">
+                <div class="moss-slogan-inner">
+                    <div class="moss-app-logo fadein">
+                        <img width="335" src="./public/images/appPageImage/2X/e41.png" alt="">
+                    </div>
+                    <ul class="moss-inner-text">
+                        <li class="fadein" style="animation-delay: .25s;">App Service</li>
+                        <li class="fadein" style="animation-delay: .45s;">시니어 맞춤형 온라인 쇼핑을 돕는 패션 큐레이터, MOSS 앱</li>
+                    </ul>
                 </div>
-                <ul class="moss-inner-text">
-                    <li class="fadein active" style="animation-delay: .5s;">App Service</li>
-                    <li class="fadein active" style="animation-delay: 1s;">시니어 맞춤형 온라인 쇼핑을 돕는 패션 큐레이터, MOSS 앱</li>
-                </ul>
             </div>
 
             <div class="main-mockup-image">
-                <img class="fadein active" style="animation-delay: 1.5s;" src="./public/images/appPageImage/2X/e1_1.png"
+                <img class="fadein" style="animation-delay: .65s;" src="./public/images/appPageImage/2X/e1_1.png"
                     alt="메인 목업 이미지">
             </div>
         </div>
@@ -81,62 +87,93 @@
         <div class="app-strategy-group">
             <div class="app-strategy-contents">
                 <ul class="app-strategy-text">
-                    <li class="fadein">앱 사용성 전략</li>
-                    <li class="fadein" style="animation-delay: .15s;">시니어를 위한 패션 <span>앱 서비스</span><br>
+                    <li class="tutorial-text fadein">앱 사용성 전략</li>
+                    <li class="tutorial-text fadein" style="animation-delay: .15s;">시니어를 위한 패션 <span>앱 서비스</span>
                         UI 개발전 사용성 점검을 위하여</li>
-                    <li class="fadein" style="animation-delay: .35s;">타겟이 시니어라는 점을 고려하여 앱 서비스를 이용할 때 이들이 쉽고 편리하게<br>
-                        패션 정보를 받아드릴 수 있도록 연구했습니다.</li>
+                    <li class="tutorial-text fadein" style="animation-delay: .35s;">타겟이 시니어라는 점을 고려하여 앱 서비스를 이용할 때 이들이
+                        쉽고 편리하게 패션 정보를 받아드릴 수 있도록 연구했습니다.</li>
                 </ul>
 
                 <div class="contents-box-group">
-                    <img class="fadein" style="animation-delay: .35s;" width="672" src="./public/images/appPageImage/2X/e38.png" alt="">
-                    <img class="fadein" style="animation-delay: .35s;" width="672" src="./public/images/appPageImage/2X/e39.png" alt="">
+                    <div class="contents-box-item right" style="animation-delay: .35s;">
+                        <ul class="contents-box-inner">
+                            <li>UIUX 관련 <br>
+                                논문 자료 수집
+                            </li>
+                            <li>시니어를 대상으로 한 서비스에 고려해야 할 UIUX <br>
+                                디자인 원칙에 대해 세세하게 공부했습니다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents-box-item left" style="animation-delay: .35s;">
+                        <ul class="contents-box-inner">
+                            <li>시니어들이 자주 <br>
+                                사용하는 서비스 UI분석
+                            </li>
+                            <li>
+                                같은 타겟이 가장 많이 사용하고 있는 서비스를 직접 <br>
+                                이용해보고 분석했습니다.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="derive-uiux-wrap">
-                    <div class="things-to-consider">
-                        <ul class="consider">
-                            <li>1</li>
-                            <li>정보 탐색<br>깊이의 최소화</li>
-                        </ul>
-                        <ul class="consider">
-                            <li>2</li>
-                            <li>많은 색상을 사용시<br>혼란을 줄 수 있음</li>
-                        </ul>
-                        <ul class="consider">
-                            <li>3</li>
-                            <li>안정적인<br>화면 경로의 이동</li>
-                        </ul>
-                        <ul class="consider">
-                            <li>4</li>
-                            <li>음성 인식 지원시<br>정보 습득의 양 증가</li>
-                        </ul>
-                        <ul class="consider">
-                            <li>5</li>
-                            <li>시력을 고려한<br>화면 정보 제공 방법</li>
-                        </ul>
+                    <div class="derive-uiux-item">
+                        <div class="things-to-consider down" style="animation-delay: .25s;">
+                            <ul class="consider">
+                                <li>1</li>
+                                <li>정보 탐색<br>깊이의 최소화</li>
+                            </ul>
+                            <ul class="consider">
+                                <li>2</li>
+                                <li>많은 색상을 사용시<br>혼란을 줄 수 있음</li>
+                            </ul>
+                            <ul class="consider">
+                                <li>3</li>
+                                <li>안정적인<br>화면 경로의 이동</li>
+                            </ul>
+                            <ul class="consider">
+                                <li>4</li>
+                                <li>음성 인식 지원시<br>정보 습득의 양 증가</li>
+                            </ul>
+                            <ul class="consider">
+                                <li>5</li>
+                                <li>시력을 고려한<br>화면 정보 제공 방법</li>
+                            </ul>
+                        </div>
+
+                        <div class="down-aroow down" style="animation-delay: .3s;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="122" viewBox="0 0 30 122"
+                                fill="none">
+                                <path
+                                    d="M13.5858 121.414C14.3668 122.195 15.6332 122.195 16.4142 121.414L29.1421 108.686C29.9232 107.905 29.9232 106.639 29.1421 105.858C28.3611 105.077 27.0948 105.077 26.3137 105.858L15 117.172L3.68629 105.858C2.90524 105.077 1.63891 105.077 0.857865 105.858C0.0768158 106.639 0.0768157 107.905 0.857865 108.686L13.5858 121.414ZM13 -2.38498e-08L13 120L17 120L17 2.38498e-08L13 -2.38498e-08Z"
+                                    fill="url(#paint0_linear_1231_4691)" />
+                                <path
+                                    d="M13.5858 121.414C14.3668 122.195 15.6332 122.195 16.4142 121.414L29.1421 108.686C29.9232 107.905 29.9232 106.639 29.1421 105.858C28.3611 105.077 27.0948 105.077 26.3137 105.858L15 117.172L3.68629 105.858C2.90524 105.077 1.63891 105.077 0.857865 105.858C0.0768158 106.639 0.0768157 107.905 0.857865 108.686L13.5858 121.414ZM13 -2.38498e-08L13 120L17 120L17 2.38498e-08L13 -2.38498e-08Z"
+                                    fill="url(#paint1_linear_1231_4691)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1231_4691" x1="15.0005" y1="4.91189e-10"
+                                        x2="15.0004" y2="120" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96512" stop-opacity="0" />
+                                        <stop offset="1" stop-color="#F96512" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_1231_4691" x1="15.0005" y1="4.91189e-10"
+                                        x2="15.0004" y2="120" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F96512" stop-opacity="0" />
+                                        <stop offset="1" stop-color="#F96512" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <img class="down" style="animation-delay: .45s;" src="./public/images/appPageImage/2X/e40.png"
+                            alt="">
+                        <h1 class="down" style="animation-delay: .55s;">시니어를 고려한 UI/UX 사용성 원칙 도출 및 반영</h1>
                     </div>
-                    <div class="down-aroow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="122" viewBox="0 0 30 122" fill="none">
-                            <path d="M13.5858 121.414C14.3668 122.195 15.6332 122.195 16.4142 121.414L29.1421 108.686C29.9232 107.905 29.9232 106.639 29.1421 105.858C28.3611 105.077 27.0948 105.077 26.3137 105.858L15 117.172L3.68629 105.858C2.90524 105.077 1.63891 105.077 0.857865 105.858C0.0768158 106.639 0.0768157 107.905 0.857865 108.686L13.5858 121.414ZM13 -2.38498e-08L13 120L17 120L17 2.38498e-08L13 -2.38498e-08Z" fill="url(#paint0_linear_1231_4691)"/>
-                            <path d="M13.5858 121.414C14.3668 122.195 15.6332 122.195 16.4142 121.414L29.1421 108.686C29.9232 107.905 29.9232 106.639 29.1421 105.858C28.3611 105.077 27.0948 105.077 26.3137 105.858L15 117.172L3.68629 105.858C2.90524 105.077 1.63891 105.077 0.857865 105.858C0.0768158 106.639 0.0768157 107.905 0.857865 108.686L13.5858 121.414ZM13 -2.38498e-08L13 120L17 120L17 2.38498e-08L13 -2.38498e-08Z" fill="url(#paint1_linear_1231_4691)"/>
-                            <defs>
-                                <linearGradient id="paint0_linear_1231_4691" x1="15.0005" y1="4.91189e-10" x2="15.0004" y2="120" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#F96512" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#F96512"/>
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_1231_4691" x1="15.0005" y1="4.91189e-10" x2="15.0004" y2="120" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#F96512" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#F96512"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <img width="1460" src="./public/images/appPageImage/2X/e40.png" alt="">
-                    <h1>시니어를 고려한 UI/UX 사용성 원칙 도출 및 반영</h1>
                 </div>
             </div>
-            <img width="1920" class="app-strategy-bottom-mockup" src="./public/images/appPageImage/2X/e37.png" alt="">
+            <img class="app-strategy-bottom-mockup" src="./public/images/appPageImage/2X/e37.png" alt="">
         </div>
     </section>
 
@@ -154,15 +191,15 @@
                 <ul class="tutorial-text-inner">
                     <li>정보 수집 튜토리얼</li>
                     <li>
-                        맞춤형 스타일 추천에<br>
+                        맞춤형 스타일 추천에
                         필요한 정보 입력
                     </li>
                 </ul>
                 <ul class="tutorial-detailed-text">
                     <li>
-                        기본 정보와 상세 체형 및 스타일까지 패션 큐레이팅에 필요한<br>
-                        상세한 정보를 등록하세요. 입력한 정보를 바탕으로<br>
-                        모스만의 맞춤형 패션 아이템을 추천해드립니다.<br>
+                        기본 정보와 상세 체형 및 스타일까지 패션 큐레이팅에 필요한
+                        상세한 정보를 등록하세요. 입력한 정보를 바탕으로
+                        모스만의 맞춤형 패션 아이템을 추천해드립니다.
                     </li>
                 </ul>
             </div>
@@ -210,9 +247,11 @@
         <div class="second-tutorial-group">
             <ul class="second-tutorial-text">
                 <li class="fadein tutorial-text" style="animation-delay: .25s;">체형 분석 결과</li>
-                <li class="fadein tutorial-text" style="animation-delay: .5s;"><span>내 체형은</span> 어떤 유형에<br>해당할까?</li>
+                <li class="fadein tutorial-text" style="animation-delay: .5s;"><span>내 체형은</span> 어떤 유형에
+                    해당할까?</li>
                 <li class="fadein tutorial-text" style="animation-delay: .75s;">
-                    내 체형 사진을 통한 AI 분석으로 현재<br> 체형을 정확하고 쉽게 알려드립니다.</li>
+                    내 체형 사진을 통한 AI 분석으로 현재
+                    체형을 정확하고 쉽게 알려드립니다.</li>
             </ul>
 
             <div class="second-mockup-group">
@@ -233,31 +272,34 @@
     <section class="third-tutorial-wrapper">
         <div class="third-tutorial-group">
             <div class="third-cetailed-category">
-                <img class="category-item" style="animation-delay: 1s;" width="339"
-                    src="./public/images/appPageImage/2X/e13.png" alt="어깨가 좁다">
-                <img class="category-item" style="animation-delay: .75s;" width="339"
-                    src="./public/images/appPageImage/2X/e14.png" alt="허리가 길다">
-                <img class="category-item" style="animation-delay: .5s;" width="293"
-                    src="./public/images/appPageImage/2X/e15.png" alt="목이 짧다">
-                <img class="category-item" style="animation-delay: .25s;" width="385"
-                    src="./public/images/appPageImage/2X/e16.png" alt="종아리가 짧다">
-                <img class="category-item" style="animation-delay: 0s;" width="430"
-                    src="./public/images/appPageImage/2X/e17.png" alt="허벅지가 두껍다">
+                <img class="category-item" style="animation-delay: 1s;" src="./public/images/appPageImage/2X/e13.png"
+                    alt="어깨가 좁다">
+                <img class="category-item" style="animation-delay: .75s;" src="./public/images/appPageImage/2X/e14.png"
+                    alt="허리가 길다">
+                <img class="category-item" style="animation-delay: .5s;" src="./public/images/appPageImage/2X/e15.png"
+                    alt="목이 짧다">
+                <img class="category-item" style="animation-delay: .25s;" src="./public/images/appPageImage/2X/e16.png"
+                    alt="종아리가 굵다">
+                <img class="category-item" style="animation-delay: 0s;" src="./public/images/appPageImage/2X/e17.png"
+                    alt="허벅지가 두껍다">
+            </div>
+            <div class="third-cetailed-category-2">
+                <img width="300" src="./public/images/appPageImage/2X/e46.png" alt="">
             </div>
             <ul class="third-tutorial-text">
                 <li class="fadein tutorial-text" style="animation-delay: .25s;">상세 체형 설정</li>
-                <li class="fadein tutorial-text" style="animation-delay: .5s;">내가 생각하는<br>
-                    <span>체형 고민</span>을 정확하게
+                <li class="fadein tutorial-text" style="animation-delay: .5s;">내가 생각하는
+                    <pre><span>체형 고민</span>을 정확하게</pre>
                 </li>
                 <li class="fadein tutorial-text" style="animation-delay: .75s;">
-                    따로 신경쓰이는 고민이 있다면 상세 체형 설정에서<br>
-                    신체 부분 별로 고민을 선택하여 설정할 수 있습니다. </li>
+                    따로 신경쓰이는 고민이 있다면 상세 체형 설정에서
+                    <pre>신체 부분 별로 고민을 선택하여 설정할 수 있습니다.</pre>
+                </li>
             </ul>
         </div>
     </section>
 
 
-    
     <!-- check-list-wrapper -->
     <section class="check-list-wrapper">
         <video src="./video/mockup_video/Merchant_Settings.mp4" autoplay muted loop></video>
@@ -283,19 +325,29 @@
                 <div class="fourth-mockup-group">
                     <div class="fourth-mockup-item"">
                         <div class=" iphone fadein" style="animation-delay: .25s;">
-                        <video class="video" width="338" src="./video/mockup_video/Comp_5.mp4" autoplay muted
-                            loop></video>
+                        <video class="video" width="338" src="./video/mockup_video/Comp_5.mp4" autoplay muted loop>
+                        </video>
                     </div>
                 </div>
             </div>
-            <div class="fourth-mockup-item-inner">
-                <img class="mockup-left-item left" style="animation-delay: .5s;"
-                    src="./public/images/appPageImage/2X/e20.png" alt="날씨 정보 이미지">
-                <img class="mockup-left-item left" style="animation-delay: 1s;"
-                    src="./public/images/appPageImage/2X/e19.png" alt="날씨 정보 이미지">
-                <img class="mockup-right-item right" style="animation-delay: .75s;"
-                    src="./public/images/appPageImage/2X/e21.png" alt="날씨 정보 이미지">
-            </div>
+        </div>
+
+        <div class="fourth-mockup-item-inner">
+            <img class="mockup-left-item left" style="animation-delay: .5s;"
+                src="./public/images/appPageImage/2X/e20.png" alt="날씨 정보 이미지">
+            <img class="mockup-left-item left" style="animation-delay: 1s;"
+                src="./public/images/appPageImage/2X/e19.png" alt="날씨 정보 이미지">
+            <img class="mockup-right-item right" style="animation-delay: .75s;"
+                src="./public/images/appPageImage/2X/e21.png" alt="날씨 정보 이미지">
+        </div>
+
+        <div class="fourth-mockup-item-inner-2">
+            <img class="left" style="animation-delay: .5s;" src="./public/images/appPageImage/2X/e20.png"
+                alt="날씨 정보 이미지">
+            <img class="left" style="animation-delay: 1s;" src="./public/images/appPageImage/2X/e19.png"
+                alt="날씨 정보 이미지">
+            <img class="right" style="animation-delay: .75s;" src="./public/images/appPageImage/2X/e21.png"
+                alt="날씨 정보 이미지">
         </div>
         </div>
     </section>
@@ -320,6 +372,7 @@
                     <div class="fifth-mockup-item-inner">
                         <div class="div-with-gap right" style="animation-delay: .25s;">
                             <img width="370" src="./public/images/appPageImage/2X/e23.png" alt="상세 체형 이미지">
+                            <p>판매자는 상품 등록시 상세 체형설정을 하고, 이용자는 자신의 체형 고민에 관한 상세정보를 확인할 수 있습니다.</p>
                         </div>
                         <div class="div-with-gap right" style="animation-delay: .5s;">
                             <img width="338" src="./public/images/appPageImage/2X/e24.png" alt="상하체 맞춤 아이템 이미지">
@@ -331,8 +384,6 @@
                         </div>
                     </div>
                 </div>
-                <p class="fadein">판매자가 상품마다 어울리는 체형을 등록하여<br>
-                    더 쉽고 정확하게 상품을 볼 수 있어요.</p>
             </div>
         </div>
     </section>
@@ -356,11 +407,11 @@
                 <div class="sixth-mockup-item fadein" style="animation-delay: .25s;">
                     <img width="371" src="./public/images/appPageImage/2X/e26.png" alt="상황에 맞는 옷차림 이미지">
                 </div>
-                <div class="sixth-mockup-item right" style="margin-top: 400px; animation-delay: .5s;">
+                <div class="sixth-mockup-item right" style="animation-delay: .5s;">
                     <img width="338" src="./public/images/appPageImage/2X/e27.png" alt="옷차림 상세 1">
                     <h1>옷차림 상세 1</h1>
                 </div>
-                <div class="sixth-mockup-item right" style="margin-top: 400px; animation-delay: .75s;">
+                <div class="sixth-mockup-item right" style="animation-delay: .75s;">
                     <img width="338" src="./public/images/appPageImage/2X/e28.png" alt="옷차림 상세 2">
                     <h1>옷차림 상세 2</h1>
                 </div>
@@ -384,23 +435,25 @@
                 </li>
             </ul>
 
-            <div class="seventh-mockup-scrolling fadein" style="animation-delay: .25s;">
-                <img width="371" src="./public/images/appPageImage/2X/e30.png" alt="상품 이미지">
-                <img width="338" src="./public/images/appPageImage/2X/e30_1.png" alt="상품 이미지">
-            </div>
+            <div class="seventh-mockup">
+                <div class="seventh-mockup-scrolling fadein" style="animation-delay: .25s;">
+                    <img width="371" src="./public/images/appPageImage/2X/e30.png" alt="상품 이미지">
+                    <img width="338" src="./public/images/appPageImage/2X/e30_1.png" alt="상품 이미지">
+                </div>
 
-            <div class="seventh-mockup-group">
-                <div class="seventh-mockup-item right" style="animation-delay: .5s;">
-                    <img width="338" src="./public/images/appPageImage/2X/e31.png" alt="체형 적용 확인 이미지">
-                    <h1>체형 적용 확인</h1>
-                </div>
-                <div class="seventh-mockup-item right" style="animation-delay: .75s;">
-                    <img width="338" src="./public/images/appPageImage/2X/e32.png" alt="재질 상세 확인 이미지">
-                    <h1>재질 상세 확인</h1>
-                </div>
-                <div class="seventh-mockup-item right" style="animation-delay: 1s;">
-                    <img width="338" src="./public/images/appPageImage/2X/e33.png" alt="상품 디테일 이미지">
-                    <h1>상품 디테일 확인</h1>
+                <div class="seventh-mockup-group">
+                    <div class="seventh-mockup-item right" style="animation-delay: .5s;">
+                        <img width="338" src="./public/images/appPageImage/2X/e31.png" alt="체형 적용 확인 이미지">
+                        <h1>체형 적용 확인</h1>
+                    </div>
+                    <div class="seventh-mockup-item right" style="animation-delay: .75s;">
+                        <img width="338" src="./public/images/appPageImage/2X/e32.png" alt="재질 상세 확인 이미지">
+                        <h1>재질 상세 확인</h1>
+                    </div>
+                    <div class="seventh-mockup-item right" style="animation-delay: 1s;">
+                        <img width="338" src="./public/images/appPageImage/2X/e33.png" alt="상품 디테일 이미지">
+                        <h1>상품 디테일 확인</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -443,7 +496,7 @@
             <div class="app-downlod-text">
                 <div class="app-downlod-text-inner">
                     <h1>
-                        시니어 패션 큐레이팅 앱<br> MOSS 설치하기
+                        시니어 패션 큐레이팅 앱<br>MOSS 설치하기
                     </h1>
                     <div class="btn-wrap">
                         <a class="btn" href="#">앱 다운로드 하기</a>
@@ -456,15 +509,9 @@
 
 
     <!-- footer -->
-    <footer></footer>
-    <!-- <footer>
-        <ul class="footer-wrapper">
-            <li>MOSS</li>
-            <li>SENIOR FASHION SERVICE</li>
-            <li>Copyright Ⓒ 2023. MOSS All pictures cannot be copied without permission</li>
-        </ul>
-    </footer> -->
-
+    <footer>
+        <img src="./public/images/appPageImage/2X/e36.png" alt="">
+    </footer>
 
 
     <div id="mouse-cursor"></div>
@@ -474,6 +521,7 @@
     <script src="./public/header.js"></script>
     <script src="./public/scroll.js"></script>
     <script src="./public/fadeinGroup.js"></script>
+    <script src="./public/hamburger.js"></script>
 </body>
 
 </html>

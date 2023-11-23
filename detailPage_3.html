@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/mouseCursor.css">
+    <!-- <link rel="stylesheet" href="/public/css/splashScreen.css"> -->
+    <link rel="stylesheet" href="./public/css/font.css">
+    <link rel="stylesheet" href="./public/css/detailPage_3.css">
+    <link rel="stylesheet" href="./public/css/header.css">
+    <!-- font popins / Noto Sans Korea-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>MOSS | 시니어 패션 큐레이팅 서비스</title>
+</head>
+
+<body>
+    <!-- header / nav -->
+    <header id="header-Wrap">
+        <nav id="nav-Wrap">
+            <a style="text-decoration: none; color: #000;" href="main.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path
+                        d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.20101 47.799C2.94999 42.548 -1.97574e-06 35.4261 -2.44784e-06 28L28 28L56 28Z"
+                        fill="#F96512" />
+                    <rect x="38" y="8.87427" width="2.25166" height="20" transform="rotate(90 38 8.87427)"
+                        fill="#F96512" />
+                    <rect x="20.1328" y="3.72485" width="2.25166" height="20" transform="rotate(-45 20.1328 3.72485)"
+                        fill="#F96512" />
+                    <rect x="26.875" width="2.25166" height="20" fill="#F96512" />
+                    <rect x="34.2754" y="2.13281" width="2.25166" height="20" transform="rotate(45 34.2754 2.13281)"
+                        fill="#F96512" />
+                </svg>
+            </a>
+
+            <!-- nav menu -->
+            <ul id="nav-menu">
+                <li><a href="main.html">모스 소개</a></li>
+                <li><a href="magazine.html">패션 매거진</a></li>
+            </ul>
+
+            <!-- hamburger -->
+            <div class="hamberger-wrapper">
+                <div class="hamberger-menu"></div>
+            </div>
+            
+            <div class="hamberger-group">
+                <ul class="hamberger-link-item">
+                    <li><a href="main.html">모스 소개</a></li>
+                    <li><a href="magazine.html">패션 매거진</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section id="interviewee-wrapper">
+            <div class="interviewee-group">
+                <div class="interviewee-group-inner-text">
+                    <h1 class="Place">인사동 문화의 거리에서</h1>
+                    <div class="interviewee-group">
+                        <div class="interviewee-inner">
+                            <div class="interviewee-name-item">
+                                <h1 class="interviewee-english-name">Lee mi ra </h1>
+                                <p class="interviewee-korean-name">이미라</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- clipped-image Section -->
+        <section class="clipped-image-wrapper">
+            <div class="clipped-image-group">
+                <div class="clipped-image-2">
+                    <img src="./public/images/senior/senior_26.jpg" alt="city-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- detailPage-wrapper Section -->
+        <section class="detailPage-wrapper">
+            <div class="detailPage-group">
+                <div class="interview-intro-group">
+                    <ul class="interview-intro-item">
+                        <li class="interview-intro">인터뷰 소개</li>
+                        <li class="interview-info">작성일<span>2023. 09. 21</span></li>
+                        <li class="interview-info">위치<span>인사동 문화의 거리에서</span></li>
+                    </ul>
+                </div>
+
+                <div class="main-interview-wrap">
+                    <div class="main-interview-group">
+                        <ul class="intro-item">
+                            <li class="intro">인터뷰 소개</li>
+                            <li class="info">작성일<span>:&nbsp; &nbsp; 2023. 09. 21</span></li>
+                            <li class="info">위치<span>:&nbsp; &nbsp; 인사동 문화의 거리에서</span></li>
+                        </ul>
+
+                        <ul class="interview-inner-text">
+                            <li class="interview-title">
+                                산뜻한 파스텔 핑크 쉬폰 셋업과 악세사리<br>
+                                그리고 환한 미소가 아름다우셨던
+                            </li>
+                            <li class="interview-background">
+                                인사동 거리를 돌아다니다가 저 멀리에서부터 눈에 확 돋보였던 그가 있다. 굉장히 화사하고 단아한 룩으로 그가 지나가는 거리는 마치 가을이 아닌 벌써 봄이 온 것만 같은 기분이었다. 그에게 인터뷰를 요청하였고 흔쾌히 수락해 주셔서, 그의 머리부터 발끝까지 디테일이 담긴 패션에 대하여 이야기를 나눴다.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="interview-qna-wrapper">
+                        <div class="senior-couple-photo top-inset"></div>
+                        <ul class="qna-item">
+                            <li class="question">
+                                Q. 인터뷰 응해주셔서 감사합니다. 간단한 자기소개 부탁드려요.
+                            </li>
+                            <li class="answer">
+                                안녕하세요~ 저는 그림 한국화를 그리고 있는 사람인 이미라에요. 이렇게 또 한국화 전시회를 열게 되어 인사동에 방문했는데 인터뷰를 하게 되어 쑥스럽네요.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fashion-info-wrapper">
+                        <div class="fashion-image-group">
+                            <div class="top-image">
+                                <div class="fashion-item-image">
+                                    <img src="./public/images/senior/senior_28.jpg" alt="">
+                                    <div class="see-products">
+                                        <div class="see-products-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"
+                                                viewBox="0 0 54 54" fill="none">
+                                                <path
+                                                    d="M54 27C54 34.1608 51.1554 41.0284 46.0919 46.0919C41.0284 51.1554 34.1608 54 27 54C19.8392 54 12.9716 51.1554 7.90812 46.0919C2.84463 41.0284 -1.90518e-06 34.1608 -2.36041e-06 27L27 27L54 27Z"
+                                                    fill="white" />
+                                                <rect x="36.6436" y="8.55859" width="2.17124" height="19.2857"
+                                                    transform="rotate(90 36.6436 8.55859)" fill="white" />
+                                                <rect x="19.415" y="3.59375" width="2.17124" height="19.2857"
+                                                    transform="rotate(-45 19.415 3.59375)" fill="white" />
+                                                <rect x="25.9153" width="2.17124" height="19.2857" fill="white" />
+                                                <rect x="33.0518" y="2.05469" width="2.17124" height="19.2857"
+                                                    transform="rotate(45 33.0518 2.05469)" fill="white" />
+                                            </svg>
+                                            <p>
+                                                MOSS 앱에서 비슷한 상품 보러가기
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fashion-item-image">
+                                    <img src="./public/images/senior/senior_29.jpg" alt="">
+                                    <div class="see-products">
+                                        <div class="see-products-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"
+                                                viewBox="0 0 54 54" fill="none">
+                                                <path
+                                                    d="M54 27C54 34.1608 51.1554 41.0284 46.0919 46.0919C41.0284 51.1554 34.1608 54 27 54C19.8392 54 12.9716 51.1554 7.90812 46.0919C2.84463 41.0284 -1.90518e-06 34.1608 -2.36041e-06 27L27 27L54 27Z"
+                                                    fill="white" />
+                                                <rect x="36.6436" y="8.55859" width="2.17124" height="19.2857"
+                                                    transform="rotate(90 36.6436 8.55859)" fill="white" />
+                                                <rect x="19.415" y="3.59375" width="2.17124" height="19.2857"
+                                                    transform="rotate(-45 19.415 3.59375)" fill="white" />
+                                                <rect x="25.9153" width="2.17124" height="19.2857" fill="white" />
+                                                <rect x="33.0518" y="2.05469" width="2.17124" height="19.2857"
+                                                    transform="rotate(45 33.0518 2.05469)" fill="white" />
+                                            </svg>
+                                            <p>
+                                                MOSS 앱에서 비슷한 상품 보러가기
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-image">
+                                <div class="fashion-item-image">
+                                    <img src="./public/images/senior/senior_30.jpg" alt="">
+                                    <div class="see-products">
+                                        <div class="see-products-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"
+                                                viewBox="0 0 54 54" fill="none">
+                                                <path
+                                                    d="M54 27C54 34.1608 51.1554 41.0284 46.0919 46.0919C41.0284 51.1554 34.1608 54 27 54C19.8392 54 12.9716 51.1554 7.90812 46.0919C2.84463 41.0284 -1.90518e-06 34.1608 -2.36041e-06 27L27 27L54 27Z"
+                                                    fill="white" />
+                                                <rect x="36.6436" y="8.55859" width="2.17124" height="19.2857"
+                                                    transform="rotate(90 36.6436 8.55859)" fill="white" />
+                                                <rect x="19.415" y="3.59375" width="2.17124" height="19.2857"
+                                                    transform="rotate(-45 19.415 3.59375)" fill="white" />
+                                                <rect x="25.9153" width="2.17124" height="19.2857" fill="white" />
+                                                <rect x="33.0518" y="2.05469" width="2.17124" height="19.2857"
+                                                    transform="rotate(45 33.0518 2.05469)" fill="white" />
+                                            </svg>
+                                            <p>
+                                                MOSS 앱에서 비슷한 상품 보러가기
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fashion-item-image">
+                                    <img src="./public/images/senior/senior_31.jpg" alt="">
+                                    <div class="see-products">
+                                        <div class="see-products-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"
+                                                viewBox="0 0 54 54" fill="none">
+                                                <path
+                                                    d="M54 27C54 34.1608 51.1554 41.0284 46.0919 46.0919C41.0284 51.1554 34.1608 54 27 54C19.8392 54 12.9716 51.1554 7.90812 46.0919C2.84463 41.0284 -1.90518e-06 34.1608 -2.36041e-06 27L27 27L54 27Z"
+                                                    fill="white" />
+                                                <rect x="36.6436" y="8.55859" width="2.17124" height="19.2857"
+                                                    transform="rotate(90 36.6436 8.55859)" fill="white" />
+                                                <rect x="19.415" y="3.59375" width="2.17124" height="19.2857"
+                                                    transform="rotate(-45 19.415 3.59375)" fill="white" />
+                                                <rect x="25.9153" width="2.17124" height="19.2857" fill="white" />
+                                                <rect x="33.0518" y="2.05469" width="2.17124" height="19.2857"
+                                                    transform="rotate(45 33.0518 2.05469)" fill="white" />
+                                            </svg>
+                                            <p>
+                                                MOSS 앱에서 비슷한 상품 보러가기
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="qna-wrapper">
+                            <div class="question-group">
+                                <ul class="question-1-1">
+                                    <li>Q. 계속 옷에 시선이 가게 되는데요.
+                                        오늘 옷에 대한 소개와 좋아하는
+                                        스타일에 대해 소개해주세요.
+                                    </li>
+                                </ul>
+                                <ul class="answer-1-1 answer-group">
+                                    <li>평소에 비해 비교적 평범하게 입은 날인데 이렇게 인터뷰를 하게 되었네요. 오늘은 연핑크 색상으로 화사한 느낌이 들게 입어 보았고 목걸이와 반지로 포인트를 주었어요. 가장 신경 쓴 부분은 색상 매치인 것 같아요. 평소에도 전 평범한 옷보다는 럭셔리한 옷을 좋아해요.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="question-group">
+                                <ul class="question-1-2">
+                                    <li>Q. 평소에도 옷을 구매하는데 있어서
+                                        본인만의 기준이 있나요?
+                                    </li>
+                                </ul>
+                                <ul class="answer-1-2 answer-group">
+                                    <li>저는 워낙 옷에 관심도 많고 좋아하기 때문에 명품이나 보세 가리지 않고 저와 어울리는 옷을 찾아 입는 것 같아요. 그러나 옷에서 디자인을 가장 중요하게 생각하는 사람이라 아무리 비싸고 좋은 명품이라고 해도 디자인 별로면 구매하지 않아요.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="question-group">
+                                <ul class="question-1-3">
+                                    <li>Q. 패션에 대한 본인만의 가치관이나 철학이 있으신가요?
+                                    </li>
+                                </ul>
+                                <ul class="answer-1-3 answer-group">
+                                    <li>음 철학까지는 아니지만 하나의 생각을 말해보자면, 전 나이가 들수록 더욱더 신경 써서 겉모습을 꾸며야 한다고 생각해요.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="question-group">
+                                <ul class="question-1-4">
+                                    <li>Q. 평소에 자주 방문하시는 곳이 있다면 소개해 주실 수 있나요?
+                                    </li>
+                                </ul>
+                                
+                                <ul class="answer-1-4 answer-group">
+                                    <li>우리는 그림을 그리고 전시회를 여는 것이 업인 사람이기 때문에 주로 이런 전시회가 많이 열리는 곳에 있어요. 그 외에는 고궁에 산책 가는 것도 좋아하고 풍경이 좋은 찻집에 가서 시간을 보내는 것도 좋아하는 것 같네요.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interview-qna-last-wrapper">
+                        <div class="senior-couple-photo-2 top-inset"></div>
+                        <div class="qna-wrapper">
+                            <div class="question-group-2">
+                                <ul class="question-2-1">
+                                    <li>Q. 나에게 있어서 옷을 한마디로 정의 한다면?
+                                    </li>
+                                </ul>
+                                <ul class="answer-2-1 answer-group">
+                                    <li>나에겐 옷이란 디자인이에요. 전 절대 옷은 아무거나 입을 수 없고 디자인에 따라 좋아 보이는 것만 입을 수 있기 때문에 옷이란 디자인이라고 생각해요.
+                                </ul>
+                            </div>
+
+                            <div class="question-group-2">
+                                <div class="question-2-2">
+                                    <img class="top-inset" src="./public/images/senior/senior_33.jpg" alt="">
+                                    <img class="top-inset" src="./public/images/senior/senior_34.jpg" alt="">
+                                </div>
+
+                                <ul class="answer-2-2"></ul>
+                            </div>
+
+                            <div class="question-group-2">
+                                <ul class="question-2-3" >
+                                    <li>Q. 옷을 감각있게 잘 입고 싶은 사람들에게 한마디를 한다면?
+                                    </li>
+                                </ul>
+
+                                <ul class="answer-2-3 answer-group">
+                                    <li>의복이 즉 사람의 날개이기 때문에 아까 말한 저의 옷에 대한 생각에서도 이어지는 말이지만 나이가 들수록 옷도 더욱더 신경을 써서 깔끔하게 입는 게 중요해요. 단순히 옷은 입는 것이 아닌 자신을 표현하는 수단이기 때문이죠.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-wrapper">
+            <li>MOSS</li>
+            <li>시니어 스타일을 위한 모던 오아시스</li>
+            <li>Copyright Ⓒ 2023. MOSS All pictures cannot be copied without permission</li>
+        </ul>
+    </footer>
+
+    <div id="mouse-cursor"></div>
+    <!-- script -->
+    <script src="./public/mouseCursor.js"></script>
+    <script src="./public/header.js"></script>
+    <script src="./public/scroll.js"></script>
+    <script src="./public/hamburger.js"></script>
+</body>
+
+</html>

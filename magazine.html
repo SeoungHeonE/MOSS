@@ -9,8 +9,10 @@
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
 
     <!-- css -->
     <link rel="stylesheet" href="./public/css/reset.css">
@@ -46,195 +48,229 @@
                 </svg>
             </a>
 
+            <!-- nav menu -->
+            <ul id="nav-menu">
+                <li><a href="main.html">모스 소개</a></li>
+                <li><a href="magazine.html">패션 매거진</a></li>
+            </ul>
+
             <!-- hamburger -->
-            <div class="menu">
+            <div class="hamberger-wrapper">
                 <div class="hamberger-menu"></div>
             </div>
 
-            <!-- nav menu -->
-            <ul id="nav-menu">
-                <li><a href="#">모스 소개</a></li>
-                <li><a href="magazine.html">패션 매거진</a></li>
-            </ul>
+            <div class="hamberger-group">
+                <ul class="hamberger-link-item">
+                    <li><a href="main.html">모스 소개</a></li>
+                    <li><a href="magazine.html">패션 매거진</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 
-        <section class="magazine-map">
-            <div class="magazine-content">
+
+    <section class="magazine-map">
+        <div class="magazine-content">
+            <div class="magazine-category-wrapper">
                 <div class="magazine-category">
-                    <ul class="category-title">
-                        <li>Fashion<br>Magazine</li>
-                        <li>매월 새로워지는 감각적인 시니어를 찾아보세요!</li>
-                    </ul>
-
-                    <nav class="link-table">
-                        <h1>2023 | 10월</h1>
-                        <div class="link-item">
-                            <a href="#image1">
-                                <div class="link-item-text">
-                                    <span class="link-item-innertext">긴 장발의 카리스마</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="link-item">
-                            <a href="#image2">
-                                <div class="link-item-text">
-                                    <span class="link-item-innertext">락 시크의 대명사 크롬하츠</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="link-item">
-                            <a href="#image3">
-                                <div class="link-item-text">
-                                    <span class="link-item-innertext">산뜻한 파스텔 핑크 쉬폰 셋업</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="link-item">
-                            <a href="#image4">
-                                <div class="link-item-text">
-                                    <span class="link-item-innertext">클래식한 정장 셋업과 수제구두</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="link-item">
-                            <a href="#image5">
-                                <div class="link-item-text">
-                                    <span class="link-item-innertext">가을의 분위기를 한 껏 머금은</span>
-                                </div>
-                            </a>
-                        </div>
-                    </nav>
-
-                    <div class="monthly-category-wrapper">
-                        <p>월간 카테고리</p>
-                    </div>
-
-                    <div class="monthly-category-group">
-                        <ul class="monthly-category-item">
-                            <li><a href="#">2023 | 5월</a></li>
-                            <li><a href="#">2023 | 6월</a></li>
-                            <li><a href="#">2023 | 7월</a></li>
-                            <li><a href="#">2023 | 8월</a></li>
-                            <li><a href="#">2023 | 9월</a></li>
-                            <li><a href="#">2023 | 10월</a></li>
-                            <li><a href="#">2023 | 11월</a></li>
-                            <li class="close no-hover">닫기</li>
+                    <div class="magazine-category-item">
+                        <ul class="category-title">
+                            <li>Fashion<br>Magazine</li>
+                            <li>매월 새로워지는 감각적인 시니어를 찾아보세요!</li>
                         </ul>
+
+                        <div class="link-wrap">
+                            <div class="link-table">
+                                <h1>2023 | 10월</h1>
+                                <div class="link-item">
+                                    <a href="#image1" class="scroll-link">
+                                        <div class="link-item-text">
+                                            <span class="link-item-innertext">긴 장발의 카리스마</span>
+                                            <img width="40" src="./public/images/webShowingImage/e11.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="link-item">
+                                    <a href="#image2" class="scroll-link">
+                                        <div class="link-item-text">
+                                            <span class="link-item-innertext">락 시크의 대명사 크롬하츠</span>
+                                            <img width="40" src="./public/images/webShowingImage/e11.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="link-item">
+                                    <a href="#image3" class="scroll-link">
+                                        <div class="link-item-text">
+                                            <span class="link-item-innertext">산뜻한 파스텔 핑크 쉬폰 셋업</span>
+                                            <img width="40" src="./public/images/webShowingImage/e11.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="link-item">
+                                    <a href="#image4" class="scroll-link">
+                                        <div class="link-item-text">
+                                            <span class="link-item-innertext">클래식한 정장 셋업과 수제구두</span>
+                                            <img width="40" src="./public/images/webShowingImage/e11.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="link-item">
+                                    <a href="#image5" class="scroll-link">
+                                        <div class="link-item-text">
+                                            <span class="link-item-innertext">가을의 분위기를 한 껏 머금은</span>
+                                            <img width="40" src="./public/images/webShowingImage/e11.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="monthly-category-wrapper">
+                            <p>월간 카테고리</p>
+                        </div>
+
+                        <div class="monthly-category-group">
+                            <ul class="monthly-category-item">
+                                <li><a href="#">2023 | 5월</a></li>
+                                <li><a href="#">2023 | 6월</a></li>
+                                <li><a href="#">2023 | 7월</a></li>
+                                <li><a href="#">2023 | 8월</a></li>
+                                <li><a href="#">2023 | 9월</a></li>
+                                <li><a href="#">2023 | 10월</a></li>
+                                <li><a href="#">2023 | 11월</a></li>
+                                <li class="close no-hover">닫기</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="119" viewBox="0 0 47 119" fill="none">
+                            <path d="M43.0875 3L4.91662 55.3773C3.12612 57.8342 3.12612 61.1658 4.91662 63.6227L43.0875 116"
+                                stroke="#CCCCCC" stroke-width="6" stroke-linecap="round" />
+                        </svg>
                     </div>
                 </div>
+            </div>
 
-                <h1 class="click-to-move">클릭하여 자유롭게 움직여보세요!</h1>
+            <!-- <h1 class="click-to-move">클릭하여 자유롭게 움직여보세요!</h1> -->
+            <div class="screen-dragging-wrapper">
                 <div class="screen-dragging">
-                    <div id="dragging" class="dragging-group">
-                        <div class="magazine-list">
-                            <div id="image1" class="magazine-item">
-                                <img src="./public/images/senior/senior_1.jpg" width="395" alt="interview-participant">
-                                <ul>
-                                    <li>김정남 님</li>
-                                    <li>긴 장발의 카리스마와<br>시크함을 보여주셨던</li>
-                                </ul>
-                            </div>
+                    <div id="dragging magazine-items" class="dragging-group">
+                        <div id="image1" class="magazine-item title-right comingSoon">
+                            <img src="./public/images/senior/senior_1.jpg" alt="interview-participant">
+                            <ul>
+                                <li>김정남 님</li>
+                                <li>긴 장발의 카리스마와<br>시크함을 보여주셨던</li>
+                            </ul>
+                        </div>
 
-                            <div id="image2" class="magazine-item">
-                                <img src="./public/images/senior/senior_11.jpg" width="424" alt="interview-participant">
+                        <div id="image2" class="magazine-item title-right" draggable="false">
+                            <a href="detailPage_2.html" class="visit">
+                                <img src="./public/images/senior/senior_11.jpg"  alt="interview-participant">
+                            </a>
+                            <a href="detailPage_2.html" class="visit">
                                 <ul>
                                     <li>최영배 님</li>
-                                    <li>락 시크의 대명사 크롬하츠와<br>
-                                        필립프레인의 착용법</li>
+                                    <li>락 시크의 대명사 크롬하츠와 필립프레인으로<br>
+                                        힙하고 강렬한 개성을 보여주셨던</li>
                                 </ul>
-                            </div>
+                            </a>
+                        </div>
 
-                            <div id="image3" class="magazine-item">
+                        <div id="image3" class="magazine-item">
+                            <a href="detailPage_3.html" class="visit">
                                 <img src="./public/images/senior/senior_6.jpg" width="700" alt="interview-participant">
+                            </a>
+                            <a href="detailPage_3.html" class="visit">
                                 <ul style="padding-top: 20px;">
                                     <li>이미라 님</li>
-                                    <li>산뜻한 파스텔 핑크 쉬폰 셋업과<br>
-                                        환한 미소가 아름다우셨던</li>
+                                    <li>산뜻한 파스텔 핑크 쉬폰 셋업과 악세사리<br>
+                                        그리고 환한 미소가 아름다우셨던</li>
                                 </ul>
-                            </div>
+                            </a>
+                        </div>
 
-                            <div id="image4" class="magazine-item">
-                                <a href="detailPage.html" class="visit">
-                                    <img src="./public/images/senior/senior_10.jpg" width="778"
-                                        alt="interview-participant">
-                                    <ul>
-                                        <li>임경섭 님과 조미숙 님</li>
-                                        <li>클래식한 정장 셋업과 수제구두<br>
-                                            분위기부터 압도되었던</li>
-                                    </ul>
-                                </a>
-                            </div>
-
-                            <div id="image5" class="magazine-item">
-                                <img src="./public/images/senior/senior_7.jpg" width="540" alt="interview-participant">
-                                <ul style="padding-top: 20px;">
-                                    <li>이종선 님</li>
-                                    <li>가을 분위기를<br>한껏 머금으셨던</li>
+                        <div id="image4" class="magazine-item title-right" draggable="false">
+                            <a href="detailPage.html" class="visit">
+                                <img src="./public/images/senior/senior_10.jpg" width="778" alt="interview-participant">
+                            </a>
+                            <a href="detailPage.html" class="visit">
+                                <ul>
+                                    <li>임경섭 님과 조미숙 님</li>
+                                    <li>클래식한 정장 셋업과 수제구두<br>
+                                        분위기부터 압도되었던</li>
                                 </ul>
+                            </a>
+                        </div>
+
+                        <div id="image5" class="magazine-item comingSoon">
+                            <img src="./public/images/senior/senior_7.jpg" width="405" alt="interview-participant">
+                            <ul style="padding-top: 20px;">
+                                <li>이종선 님</li>
+                                <li>가을 분위기를<br>한껏 머금으셨던</li>
+                            </ul>
+                        </div>
+
+                        <div class="keyVisual-group">
+                            <div class="variously">
+                                <svg width="402" height="402" viewBox="0 0 402 402" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M332.51 0.169753C376.581 44.2408 401.34 104.014 401.34 166.34C401.34 228.666 376.581 288.439 332.51 332.51C288.439 376.581 228.666 401.34 166.34 401.34C104.014 401.34 44.2412 376.581 0.170112 332.51L166.34 166.34L332.51 0.169753Z"
+                                        fill="#FA6513" />
+                                </svg>
                             </div>
 
-                            <div class="keyVisual-group">
-                                <div class="variously">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="447" height="447"
-                                        viewBox="0 0 447 447" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M446.807 112.337C446.807 173.902 396.898 223.811 335.333 223.811C273.768 223.811 223.859 173.902 223.859 112.337C223.859 50.7717 273.768 0.863281 335.333 0.863281C396.898 0.863281 446.807 50.7717 446.807 112.337ZM223.859 335.284C223.859 273.719 273.768 223.811 335.333 223.811C396.898 223.811 446.807 273.719 446.807 335.284C446.807 396.849 396.898 446.758 335.333 446.758C273.768 446.758 223.859 396.849 223.859 335.284ZM223.859 335.284C223.859 396.849 173.951 446.758 112.386 446.758C50.8206 446.758 0.912137 396.849 0.912137 335.284C0.912137 273.733 50.7983 223.833 112.344 223.811C50.7983 223.788 0.912109 173.888 0.912109 112.337C0.912109 50.7717 50.8205 0.863298 112.386 0.863298C173.951 0.863298 223.859 50.7717 223.859 112.337C223.859 173.888 173.973 223.788 112.427 223.811C173.973 223.833 223.859 273.733 223.859 335.284Z"
-                                            fill="#F96512" />
-                                    </svg>
-                                </div>
+                            <div class="easily">
+                                <svg width="450" height="450" viewBox="0 0 450 450" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="225" cy="224.992" r="225" fill="#FA6513" />
+                                </svg>
 
-                                <div class="easily">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="446" height="223"
-                                        viewBox="0 0 446 223" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M222.947 111.432C222.925 49.8861 173.025 0 111.474 0C49.9084 0 0 49.9084 0 111.474C0 173.039 49.9084 222.947 111.474 222.947C173.025 222.947 222.925 173.061 222.947 111.515C222.969 173.061 272.869 222.947 334.421 222.947C395.986 222.947 445.894 173.039 445.894 111.474C445.894 49.9084 395.986 0 334.421 0C272.869 0 222.969 49.8861 222.947 111.432Z"
-                                            fill="#F96512" />
-                                    </svg>
-                                </div>
+                            </div>
 
-                                <div class="accurately">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="205" height="204"
-                                        viewBox="0 0 205 204" fill="none">
-                                        <path
-                                            d="M204.5 102C204.5 158.333 158.833 204 102.5 204C46.1671 204 0.5 158.333 0.5 102C0.5 45.6671 46.1671 0 102.5 0C158.833 0 204.5 45.6671 204.5 102Z"
-                                            fill="#F96512" />
-                                        <rect x="108.653" y="156.641" width="12.3037" height="109.286"
-                                            transform="rotate(-180 108.653 156.641)" fill="white" />
-                                        <rect x="136.789" y="59.0078" width="12.3037" height="109.286"
-                                            transform="rotate(45 136.789 59.0078)" fill="white" />
-                                        <rect x="157.145" y="95.8438" width="12.3037" height="109.286"
-                                            transform="rotate(90 157.145 95.8438)" fill="white" />
-                                        <rect x="145.49" y="136.285" width="12.3037" height="109.286"
-                                            transform="rotate(135 145.49 136.285)" fill="white" />
-                                    </svg>
-                                </div>
+                            <div class="accurately">
+                                <svg width="450" height="450" viewBox="0 0 450 450" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M450 224.992C450 284.666 426.295 341.895 384.099 384.091C341.903 426.287 284.674 449.992 225 449.992C165.326 449.992 108.097 426.287 65.901 384.091C23.7053 341.895 -1.58765e-05 284.666 -1.96701e-05 224.992L225 224.992L450 224.992Z"
+                                        fill="#F96512" />
+                                    <rect x="305" y="70.9863" width="18.0132" height="160"
+                                        transform="rotate(90 305 70.9863)" fill="#F96512" />
+                                    <rect x="162.064" y="29.791" width="18.0132" height="160"
+                                        transform="rotate(-45 162.064 29.791)" fill="#F96512" />
+                                    <rect x="215.994" y="-0.0078125" width="18.0132" height="160" fill="#F96512" />
+                                    <rect x="275.199" y="17.0547" width="18.0132" height="160"
+                                        transform="rotate(45 275.199 17.0547)" fill="#F96512" />
+                                </svg>
+                            </div>
 
-                                <div class="find">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="205" height="204"
-                                        viewBox="0 0 205 204" fill="none">
-                                        <path
-                                            d="M204.5 102C204.5 129.052 193.754 154.996 174.625 174.125C155.496 193.254 129.552 204 102.5 204C75.4481 204 49.5039 193.254 30.3752 174.125C11.2464 154.996 0.499993 129.052 0.499991 102L102.5 102L204.5 102Z"
-                                            fill="#F96512" />
-                                        <rect x="138.93" y="32.3281" width="8.20248" height="72.8573"
-                                            transform="rotate(90 138.93 32.3281)" fill="#F96512" />
-                                        <rect x="73.8418" y="13.5703" width="8.20248" height="72.8573"
-                                            transform="rotate(-45 73.8418 13.5703)" fill="#F96512" />
-                                        <rect x="98.4004" width="8.20248" height="72.8573" fill="#F96512" />
-                                        <rect x="125.361" y="7.76953" width="8.20248" height="72.8573"
-                                            transform="rotate(45 125.361 7.76953)" fill="#F96512" />
-                                    </svg>
-                                </div>
+                            <div class="find">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" viewBox="0 0 450 450"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M199.668 450H250.33L250.33 286.15L366.189 402.009L402.013 366.186L286.163 250.336L450 250.336V199.673L286.146 199.673L402.005 83.8144L366.182 47.9908L250.33 163.842L250.33 4.42904e-06L199.668 0L199.668 163.841L83.8149 47.9875L47.9913 83.8112L163.853 199.673L4.42904e-06 199.673L0 250.336L163.837 250.336L47.9837 366.189L83.8073 402.012L199.668 286.152L199.668 450Z"
+                                        fill="#FA6513" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
     <div id="mouse-cursor"></div>
@@ -242,6 +278,7 @@
     <script src="./public/mouseCursor.js"></script>
     <script src="./public/clickEvent.js"></script>
     <script src="./public/screenDrag.js"></script>
+    <script src="./public/hamburger.js"></script>
 </body>
 
 </html>

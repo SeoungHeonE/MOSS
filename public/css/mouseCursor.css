@@ -5,7 +5,14 @@
 #mouse-cursor {position: absolute; width: 40px; height: 40px; margin: -32px 0px 0px -32px; border: 1.4px solid var(--black--color); border-radius: 50%; pointer-events: none !important;  z-index: 201; transition: transform 0.3s ease;}
 
 
-#mouse-cursor.active {transform: scale(3); border: solid 2px var(--yellow--color); z-index: 201; /*filter: invert(100%);  mix-blend-mode: difference;*/}
-#mouse-cursor.visitsite {background: var(--yellow--color); z-index: 201;}
-#mouse-cursor.visitsite::before {content: "Visit Site"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 8px; white-space: pre; z-index: 201;}
+#mouse-cursor.active2 {transform: scale(3); border: solid 2px var(--yellow--color); z-index: 201; /*filter: invert(100%);  mix-blend-mode: difference;*/}
+
+#mouse-cursor.active3 { width: 300px; border: none; border-radius: 0; display: flex; align-items: center; justify-content: center; }
+#mouse-cursor.active3::before {content: '클릭하여 자유롭게 움직여 보세요!'; position: absolute; font-size: 20px; }
+
+#mouse-cursor.coming { width: 40px; height: 40px;  border-radius: 50%; background: var(--yellow--color); z-index: 201; display: flex; align-items: center; justify-content: center; }
+#mouse-cursor.coming::before {content: 'Coming Soon!'; color: #fff; font-size: 8px; text-align: center; line-height: normal; z-index: 201; }
+
+#mouse-cursor.visitsite { width: 40px; height: 40px;  border-radius: 50%; background: var(--yellow--color); z-index: 201; display: flex; align-items: center; justify-content: center;}
+#mouse-cursor.visitsite::before {content: "Visit Site";  color: #fff; font-size: 8px; white-space: pre; z-index: 201;}
 #mouse-cursor.oasis {border: 1.4px solid var(--yellow--color);}
